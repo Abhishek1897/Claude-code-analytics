@@ -1,0 +1,264 @@
+Transaction_ID,Date,Month,Dept_Code,Department,Vendor,Amount,Campaign_Name,Attributed_Revenue,ROAS,Is_Future_Dated
+TXN-001,2026-01-05,2026-01,MKT,Marketing,Google Ads,15000,Google Search Q1,87000.0,5.8,False
+TXN-002,2026-01-06,2026-01,OPS,Operations,Staples Business,4200,,,,False
+TXN-003,2026-01-07,2026-01,HR,Human Resources,LinkedIn Recruiter,8500,,,,False
+TXN-004,2026-01-08,2026-01,ENG,Engineering,AWS,22000,,,,False
+TXN-005,2026-01-09,2026-01,SAL,Sales,Salesforce,3100,,,,False
+TXN-006,2026-01-10,2026-01,MKT,Marketing,Meta Ads,8000,Meta Brand Awareness,32000.0,4.0,False
+TXN-007,2026-01-13,2026-01,FIN,Finance,Deloitte,5500,,,,False
+TXN-008,2026-01-14,2026-01,OPS,Operations,Acme Facilities,31000,,,,False
+TXN-009,2026-01-15,2026-01,ENG,Engineering,GitHub Enterprise,18500,,,,False
+TXN-010,2026-01-16,2026-01,SAL,Sales,HubSpot,9200,,,,False
+TXN-011,2026-01-20,2026-01,MKT,Marketing,LinkedIn Ads,6000,LinkedIn B2B Q1,45000.0,7.5,False
+TXN-012,2026-01-21,2026-01,HR,Human Resources,Workday,14000,,,,False
+TXN-013,2026-01-22,2026-01,OPS,Operations,FedEx Logistics,7800,,,,False
+TXN-014,2026-01-23,2026-01,FIN,Finance,Bloomberg Terminal,3200,,,,False
+TXN-015,2026-01-27,2026-01,ENG,Engineering,Azure,45000,,,,False
+TXN-016,2026-01-28,2026-01,IT,Information Technology,Microsoft 365,38000,,,,False
+TXN-017,2026-01-29,2026-01,PRD,Product,Jira Software,7500,,,,False
+TXN-018,2026-01-30,2026-01,CS,Customer Success,Zendesk,5800,,,,False
+TXN-019,2026-01-31,2026-01,LEG,Legal,Latham & Watkins,10500,,,,False
+TXN-020,2026-02-03,2026-02,MKT,Marketing,Google Ads,15000,Google Search Q1,91500.0,6.1,False
+TXN-021,2026-02-04,2026-02,OPS,Operations,Staples Business,5100,,,,False
+TXN-022,2026-02-05,2026-02,SAL,Sales,ZoomInfo,6700,,,,False
+TXN-023,2026-02-06,2026-02,ENG,Engineering,AWS,19000,,,,False
+TXN-024,2026-02-09,2026-02,IT,Information Technology,Crowdstrike,9500,,,,False
+TXN-025,2026-02-10,2026-02,HR,Human Resources,Greenhouse Recruiting,11000,,,,False
+TXN-026,2026-02-11,2026-02,PRD,Product,Figma,6200,,,,False
+TXN-027,2026-02-12,2026-02,MKT,Marketing,Meta Ads,8000,Meta Brand Awareness,29000.0,3.62,False
+TXN-028,2026-02-13,2026-02,FIN,Finance,PwC Advisory,4800,,,,False
+TXN-029,2026-02-14,2026-02,OPS,Operations,Acme Facilities,28000,,,,False
+TXN-030,2026-02-17,2026-02,CS,Customer Success,Intercom,6400,,,,False
+TXN-031,2026-02-18,2026-02,MKT,Marketing,LinkedIn Ads,6000,LinkedIn B2B Q1,52000.0,8.67,False
+TXN-032,2026-02-19,2026-02,ENG,Engineering,Azure,52000,,,,False
+TXN-033,2026-02-20,2026-02,SAL,Sales,Salesforce,4400,,,,False
+TXN-034,2026-02-23,2026-02,LEG,Legal,Baker McKenzie,8900,,,,False
+TXN-035,2026-02-25,2026-02,MKT,Marketing,YouTube Ads,10000,YouTube Pre-Roll,38500.0,3.85,False
+TXN-036,2026-02-26,2026-02,HR,Human Resources,Workday,9500,,,,False
+TXN-037,2026-02-27,2026-02,OPS,Operations,UPS Supply Chain,6300,,,,False
+TXN-038,2026-02-28,2026-02,IT,Information Technology,Microsoft 365,40000,,,,False
+TXN-039,2026-03-02,2026-03,PRD,Product,Mixpanel,8100,,,,False
+TXN-040,2026-03-04,2026-03,MKT,Marketing,Google Ads,18000,Google Search Q2,105000.0,5.83,False
+TXN-041,2026-03-05,2026-03,ENG,Engineering,GitHub Enterprise,24000,,,,False
+TXN-042,2026-03-06,2026-03,FIN,Finance,Deloitte,6100,,,,False
+TXN-043,2026-03-09,2026-03,OPS,Operations,Acme Facilities,33000,,,,False
+TXN-044,2026-03-10,2026-03,SAL,Sales,HubSpot,8900,,,,False
+TXN-045,2026-03-11,2026-03,MKT,Marketing,Meta Ads,12000,Meta Spring Campaign,44000.0,3.67,False
+TXN-046,2026-03-12,2026-03,HR,Human Resources,ADP Payroll Services,16000,,,,False
+TXN-047,2026-03-13,2026-03,CS,Customer Success,Zendesk,7100,,,,False
+TXN-048,2026-03-16,2026-03,IT,Information Technology,Crowdstrike,11000,,,,False
+TXN-049,2026-03-17,2026-03,ENG,Engineering,AWS,61000,,,,False
+TXN-050,2026-03-18,2026-03,SAL,Sales,ZoomInfo,5500,,,,False
+TXN-051,2026-03-19,2026-03,MKT,Marketing,LinkedIn Ads,7500,LinkedIn B2B Q2,61000.0,8.13,False
+TXN-052,2026-03-20,2026-03,FIN,Finance,Bloomberg Terminal,3900,,,,False
+TXN-053,2026-03-23,2026-03,LEG,Legal,Latham & Watkins,11500,,,,False
+TXN-054,2026-03-24,2026-03,MKT,Marketing,TradeDesk,5000,Programmatic Display,18500.0,3.7,False
+TXN-055,2026-03-25,2026-03,OPS,Operations,FedEx Logistics,9200,,,,False
+TXN-056,2026-03-26,2026-03,PRD,Product,Jira Software,9800,,,,False
+TXN-057,2026-03-28,2026-03,MKT,Marketing,Mailchimp,2500,Email Re-engagement,22000.0,8.8,False
+TXN-058,2026-03-30,2026-03,CS,Customer Success,Intercom,6900,,,,False
+TXN-059,2026-03-31,2026-03,ENG,Engineering,Azure,48000,,,,False
+TXN-060,2026-03-31,2026-03,IT,Information Technology,Microsoft 365,42000,,,,False
+TXN-061,2026-04-02,2026-04,MKT,Marketing,Google Ads,18000,Google Search Q2,112000.0,6.22,False
+TXN-062,2026-04-03,2026-04,HR,Human Resources,LinkedIn Recruiter,7200,,,,False
+TXN-063,2026-04-04,2026-04,OPS,Operations,Staples Business,4800,,,,False
+TXN-064,2026-04-07,2026-04,MKT,Marketing,Meta Ads,12000,Meta Spring Campaign,51000.0,4.25,False
+TXN-065,2026-04-08,2026-04,ENG,Engineering,AWS,21000,,,,False
+TXN-066,2026-04-09,2026-04,MKT,Marketing,TikTok Ads,9000,TikTok Awareness,27500.0,3.06,False
+TXN-067,2026-04-09,2026-04,SAL,Sales,Salesforce,7300,,,,False
+TXN-068,2026-04-10,2026-04,FIN,Finance,PwC Advisory,5200,,,,False
+TXN-069,2026-04-11,2026-04,IT,Information Technology,Microsoft 365,35000,,,,False
+TXN-070,2026-04-13,2026-04,PRD,Product,Jira Software,8500,,,,False
+TXN-071,2026-04-14,2026-04,MKT,Marketing,LinkedIn Ads,7500,LinkedIn B2B Q2,63000.0,8.4,False
+TXN-072,2026-04-15,2026-04,LEG,Legal,Latham & Watkins,12000,,,,False
+TXN-073,2026-04-16,2026-04,CS,Customer Success,Zendesk,6200,,,,False
+TXN-074,2026-04-17,2026-04,OPS,Operations,Acme Facilities,29000,,,,False
+TXN-075,2026-04-20,2026-04,ENG,Engineering,Azure,23000,,,,False
+TXN-076,2026-04-21,2026-04,MKT,Marketing,YouTube Ads,11000,YouTube Pre-Roll,41000.0,3.73,False
+TXN-077,2026-04-22,2026-04,HR,Human Resources,Workday,9800,,,,False
+TXN-078,2026-04-23,2026-04,SAL,Sales,HubSpot,5600,,,,False
+TXN-079,2026-04-24,2026-04,FIN,Finance,Bloomberg Terminal,4100,,,,False
+TXN-080,2026-04-27,2026-04,IT,Information Technology,Crowdstrike,12000,,,,False
+TXN-081,2026-04-28,2026-04,MKT,Marketing,Mailchimp,2500,Email Re-engagement,19500.0,7.8,False
+TXN-082,2026-04-29,2026-04,PRD,Product,Figma,6000,,,,False
+TXN-083,2026-04-30,2026-04,ENG,Engineering,Azure,55000,,,,False
+TXN-084,2026-05-04,2026-05,MKT,Marketing,Google Ads,20000,Google Search Q2,118000.0,5.9,False
+TXN-085,2026-05-05,2026-05,OPS,Operations,Acme Facilities,31000,,,,False
+TXN-086,2026-05-06,2026-05,ENG,Engineering,AWS,25000,,,,False
+TXN-087,2026-05-07,2026-05,HR,Human Resources,LinkedIn Recruiter,10500,,,,False
+TXN-088,2026-05-08,2026-05,MKT,Marketing,Meta Ads,14000,Meta Summer Preview,58000.0,4.14,False
+TXN-089,2026-05-09,2026-05,SAL,Sales,Salesforce,7800,,,,False
+TXN-090,2026-05-11,2026-05,FIN,Finance,Deloitte,5300,,,,False
+TXN-091,2026-05-12,2026-05,IT,Information Technology,Crowdstrike,8900,,,,False
+TXN-092,2026-05-13,2026-05,MKT,Marketing,LinkedIn Ads,7500,LinkedIn B2B Q2,67000.0,8.93,False
+TXN-093,2026-05-14,2026-05,PRD,Product,Mixpanel,11000,,,,False
+TXN-094,2026-05-15,2026-05,LEG,Legal,Baker McKenzie,9500,,,,False
+TXN-095,2026-05-18,2026-05,CS,Customer Success,Zendesk,7400,,,,False
+TXN-096,2026-05-19,2026-05,MKT,Marketing,TikTok Ads,9000,TikTok Awareness,31000.0,3.44,False
+TXN-097,2026-05-20,2026-05,ENG,Engineering,Azure,58000,,,,False
+TXN-098,2026-05-21,2026-05,OPS,Operations,FedEx Logistics,8100,,,,False
+TXN-099,2026-05-22,2026-05,MKT,Marketing,TradeDesk,6000,Programmatic Display,22000.0,3.67,False
+TXN-100,2026-05-25,2026-05,SAL,Sales,ZoomInfo,4200,,,,False
+TXN-101,2026-05-26,2026-05,HR,Human Resources,Greenhouse Recruiting,13500,,,,False
+TXN-102,2026-05-27,2026-05,MKT,Marketing,YouTube Ads,11000,YouTube Pre-Roll,43500.0,3.95,False
+TXN-103,2026-05-28,2026-05,FIN,Finance,PwC Advisory,3700,,,,False
+TXN-104,2026-05-29,2026-05,MKT,Marketing,Mailchimp,2500,Email Re-engagement,20000.0,8.0,False
+TXN-105,2026-05-30,2026-05,IT,Information Technology,Microsoft 365,42000,,,,False
+TXN-106,2026-06-01,2026-06,PRD,Product,Figma,9200,,,,False
+TXN-107,2026-06-02,2026-06,MKT,Marketing,Google Ads,20000,Google Search Q2,122000.0,6.1,False
+TXN-108,2026-06-03,2026-06,OPS,Operations,Acme Facilities,33000,,,,False
+TXN-109,2026-06-04,2026-06,ENG,Engineering,AWS,26000,,,,False
+TXN-110,2026-06-05,2026-06,CS,Customer Success,Intercom,8100,,,,False
+TXN-111,2026-06-08,2026-06,HR,Human Resources,Workday,12000,,,,False
+TXN-112,2026-06-09,2026-06,MKT,Marketing,Meta Ads,16000,Meta Summer Campaign,65000.0,4.06,False
+TXN-113,2026-06-10,2026-06,FIN,Finance,Bloomberg Terminal,6200,,,,False
+TXN-114,2026-06-11,2026-06,SAL,Sales,HubSpot,9400,,,,False
+TXN-115,2026-06-12,2026-06,IT,Information Technology,Crowdstrike,11500,,,,False
+TXN-116,2026-06-15,2026-06,MKT,Marketing,LinkedIn Ads,7500,LinkedIn B2B Q2,71000.0,9.47,False
+TXN-117,2026-06-16,2026-06,LEG,Legal,Latham & Watkins,14000,,,,False
+TXN-118,2026-06-17,2026-06,PRD,Product,Jira Software,7800,,,,False
+TXN-119,2026-06-18,2026-06,MKT,Marketing,TikTok Ads,12000,TikTok Summer Push,38000.0,3.17,False
+TXN-120,2026-06-19,2026-06,ENG,Engineering,Azure,62000,,,,False
+TXN-121,2026-06-22,2026-06,OPS,Operations,UPS Supply Chain,7600,,,,False
+TXN-122,2026-06-23,2026-06,SAL,Sales,Salesforce,6100,,,,False
+TXN-123,2026-06-24,2026-06,MKT,Marketing,TradeDesk,6000,Programmatic Display,24000.0,4.0,False
+TXN-124,2026-06-25,2026-06,HR,Human Resources,ADP Payroll Services,11000,,,,False
+TXN-125,2026-06-26,2026-06,FIN,Finance,Deloitte,5900,,,,False
+TXN-126,2026-06-29,2026-06,MKT,Marketing,Influencer Network,8000,Influencer Partnerships,35000.0,4.38,False
+TXN-127,2026-06-30,2026-06,IT,Information Technology,Microsoft 365,38000,,,,False
+TXN-128,2026-07-01,2026-07,CS,Customer Success,Zendesk,8800,,,,False
+TXN-129,2026-07-02,2026-07,PRD,Product,Mixpanel,10500,,,,False
+TXN-130,2026-07-03,2026-07,OPS,Operations,Acme Facilities,30000,,,,False
+TXN-131,2026-07-06,2026-07,MKT,Marketing,Google Ads,22000,Google Search Q3,130000.0,5.91,False
+TXN-132,2026-07-07,2026-07,ENG,Engineering,AWS,27000,,,,False
+TXN-133,2026-07-08,2026-07,SAL,Sales,ZoomInfo,8300,,,,False
+TXN-134,2026-07-09,2026-07,HR,Human Resources,LinkedIn Recruiter,9200,,,,False
+TXN-135,2026-07-10,2026-07,MKT,Marketing,Meta Ads,16000,Meta Summer Campaign,68000.0,4.25,False
+TXN-136,2026-07-13,2026-07,FIN,Finance,PwC Advisory,4500,,,,False
+TXN-137,2026-07-14,2026-07,IT,Information Technology,Crowdstrike,14000,,,,False
+TXN-138,2026-07-15,2026-07,MKT,Marketing,LinkedIn Ads,9000,LinkedIn B2B Q3,78000.0,8.67,False
+TXN-139,2026-07-16,2026-07,LEG,Legal,Baker McKenzie,11000,,,,False
+TXN-140,2026-07-17,2026-07,PRD,Product,Figma,8900,,,,False
+TXN-141,2026-07-20,2026-07,OPS,Operations,FedEx Logistics,9500,,,,False
+TXN-142,2026-07-21,2026-07,MKT,Marketing,TikTok Ads,12000,TikTok Summer Push,40000.0,3.33,False
+TXN-143,2026-07-22,2026-07,ENG,Engineering,Azure,65000,,,,False
+TXN-144,2026-07-23,2026-07,SAL,Sales,Salesforce,7200,,,,False
+TXN-145,2026-07-24,2026-07,MKT,Marketing,YouTube Ads,13000,YouTube Mid-Year,52000.0,4.0,False
+TXN-146,2026-07-25,2026-07,CS,Customer Success,Intercom,9100,,,,False
+TXN-147,2026-07-27,2026-07,HR,Human Resources,Workday,14500,,,,False
+TXN-148,2026-07-28,2026-07,FIN,Finance,Bloomberg Terminal,5100,,,,False
+TXN-149,2026-07-29,2026-07,MKT,Marketing,TradeDesk,7000,Programmatic Display,26000.0,3.71,False
+TXN-150,2026-07-31,2026-07,IT,Information Technology,Microsoft 365,40000,,,,False
+TXN-151,2026-08-03,2026-08,MKT,Marketing,Google Ads,22000,Google Search Q3,128000.0,5.82,False
+TXN-152,2026-08-04,2026-08,OPS,Operations,Acme Facilities,32000,,,,False
+TXN-153,2026-08-05,2026-08,ENG,Engineering,AWS,28000,,,,False
+TXN-154,2026-08-06,2026-08,PRD,Product,Jira Software,12000,,,,False
+TXN-155,2026-08-07,2026-08,MKT,Marketing,Meta Ads,18000,Meta Back to School,72000.0,4.0,False
+TXN-156,2026-08-10,2026-08,SAL,Sales,HubSpot,10200,,,,False
+TXN-157,2026-08-11,2026-08,HR,Human Resources,Greenhouse Recruiting,11500,,,,False
+TXN-158,2026-08-12,2026-08,MKT,Marketing,LinkedIn Ads,9000,LinkedIn B2B Q3,81000.0,9.0,False
+TXN-159,2026-08-13,2026-08,FIN,Finance,Deloitte,6800,,,,False
+TXN-160,2026-08-14,2026-08,IT,Information Technology,Crowdstrike,16000,,,,False
+TXN-161,2026-08-17,2026-08,CS,Customer Success,Zendesk,7600,,,,False
+TXN-162,2026-08-18,2026-08,MKT,Marketing,TikTok Ads,14000,TikTok Back to School,44000.0,3.14,False
+TXN-163,2026-08-19,2026-08,ENG,Engineering,Azure,68000,,,,False
+TXN-164,2026-08-20,2026-08,LEG,Legal,Latham & Watkins,13000,,,,False
+TXN-165,2026-08-21,2026-08,OPS,Operations,UPS Supply Chain,8400,,,,False
+TXN-166,2026-08-24,2026-08,SAL,Sales,ZoomInfo,5900,,,,False
+TXN-167,2026-08-25,2026-08,MKT,Marketing,Mailchimp,3000,Email Summer Series,28000.0,9.33,False
+TXN-168,2026-08-26,2026-08,PRD,Product,Mixpanel,9500,,,,False
+TXN-169,2026-08-27,2026-08,FIN,Finance,Bloomberg Terminal,4300,,,,False
+TXN-170,2026-08-28,2026-08,MKT,Marketing,TradeDesk,7000,Programmatic Display,29000.0,4.14,False
+TXN-171,2026-08-31,2026-08,IT,Information Technology,Microsoft 365,43000,,,,False
+TXN-172,2026-09-01,2026-09,CS,Customer Success,Intercom,9800,,,,False
+TXN-173,2026-09-02,2026-09,MKT,Marketing,Google Ads,22000,Google Search Q3,135000.0,6.14,False
+TXN-174,2026-09-03,2026-09,OPS,Operations,Acme Facilities,34000,,,,False
+TXN-175,2026-09-04,2026-09,ENG,Engineering,AWS,29000,,,,False
+TXN-176,2026-09-07,2026-09,HR,Human Resources,Workday,12500,,,,False
+TXN-177,2026-09-08,2026-09,MKT,Marketing,Meta Ads,18000,Meta Fall Campaign,74000.0,4.11,False
+TXN-178,2026-09-09,2026-09,PRD,Product,Figma,11000,,,,False
+TXN-179,2026-09-10,2026-09,SAL,Sales,Salesforce,9100,,,,False
+TXN-180,2026-09-11,2026-09,FIN,Finance,PwC Advisory,5500,,,,False
+TXN-181,2026-09-14,2026-09,IT,Information Technology,Crowdstrike,18000,,,,False
+TXN-182,2026-09-15,2026-09,MKT,Marketing,LinkedIn Ads,9000,LinkedIn B2B Q3,85000.0,9.44,False
+TXN-183,2026-09-16,2026-09,LEG,Legal,Baker McKenzie,15000,,,,False
+TXN-184,2026-09-17,2026-09,OPS,Operations,FedEx Logistics,10200,,,,False
+TXN-185,2026-09-18,2026-09,CS,Customer Success,Zendesk,8200,,,,False
+TXN-186,2026-09-21,2026-09,ENG,Engineering,Azure,70000,,,,False
+TXN-187,2026-09-22,2026-09,MKT,Marketing,TikTok Ads,15000,TikTok Fall Launch,48000.0,3.2,False
+TXN-188,2026-09-23,2026-09,SAL,Sales,HubSpot,11400,,,,False
+TXN-189,2026-09-24,2026-09,HR,Human Resources,ADP Payroll Services,13000,,,,False
+TXN-190,2026-09-25,2026-09,FIN,Finance,Deloitte,6400,,,,False
+TXN-191,2026-09-26,2026-09,MKT,Marketing,YouTube Ads,13000,YouTube Fall Preview,55000.0,4.23,False
+TXN-192,2026-09-28,2026-09,PRD,Product,Jira Software,14000,,,,False
+TXN-193,2026-09-29,2026-09,MKT,Marketing,Influencer Network,9000,Influencer Partnerships,41000.0,4.56,False
+TXN-194,2026-09-30,2026-09,IT,Information Technology,Microsoft 365,45000,,,,False
+TXN-195,2026-10-01,2026-10,CS,Customer Success,Intercom,10500,,,,False
+TXN-196,2026-10-02,2026-10,OPS,Operations,Acme Facilities,35000,,,,False
+TXN-197,2026-10-05,2026-10,MKT,Marketing,Google Ads,25000,Google Search Q4,148000.0,5.92,False
+TXN-198,2026-10-06,2026-10,ENG,Engineering,AWS,31000,,,,False
+TXN-199,2026-10-07,2026-10,HR,Human Resources,LinkedIn Recruiter,14000,,,,False
+TXN-200,2026-10-08,2026-10,SAL,Sales,ZoomInfo,12000,,,,False
+TXN-201,2026-10-09,2026-10,MKT,Marketing,Meta Ads,20000,Meta Holiday Preview,82000.0,4.1,False
+TXN-202,2026-10-12,2026-10,FIN,Finance,Bloomberg Terminal,7200,,,,False
+TXN-203,2026-10-13,2026-10,PRD,Product,Figma,13500,,,,False
+TXN-204,2026-10-14,2026-10,MKT,Marketing,LinkedIn Ads,10000,LinkedIn B2B Q4,92000.0,9.2,False
+TXN-205,2026-10-15,2026-10,IT,Information Technology,Crowdstrike,20000,,,,False
+TXN-206,2026-10-16,2026-10,LEG,Legal,Latham & Watkins,12500,,,,False
+TXN-207,2026-10-19,2026-10,CS,Customer Success,Zendesk,9100,,,,False
+TXN-208,2026-10-20,2026-10,MKT,Marketing,TikTok Ads,16000,TikTok Holiday Teaser,54000.0,3.38,False
+TXN-209,2026-10-21,2026-10,ENG,Engineering,Azure,72000,,,,False
+TXN-210,2026-10-22,2026-10,SAL,Sales,Salesforce,8900,,,,False
+TXN-211,2026-10-23,2026-10,OPS,Operations,UPS Supply Chain,11500,,,,False
+TXN-212,2026-10-26,2026-10,MKT,Marketing,TradeDesk,8000,Programmatic Display,31000.0,3.88,False
+TXN-213,2026-10-27,2026-10,HR,Human Resources,Workday,15000,,,,False
+TXN-214,2026-10-28,2026-10,FIN,Finance,Deloitte,5800,,,,False
+TXN-215,2026-10-29,2026-10,MKT,Marketing,Mailchimp,3500,Email Fall Promo,32000.0,9.14,False
+TXN-216,2026-10-30,2026-10,IT,Information Technology,Microsoft 365,48000,,,,True
+TXN-217,2026-11-02,2026-11,MKT,Marketing,Google Ads,28000,Google Search Q4,172000.0,6.14,True
+TXN-218,2026-11-03,2026-11,OPS,Operations,Acme Facilities,36000,,,,True
+TXN-219,2026-11-04,2026-11,ENG,Engineering,AWS,33000,,,,True
+TXN-220,2026-11-05,2026-11,PRD,Product,Jira Software,15000,,,,True
+TXN-221,2026-11-06,2026-11,MKT,Marketing,Meta Ads,25000,Meta Black Friday,115000.0,4.6,True
+TXN-222,2026-11-09,2026-11,SAL,Sales,HubSpot,14500,,,,True
+TXN-223,2026-11-10,2026-11,HR,Human Resources,Greenhouse Recruiting,16500,,,,True
+TXN-224,2026-11-11,2026-11,MKT,Marketing,LinkedIn Ads,10000,LinkedIn B2B Q4,98000.0,9.8,True
+TXN-225,2026-11-12,2026-11,FIN,Finance,PwC Advisory,8100,,,,True
+TXN-226,2026-11-13,2026-11,IT,Information Technology,Crowdstrike,22000,,,,True
+TXN-227,2026-11-16,2026-11,CS,Customer Success,Intercom,11200,,,,True
+TXN-228,2026-11-17,2026-11,MKT,Marketing,TikTok Ads,20000,TikTok Black Friday,78000.0,3.9,True
+TXN-229,2026-11-18,2026-11,ENG,Engineering,Azure,78000,,,,True
+TXN-230,2026-11-19,2026-11,LEG,Legal,Baker McKenzie,18000,,,,True
+TXN-231,2026-11-20,2026-11,OPS,Operations,FedEx Logistics,12000,,,,True
+TXN-232,2026-11-21,2026-11,MKT,Marketing,YouTube Ads,15000,YouTube Holiday,68000.0,4.53,True
+TXN-233,2026-11-23,2026-11,SAL,Sales,ZoomInfo,10800,,,,True
+TXN-234,2026-11-24,2026-11,FIN,Finance,Bloomberg Terminal,7500,,,,True
+TXN-235,2026-11-25,2026-11,MKT,Marketing,TradeDesk,9000,Programmatic Display,42000.0,4.67,True
+TXN-236,2026-11-26,2026-11,HR,Human Resources,ADP Payroll Services,14000,,,,True
+TXN-237,2026-11-27,2026-11,MKT,Marketing,Mailchimp,5000,Email Black Friday,55000.0,11.0,True
+TXN-238,2026-11-28,2026-11,PRD,Product,Mixpanel,16500,,,,True
+TXN-239,2026-11-30,2026-11,IT,Information Technology,Microsoft 365,52000,,,,True
+TXN-240,2026-12-01,2026-12,MKT,Marketing,Google Ads,30000,Google Search Q4,185000.0,6.17,True
+TXN-241,2026-12-02,2026-12,OPS,Operations,Acme Facilities,38000,,,,True
+TXN-242,2026-12-03,2026-12,ENG,Engineering,AWS,35000,,,,True
+TXN-243,2026-12-04,2026-12,MKT,Marketing,Meta Ads,28000,Meta Holiday Campaign,125000.0,4.46,True
+TXN-244,2026-12-05,2026-12,PRD,Product,Figma,16000,,,,True
+TXN-245,2026-12-07,2026-12,SAL,Sales,Salesforce,16000,,,,True
+TXN-246,2026-12-08,2026-12,HR,Human Resources,Workday,18000,,,,True
+TXN-247,2026-12-09,2026-12,MKT,Marketing,LinkedIn Ads,10000,LinkedIn B2B Q4,102000.0,10.2,True
+TXN-248,2026-12-10,2026-12,FIN,Finance,Deloitte,9200,,,,True
+TXN-249,2026-12-11,2026-12,IT,Information Technology,Crowdstrike,25000,,,,True
+TXN-250,2026-12-12,2026-12,MKT,Marketing,TikTok Ads,22000,TikTok Holiday Campaign,88000.0,4.0,True
+TXN-251,2026-12-14,2026-12,CS,Customer Success,Zendesk,12500,,,,True
+TXN-252,2026-12-15,2026-12,LEG,Legal,Latham & Watkins,16000,,,,True
+TXN-253,2026-12-16,2026-12,MKT,Marketing,YouTube Ads,16000,YouTube Christmas,72000.0,4.5,True
+TXN-254,2026-12-17,2026-12,ENG,Engineering,Azure,85000,,,,True
+TXN-255,2026-12-18,2026-12,OPS,Operations,UPS Supply Chain,14500,,,,True
+TXN-256,2026-12-19,2026-12,MKT,Marketing,TradeDesk,9000,Programmatic Display,38000.0,4.22,True
+TXN-257,2026-12-21,2026-12,SAL,Sales,HubSpot,18500,,,,True
+TXN-258,2026-12-22,2026-12,MKT,Marketing,Mailchimp,6000,Email Holiday Series,65000.0,10.83,True
+TXN-259,2026-12-23,2026-12,HR,Human Resources,ADP Payroll Services,20000,,,,True
+TXN-260,2026-12-28,2026-12,FIN,Finance,PwC Advisory,11000,,,,True
+TXN-261,2026-12-29,2026-12,IT,Information Technology,Microsoft 365,58000,,,,True
+TXN-262,2026-12-30,2026-12,CS,Customer Success,Intercom,13800,,,,True
+TXN-263,2026-12-31,2026-12,PRD,Product,Jira Software,17500,,,,True

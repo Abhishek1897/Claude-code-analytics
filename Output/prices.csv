@@ -1,0 +1,1509 @@
+date,ticker,name,asset_class,close,source
+2026-07-31,AAPL,Apple,Stocks,228.004207,simulated
+2026-08-03,AAPL,Apple,Stocks,229.028228,simulated
+2026-08-04,AAPL,Apple,Stocks,228.088383,simulated
+2026-08-05,AAPL,Apple,Stocks,225.06164,simulated
+2026-08-06,AAPL,Apple,Stocks,223.531928,simulated
+2026-08-07,AAPL,Apple,Stocks,220.231565,simulated
+2026-08-10,AAPL,Apple,Stocks,220.430337,simulated
+2026-08-11,AAPL,Apple,Stocks,224.906541,simulated
+2026-08-12,AAPL,Apple,Stocks,223.252149,simulated
+2026-08-13,AAPL,Apple,Stocks,221.183953,simulated
+2026-08-14,AAPL,Apple,Stocks,222.815116,simulated
+2026-08-17,AAPL,Apple,Stocks,224.011112,simulated
+2026-08-18,AAPL,Apple,Stocks,224.365601,simulated
+2026-08-19,AAPL,Apple,Stocks,221.255878,simulated
+2026-08-20,AAPL,Apple,Stocks,221.158817,simulated
+2026-08-21,AAPL,Apple,Stocks,223.477474,simulated
+2026-08-24,AAPL,Apple,Stocks,219.016573,simulated
+2026-08-25,AAPL,Apple,Stocks,217.518339,simulated
+2026-08-26,AAPL,Apple,Stocks,211.402695,simulated
+2026-08-27,AAPL,Apple,Stocks,207.352814,simulated
+2026-08-28,AAPL,Apple,Stocks,201.702882,simulated
+2026-08-31,AAPL,Apple,Stocks,200.992856,simulated
+2026-09-01,AAPL,Apple,Stocks,197.207736,simulated
+2026-09-02,AAPL,Apple,Stocks,198.011802,simulated
+2026-09-03,AAPL,Apple,Stocks,198.477928,simulated
+2026-09-04,AAPL,Apple,Stocks,197.922182,simulated
+2026-09-07,AAPL,Apple,Stocks,190.589622,simulated
+2026-09-08,AAPL,Apple,Stocks,189.055788,simulated
+2026-09-09,AAPL,Apple,Stocks,188.918297,simulated
+2026-09-10,AAPL,Apple,Stocks,189.239662,simulated
+2026-09-11,AAPL,Apple,Stocks,184.945693,simulated
+2026-09-14,AAPL,Apple,Stocks,183.625055,simulated
+2026-09-15,AAPL,Apple,Stocks,180.949529,simulated
+2026-09-16,AAPL,Apple,Stocks,178.767412,simulated
+2026-09-17,AAPL,Apple,Stocks,181.63498,simulated
+2026-09-18,AAPL,Apple,Stocks,179.448103,simulated
+2026-09-21,AAPL,Apple,Stocks,179.360585,simulated
+2026-09-22,AAPL,Apple,Stocks,181.755807,simulated
+2026-09-23,AAPL,Apple,Stocks,180.17166,simulated
+2026-09-24,AAPL,Apple,Stocks,179.87003,simulated
+2026-09-25,AAPL,Apple,Stocks,180.168315,simulated
+2026-09-28,AAPL,Apple,Stocks,180.340769,simulated
+2026-09-29,AAPL,Apple,Stocks,177.057119,simulated
+2026-09-30,AAPL,Apple,Stocks,177.259452,simulated
+2026-10-01,AAPL,Apple,Stocks,180.909488,simulated
+2026-10-02,AAPL,Apple,Stocks,176.759432,simulated
+2026-10-05,AAPL,Apple,Stocks,179.052742,simulated
+2026-10-06,AAPL,Apple,Stocks,179.373589,simulated
+2026-10-07,AAPL,Apple,Stocks,177.655923,simulated
+2026-10-08,AAPL,Apple,Stocks,183.067495,simulated
+2026-10-09,AAPL,Apple,Stocks,185.172682,simulated
+2026-10-12,AAPL,Apple,Stocks,181.871333,simulated
+2026-10-13,AAPL,Apple,Stocks,182.074732,simulated
+2026-10-14,AAPL,Apple,Stocks,183.656573,simulated
+2026-10-15,AAPL,Apple,Stocks,183.137242,simulated
+2026-10-16,AAPL,Apple,Stocks,185.022878,simulated
+2026-10-19,AAPL,Apple,Stocks,184.838362,simulated
+2026-10-20,AAPL,Apple,Stocks,186.697645,simulated
+2026-10-21,AAPL,Apple,Stocks,190.769955,simulated
+2026-10-22,AAPL,Apple,Stocks,188.846278,simulated
+2026-10-23,AAPL,Apple,Stocks,189.422585,simulated
+2026-10-26,AAPL,Apple,Stocks,188.110735,simulated
+2026-10-27,AAPL,Apple,Stocks,188.470187,simulated
+2026-10-28,AAPL,Apple,Stocks,185.143632,simulated
+2026-10-29,AAPL,Apple,Stocks,183.541792,simulated
+2026-07-31,MSFT,Microsoft,Stocks,430.815035,simulated
+2026-08-03,MSFT,Microsoft,Stocks,436.270096,simulated
+2026-08-04,MSFT,Microsoft,Stocks,443.321237,simulated
+2026-08-05,MSFT,Microsoft,Stocks,435.182402,simulated
+2026-08-06,MSFT,Microsoft,Stocks,430.367831,simulated
+2026-08-07,MSFT,Microsoft,Stocks,434.283225,simulated
+2026-08-10,MSFT,Microsoft,Stocks,422.336773,simulated
+2026-08-11,MSFT,Microsoft,Stocks,419.607041,simulated
+2026-08-12,MSFT,Microsoft,Stocks,419.035918,simulated
+2026-08-13,MSFT,Microsoft,Stocks,426.47547,simulated
+2026-08-14,MSFT,Microsoft,Stocks,430.611592,simulated
+2026-08-17,MSFT,Microsoft,Stocks,428.643477,simulated
+2026-08-18,MSFT,Microsoft,Stocks,426.437346,simulated
+2026-08-19,MSFT,Microsoft,Stocks,424.946262,simulated
+2026-08-20,MSFT,Microsoft,Stocks,434.10747,simulated
+2026-08-21,MSFT,Microsoft,Stocks,431.513925,simulated
+2026-08-24,MSFT,Microsoft,Stocks,429.683227,simulated
+2026-08-25,MSFT,Microsoft,Stocks,431.809493,simulated
+2026-08-26,MSFT,Microsoft,Stocks,431.080012,simulated
+2026-08-27,MSFT,Microsoft,Stocks,429.891021,simulated
+2026-08-28,MSFT,Microsoft,Stocks,423.238055,simulated
+2026-08-31,MSFT,Microsoft,Stocks,423.169791,simulated
+2026-09-01,MSFT,Microsoft,Stocks,420.549992,simulated
+2026-09-02,MSFT,Microsoft,Stocks,427.472154,simulated
+2026-09-03,MSFT,Microsoft,Stocks,431.398556,simulated
+2026-09-04,MSFT,Microsoft,Stocks,431.252764,simulated
+2026-09-07,MSFT,Microsoft,Stocks,435.307079,simulated
+2026-09-08,MSFT,Microsoft,Stocks,433.240732,simulated
+2026-09-09,MSFT,Microsoft,Stocks,439.669499,simulated
+2026-09-10,MSFT,Microsoft,Stocks,439.636264,simulated
+2026-09-11,MSFT,Microsoft,Stocks,443.241632,simulated
+2026-09-14,MSFT,Microsoft,Stocks,435.303096,simulated
+2026-09-15,MSFT,Microsoft,Stocks,437.420984,simulated
+2026-09-16,MSFT,Microsoft,Stocks,427.203817,simulated
+2026-09-17,MSFT,Microsoft,Stocks,415.20261,simulated
+2026-09-18,MSFT,Microsoft,Stocks,413.436503,simulated
+2026-09-21,MSFT,Microsoft,Stocks,408.260298,simulated
+2026-09-22,MSFT,Microsoft,Stocks,409.199043,simulated
+2026-09-23,MSFT,Microsoft,Stocks,422.262977,simulated
+2026-09-24,MSFT,Microsoft,Stocks,417.37461,simulated
+2026-09-25,MSFT,Microsoft,Stocks,413.744632,simulated
+2026-09-28,MSFT,Microsoft,Stocks,414.936131,simulated
+2026-09-29,MSFT,Microsoft,Stocks,417.810004,simulated
+2026-09-30,MSFT,Microsoft,Stocks,416.779418,simulated
+2026-10-01,MSFT,Microsoft,Stocks,415.579563,simulated
+2026-10-02,MSFT,Microsoft,Stocks,421.368845,simulated
+2026-10-05,MSFT,Microsoft,Stocks,426.148242,simulated
+2026-10-06,MSFT,Microsoft,Stocks,421.70913,simulated
+2026-10-07,MSFT,Microsoft,Stocks,422.93025,simulated
+2026-10-08,MSFT,Microsoft,Stocks,424.835183,simulated
+2026-10-09,MSFT,Microsoft,Stocks,420.287291,simulated
+2026-10-12,MSFT,Microsoft,Stocks,423.509629,simulated
+2026-10-13,MSFT,Microsoft,Stocks,420.130283,simulated
+2026-10-14,MSFT,Microsoft,Stocks,427.593849,simulated
+2026-10-15,MSFT,Microsoft,Stocks,430.467676,simulated
+2026-10-16,MSFT,Microsoft,Stocks,432.7337,simulated
+2026-10-19,MSFT,Microsoft,Stocks,430.887972,simulated
+2026-10-20,MSFT,Microsoft,Stocks,431.897198,simulated
+2026-10-21,MSFT,Microsoft,Stocks,421.668367,simulated
+2026-10-22,MSFT,Microsoft,Stocks,416.705376,simulated
+2026-10-23,MSFT,Microsoft,Stocks,420.506189,simulated
+2026-10-26,MSFT,Microsoft,Stocks,409.795912,simulated
+2026-10-27,MSFT,Microsoft,Stocks,416.343974,simulated
+2026-10-28,MSFT,Microsoft,Stocks,407.918104,simulated
+2026-10-29,MSFT,Microsoft,Stocks,413.915053,simulated
+2026-07-31,NVDA,NVIDIA,Stocks,134.543662,simulated
+2026-08-03,NVDA,NVIDIA,Stocks,137.72494,simulated
+2026-08-04,NVDA,NVIDIA,Stocks,138.267061,simulated
+2026-08-05,NVDA,NVIDIA,Stocks,132.036975,simulated
+2026-08-06,NVDA,NVIDIA,Stocks,137.07887,simulated
+2026-08-07,NVDA,NVIDIA,Stocks,143.137781,simulated
+2026-08-10,NVDA,NVIDIA,Stocks,142.855485,simulated
+2026-08-11,NVDA,NVIDIA,Stocks,141.686382,simulated
+2026-08-12,NVDA,NVIDIA,Stocks,141.00848,simulated
+2026-08-13,NVDA,NVIDIA,Stocks,136.943093,simulated
+2026-08-14,NVDA,NVIDIA,Stocks,141.531607,simulated
+2026-08-17,NVDA,NVIDIA,Stocks,139.245185,simulated
+2026-08-18,NVDA,NVIDIA,Stocks,139.031509,simulated
+2026-08-19,NVDA,NVIDIA,Stocks,135.761775,simulated
+2026-08-20,NVDA,NVIDIA,Stocks,133.235669,simulated
+2026-08-21,NVDA,NVIDIA,Stocks,128.225156,simulated
+2026-08-24,NVDA,NVIDIA,Stocks,133.153131,simulated
+2026-08-25,NVDA,NVIDIA,Stocks,132.539035,simulated
+2026-08-26,NVDA,NVIDIA,Stocks,136.435892,simulated
+2026-08-27,NVDA,NVIDIA,Stocks,136.490442,simulated
+2026-08-28,NVDA,NVIDIA,Stocks,133.676471,simulated
+2026-08-31,NVDA,NVIDIA,Stocks,132.372766,simulated
+2026-09-01,NVDA,NVIDIA,Stocks,130.166577,simulated
+2026-09-02,NVDA,NVIDIA,Stocks,130.197661,simulated
+2026-09-03,NVDA,NVIDIA,Stocks,128.740115,simulated
+2026-09-04,NVDA,NVIDIA,Stocks,127.586952,simulated
+2026-09-07,NVDA,NVIDIA,Stocks,122.417933,simulated
+2026-09-08,NVDA,NVIDIA,Stocks,119.490335,simulated
+2026-09-09,NVDA,NVIDIA,Stocks,125.569227,simulated
+2026-09-10,NVDA,NVIDIA,Stocks,123.065929,simulated
+2026-09-11,NVDA,NVIDIA,Stocks,119.235128,simulated
+2026-09-14,NVDA,NVIDIA,Stocks,120.447888,simulated
+2026-09-15,NVDA,NVIDIA,Stocks,125.641846,simulated
+2026-09-16,NVDA,NVIDIA,Stocks,120.279071,simulated
+2026-09-17,NVDA,NVIDIA,Stocks,119.528995,simulated
+2026-09-18,NVDA,NVIDIA,Stocks,117.28389,simulated
+2026-09-21,NVDA,NVIDIA,Stocks,111.248542,simulated
+2026-09-22,NVDA,NVIDIA,Stocks,113.728567,simulated
+2026-09-23,NVDA,NVIDIA,Stocks,113.648608,simulated
+2026-09-24,NVDA,NVIDIA,Stocks,113.892447,simulated
+2026-09-25,NVDA,NVIDIA,Stocks,111.350759,simulated
+2026-09-28,NVDA,NVIDIA,Stocks,112.880387,simulated
+2026-09-29,NVDA,NVIDIA,Stocks,111.068799,simulated
+2026-09-30,NVDA,NVIDIA,Stocks,110.593655,simulated
+2026-10-01,NVDA,NVIDIA,Stocks,106.977111,simulated
+2026-10-02,NVDA,NVIDIA,Stocks,104.389784,simulated
+2026-10-05,NVDA,NVIDIA,Stocks,109.968919,simulated
+2026-10-06,NVDA,NVIDIA,Stocks,109.61614,simulated
+2026-10-07,NVDA,NVIDIA,Stocks,111.914484,simulated
+2026-10-08,NVDA,NVIDIA,Stocks,113.150787,simulated
+2026-10-09,NVDA,NVIDIA,Stocks,113.011205,simulated
+2026-10-12,NVDA,NVIDIA,Stocks,112.645773,simulated
+2026-10-13,NVDA,NVIDIA,Stocks,116.181151,simulated
+2026-10-14,NVDA,NVIDIA,Stocks,116.523689,simulated
+2026-10-15,NVDA,NVIDIA,Stocks,117.395818,simulated
+2026-10-16,NVDA,NVIDIA,Stocks,118.892287,simulated
+2026-10-19,NVDA,NVIDIA,Stocks,124.65042,simulated
+2026-10-20,NVDA,NVIDIA,Stocks,128.757206,simulated
+2026-10-21,NVDA,NVIDIA,Stocks,131.815935,simulated
+2026-10-22,NVDA,NVIDIA,Stocks,131.17068,simulated
+2026-10-23,NVDA,NVIDIA,Stocks,127.362877,simulated
+2026-10-26,NVDA,NVIDIA,Stocks,132.625081,simulated
+2026-10-27,NVDA,NVIDIA,Stocks,138.17481,simulated
+2026-10-28,NVDA,NVIDIA,Stocks,139.253829,simulated
+2026-10-29,NVDA,NVIDIA,Stocks,143.244776,simulated
+2026-07-31,AMZN,Amazon,Stocks,188.929803,simulated
+2026-08-03,AMZN,Amazon,Stocks,192.096764,simulated
+2026-08-04,AMZN,Amazon,Stocks,195.669477,simulated
+2026-08-05,AMZN,Amazon,Stocks,193.894567,simulated
+2026-08-06,AMZN,Amazon,Stocks,199.859376,simulated
+2026-08-07,AMZN,Amazon,Stocks,194.938113,simulated
+2026-08-10,AMZN,Amazon,Stocks,198.326884,simulated
+2026-08-11,AMZN,Amazon,Stocks,200.295794,simulated
+2026-08-12,AMZN,Amazon,Stocks,203.826191,simulated
+2026-08-13,AMZN,Amazon,Stocks,211.631761,simulated
+2026-08-14,AMZN,Amazon,Stocks,218.009077,simulated
+2026-08-17,AMZN,Amazon,Stocks,213.072645,simulated
+2026-08-18,AMZN,Amazon,Stocks,205.996614,simulated
+2026-08-19,AMZN,Amazon,Stocks,209.389784,simulated
+2026-08-20,AMZN,Amazon,Stocks,205.181974,simulated
+2026-08-21,AMZN,Amazon,Stocks,205.131073,simulated
+2026-08-24,AMZN,Amazon,Stocks,208.605249,simulated
+2026-08-25,AMZN,Amazon,Stocks,201.858662,simulated
+2026-08-26,AMZN,Amazon,Stocks,193.517539,simulated
+2026-08-27,AMZN,Amazon,Stocks,194.523724,simulated
+2026-08-28,AMZN,Amazon,Stocks,194.696483,simulated
+2026-08-31,AMZN,Amazon,Stocks,193.741692,simulated
+2026-09-01,AMZN,Amazon,Stocks,193.891065,simulated
+2026-09-02,AMZN,Amazon,Stocks,190.58269,simulated
+2026-09-03,AMZN,Amazon,Stocks,184.900211,simulated
+2026-09-04,AMZN,Amazon,Stocks,184.284947,simulated
+2026-09-07,AMZN,Amazon,Stocks,180.738098,simulated
+2026-09-08,AMZN,Amazon,Stocks,174.893879,simulated
+2026-09-09,AMZN,Amazon,Stocks,176.671664,simulated
+2026-09-10,AMZN,Amazon,Stocks,176.454849,simulated
+2026-09-11,AMZN,Amazon,Stocks,177.895376,simulated
+2026-09-14,AMZN,Amazon,Stocks,174.410149,simulated
+2026-09-15,AMZN,Amazon,Stocks,172.129746,simulated
+2026-09-16,AMZN,Amazon,Stocks,168.724578,simulated
+2026-09-17,AMZN,Amazon,Stocks,165.758984,simulated
+2026-09-18,AMZN,Amazon,Stocks,166.408064,simulated
+2026-09-21,AMZN,Amazon,Stocks,163.822495,simulated
+2026-09-22,AMZN,Amazon,Stocks,164.993293,simulated
+2026-09-23,AMZN,Amazon,Stocks,166.118259,simulated
+2026-09-24,AMZN,Amazon,Stocks,172.984702,simulated
+2026-09-25,AMZN,Amazon,Stocks,168.232572,simulated
+2026-09-28,AMZN,Amazon,Stocks,171.246738,simulated
+2026-09-29,AMZN,Amazon,Stocks,170.940521,simulated
+2026-09-30,AMZN,Amazon,Stocks,170.892563,simulated
+2026-10-01,AMZN,Amazon,Stocks,166.008302,simulated
+2026-10-02,AMZN,Amazon,Stocks,164.322986,simulated
+2026-10-05,AMZN,Amazon,Stocks,166.617017,simulated
+2026-10-06,AMZN,Amazon,Stocks,166.176138,simulated
+2026-10-07,AMZN,Amazon,Stocks,166.27938,simulated
+2026-10-08,AMZN,Amazon,Stocks,165.150149,simulated
+2026-10-09,AMZN,Amazon,Stocks,168.839143,simulated
+2026-10-12,AMZN,Amazon,Stocks,168.597968,simulated
+2026-10-13,AMZN,Amazon,Stocks,161.177893,simulated
+2026-10-14,AMZN,Amazon,Stocks,158.803443,simulated
+2026-10-15,AMZN,Amazon,Stocks,152.519323,simulated
+2026-10-16,AMZN,Amazon,Stocks,142.773939,simulated
+2026-10-19,AMZN,Amazon,Stocks,141.127004,simulated
+2026-10-20,AMZN,Amazon,Stocks,144.796806,simulated
+2026-10-21,AMZN,Amazon,Stocks,144.788466,simulated
+2026-10-22,AMZN,Amazon,Stocks,141.291185,simulated
+2026-10-23,AMZN,Amazon,Stocks,138.519195,simulated
+2026-10-26,AMZN,Amazon,Stocks,141.545493,simulated
+2026-10-27,AMZN,Amazon,Stocks,141.850503,simulated
+2026-10-28,AMZN,Amazon,Stocks,141.844827,simulated
+2026-10-29,AMZN,Amazon,Stocks,141.55162,simulated
+2026-07-31,GOOGL,Alphabet,Stocks,166.11478,simulated
+2026-08-03,GOOGL,Alphabet,Stocks,168.540537,simulated
+2026-08-04,GOOGL,Alphabet,Stocks,170.225241,simulated
+2026-08-05,GOOGL,Alphabet,Stocks,170.887456,simulated
+2026-08-06,GOOGL,Alphabet,Stocks,167.709541,simulated
+2026-08-07,GOOGL,Alphabet,Stocks,169.259581,simulated
+2026-08-10,GOOGL,Alphabet,Stocks,167.18769,simulated
+2026-08-11,GOOGL,Alphabet,Stocks,170.512105,simulated
+2026-08-12,GOOGL,Alphabet,Stocks,166.655262,simulated
+2026-08-13,GOOGL,Alphabet,Stocks,166.242938,simulated
+2026-08-14,GOOGL,Alphabet,Stocks,166.220921,simulated
+2026-08-17,GOOGL,Alphabet,Stocks,162.304489,simulated
+2026-08-18,GOOGL,Alphabet,Stocks,167.413972,simulated
+2026-08-19,GOOGL,Alphabet,Stocks,171.873191,simulated
+2026-08-20,GOOGL,Alphabet,Stocks,170.444961,simulated
+2026-08-21,GOOGL,Alphabet,Stocks,172.82913,simulated
+2026-08-24,GOOGL,Alphabet,Stocks,174.011186,simulated
+2026-08-25,GOOGL,Alphabet,Stocks,166.014563,simulated
+2026-08-26,GOOGL,Alphabet,Stocks,166.764507,simulated
+2026-08-27,GOOGL,Alphabet,Stocks,166.580468,simulated
+2026-08-28,GOOGL,Alphabet,Stocks,166.830178,simulated
+2026-08-31,GOOGL,Alphabet,Stocks,163.627524,simulated
+2026-09-01,GOOGL,Alphabet,Stocks,162.836137,simulated
+2026-09-02,GOOGL,Alphabet,Stocks,162.314489,simulated
+2026-09-03,GOOGL,Alphabet,Stocks,165.823081,simulated
+2026-09-04,GOOGL,Alphabet,Stocks,166.824294,simulated
+2026-09-07,GOOGL,Alphabet,Stocks,166.807614,simulated
+2026-09-08,GOOGL,Alphabet,Stocks,171.462159,simulated
+2026-09-09,GOOGL,Alphabet,Stocks,169.757022,simulated
+2026-09-10,GOOGL,Alphabet,Stocks,168.57123,simulated
+2026-09-11,GOOGL,Alphabet,Stocks,163.147843,simulated
+2026-09-14,GOOGL,Alphabet,Stocks,167.821465,simulated
+2026-09-15,GOOGL,Alphabet,Stocks,170.759936,simulated
+2026-09-16,GOOGL,Alphabet,Stocks,173.601415,simulated
+2026-09-17,GOOGL,Alphabet,Stocks,175.704239,simulated
+2026-09-18,GOOGL,Alphabet,Stocks,176.052949,simulated
+2026-09-21,GOOGL,Alphabet,Stocks,176.73715,simulated
+2026-09-22,GOOGL,Alphabet,Stocks,175.937265,simulated
+2026-09-23,GOOGL,Alphabet,Stocks,175.293668,simulated
+2026-09-24,GOOGL,Alphabet,Stocks,175.465096,simulated
+2026-09-25,GOOGL,Alphabet,Stocks,180.305578,simulated
+2026-09-28,GOOGL,Alphabet,Stocks,182.118113,simulated
+2026-09-29,GOOGL,Alphabet,Stocks,181.926575,simulated
+2026-09-30,GOOGL,Alphabet,Stocks,180.039111,simulated
+2026-10-01,GOOGL,Alphabet,Stocks,177.992985,simulated
+2026-10-02,GOOGL,Alphabet,Stocks,183.477644,simulated
+2026-10-05,GOOGL,Alphabet,Stocks,185.436629,simulated
+2026-10-06,GOOGL,Alphabet,Stocks,185.940943,simulated
+2026-10-07,GOOGL,Alphabet,Stocks,185.063283,simulated
+2026-10-08,GOOGL,Alphabet,Stocks,181.677816,simulated
+2026-10-09,GOOGL,Alphabet,Stocks,181.73169,simulated
+2026-10-12,GOOGL,Alphabet,Stocks,184.88929,simulated
+2026-10-13,GOOGL,Alphabet,Stocks,183.863115,simulated
+2026-10-14,GOOGL,Alphabet,Stocks,183.387459,simulated
+2026-10-15,GOOGL,Alphabet,Stocks,182.933474,simulated
+2026-10-16,GOOGL,Alphabet,Stocks,183.569851,simulated
+2026-10-19,GOOGL,Alphabet,Stocks,178.648656,simulated
+2026-10-20,GOOGL,Alphabet,Stocks,178.160333,simulated
+2026-10-21,GOOGL,Alphabet,Stocks,175.704705,simulated
+2026-10-22,GOOGL,Alphabet,Stocks,178.792748,simulated
+2026-10-23,GOOGL,Alphabet,Stocks,176.594567,simulated
+2026-10-26,GOOGL,Alphabet,Stocks,178.706245,simulated
+2026-10-27,GOOGL,Alphabet,Stocks,183.953543,simulated
+2026-10-28,GOOGL,Alphabet,Stocks,183.192682,simulated
+2026-10-29,GOOGL,Alphabet,Stocks,181.491739,simulated
+2026-07-31,META,Meta Platforms,Stocks,577.426725,simulated
+2026-08-03,META,Meta Platforms,Stocks,577.40095,simulated
+2026-08-04,META,Meta Platforms,Stocks,564.916172,simulated
+2026-08-05,META,Meta Platforms,Stocks,570.673692,simulated
+2026-08-06,META,Meta Platforms,Stocks,596.547538,simulated
+2026-08-07,META,Meta Platforms,Stocks,593.169664,simulated
+2026-08-10,META,Meta Platforms,Stocks,590.528083,simulated
+2026-08-11,META,Meta Platforms,Stocks,577.107575,simulated
+2026-08-12,META,Meta Platforms,Stocks,581.173092,simulated
+2026-08-13,META,Meta Platforms,Stocks,565.446202,simulated
+2026-08-14,META,Meta Platforms,Stocks,551.842497,simulated
+2026-08-17,META,Meta Platforms,Stocks,567.599097,simulated
+2026-08-18,META,Meta Platforms,Stocks,556.404411,simulated
+2026-08-19,META,Meta Platforms,Stocks,569.799904,simulated
+2026-08-20,META,Meta Platforms,Stocks,589.232669,simulated
+2026-08-21,META,Meta Platforms,Stocks,592.603957,simulated
+2026-08-24,META,Meta Platforms,Stocks,599.862776,simulated
+2026-08-25,META,Meta Platforms,Stocks,626.187873,simulated
+2026-08-26,META,Meta Platforms,Stocks,623.483573,simulated
+2026-08-27,META,Meta Platforms,Stocks,615.402356,simulated
+2026-08-28,META,Meta Platforms,Stocks,597.351195,simulated
+2026-08-31,META,Meta Platforms,Stocks,597.89955,simulated
+2026-09-01,META,Meta Platforms,Stocks,617.675931,simulated
+2026-09-02,META,Meta Platforms,Stocks,630.854364,simulated
+2026-09-03,META,Meta Platforms,Stocks,617.913838,simulated
+2026-09-04,META,Meta Platforms,Stocks,606.394503,simulated
+2026-09-07,META,Meta Platforms,Stocks,599.70568,simulated
+2026-09-08,META,Meta Platforms,Stocks,603.57415,simulated
+2026-09-09,META,Meta Platforms,Stocks,600.854043,simulated
+2026-09-10,META,Meta Platforms,Stocks,603.695562,simulated
+2026-09-11,META,Meta Platforms,Stocks,607.64954,simulated
+2026-09-14,META,Meta Platforms,Stocks,603.668546,simulated
+2026-09-15,META,Meta Platforms,Stocks,603.135243,simulated
+2026-09-16,META,Meta Platforms,Stocks,605.882751,simulated
+2026-09-17,META,Meta Platforms,Stocks,604.764517,simulated
+2026-09-18,META,Meta Platforms,Stocks,611.501014,simulated
+2026-09-21,META,Meta Platforms,Stocks,637.195095,simulated
+2026-09-22,META,Meta Platforms,Stocks,645.547808,simulated
+2026-09-23,META,Meta Platforms,Stocks,646.340919,simulated
+2026-09-24,META,Meta Platforms,Stocks,622.804393,simulated
+2026-09-25,META,Meta Platforms,Stocks,628.142812,simulated
+2026-09-28,META,Meta Platforms,Stocks,601.809304,simulated
+2026-09-29,META,Meta Platforms,Stocks,583.440149,simulated
+2026-09-30,META,Meta Platforms,Stocks,594.513805,simulated
+2026-10-01,META,Meta Platforms,Stocks,603.823,simulated
+2026-10-02,META,Meta Platforms,Stocks,607.275434,simulated
+2026-10-05,META,Meta Platforms,Stocks,590.141422,simulated
+2026-10-06,META,Meta Platforms,Stocks,590.631639,simulated
+2026-10-07,META,Meta Platforms,Stocks,587.138241,simulated
+2026-10-08,META,Meta Platforms,Stocks,600.805222,simulated
+2026-10-09,META,Meta Platforms,Stocks,637.109069,simulated
+2026-10-12,META,Meta Platforms,Stocks,645.944337,simulated
+2026-10-13,META,Meta Platforms,Stocks,640.704588,simulated
+2026-10-14,META,Meta Platforms,Stocks,630.060821,simulated
+2026-10-15,META,Meta Platforms,Stocks,634.972875,simulated
+2026-10-16,META,Meta Platforms,Stocks,638.226242,simulated
+2026-10-19,META,Meta Platforms,Stocks,627.886495,simulated
+2026-10-20,META,Meta Platforms,Stocks,635.186861,simulated
+2026-10-21,META,Meta Platforms,Stocks,624.904681,simulated
+2026-10-22,META,Meta Platforms,Stocks,646.171849,simulated
+2026-10-23,META,Meta Platforms,Stocks,667.436197,simulated
+2026-10-26,META,Meta Platforms,Stocks,689.735596,simulated
+2026-10-27,META,Meta Platforms,Stocks,688.750591,simulated
+2026-10-28,META,Meta Platforms,Stocks,702.88878,simulated
+2026-10-29,META,Meta Platforms,Stocks,707.185595,simulated
+2026-07-31,TSLA,Tesla,Stocks,246.620938,simulated
+2026-08-03,TSLA,Tesla,Stocks,243.71083,simulated
+2026-08-04,TSLA,Tesla,Stocks,232.872796,simulated
+2026-08-05,TSLA,Tesla,Stocks,221.396926,simulated
+2026-08-06,TSLA,Tesla,Stocks,227.638342,simulated
+2026-08-07,TSLA,Tesla,Stocks,226.119792,simulated
+2026-08-10,TSLA,Tesla,Stocks,227.839124,simulated
+2026-08-11,TSLA,Tesla,Stocks,235.968812,simulated
+2026-08-12,TSLA,Tesla,Stocks,222.080518,simulated
+2026-08-13,TSLA,Tesla,Stocks,216.068493,simulated
+2026-08-14,TSLA,Tesla,Stocks,217.398522,simulated
+2026-08-17,TSLA,Tesla,Stocks,220.402516,simulated
+2026-08-18,TSLA,Tesla,Stocks,217.512841,simulated
+2026-08-19,TSLA,Tesla,Stocks,225.490755,simulated
+2026-08-20,TSLA,Tesla,Stocks,227.157358,simulated
+2026-08-21,TSLA,Tesla,Stocks,217.712331,simulated
+2026-08-24,TSLA,Tesla,Stocks,210.734253,simulated
+2026-08-25,TSLA,Tesla,Stocks,216.759699,simulated
+2026-08-26,TSLA,Tesla,Stocks,220.307316,simulated
+2026-08-27,TSLA,Tesla,Stocks,206.140159,simulated
+2026-08-28,TSLA,Tesla,Stocks,216.096756,simulated
+2026-08-31,TSLA,Tesla,Stocks,220.667534,simulated
+2026-09-01,TSLA,Tesla,Stocks,231.290432,simulated
+2026-09-02,TSLA,Tesla,Stocks,228.205074,simulated
+2026-09-03,TSLA,Tesla,Stocks,225.855396,simulated
+2026-09-04,TSLA,Tesla,Stocks,217.124073,simulated
+2026-09-07,TSLA,Tesla,Stocks,237.284891,simulated
+2026-09-08,TSLA,Tesla,Stocks,235.832214,simulated
+2026-09-09,TSLA,Tesla,Stocks,249.306797,simulated
+2026-09-10,TSLA,Tesla,Stocks,243.722192,simulated
+2026-09-11,TSLA,Tesla,Stocks,245.123817,simulated
+2026-09-14,TSLA,Tesla,Stocks,231.196067,simulated
+2026-09-15,TSLA,Tesla,Stocks,228.118624,simulated
+2026-09-16,TSLA,Tesla,Stocks,236.109858,simulated
+2026-09-17,TSLA,Tesla,Stocks,225.988963,simulated
+2026-09-18,TSLA,Tesla,Stocks,234.631014,simulated
+2026-09-21,TSLA,Tesla,Stocks,237.416848,simulated
+2026-09-22,TSLA,Tesla,Stocks,228.898613,simulated
+2026-09-23,TSLA,Tesla,Stocks,224.915159,simulated
+2026-09-24,TSLA,Tesla,Stocks,221.330257,simulated
+2026-09-25,TSLA,Tesla,Stocks,220.946985,simulated
+2026-09-28,TSLA,Tesla,Stocks,216.839565,simulated
+2026-09-29,TSLA,Tesla,Stocks,210.650986,simulated
+2026-09-30,TSLA,Tesla,Stocks,208.417255,simulated
+2026-10-01,TSLA,Tesla,Stocks,201.059515,simulated
+2026-10-02,TSLA,Tesla,Stocks,189.325457,simulated
+2026-10-05,TSLA,Tesla,Stocks,186.19255,simulated
+2026-10-06,TSLA,Tesla,Stocks,189.176786,simulated
+2026-10-07,TSLA,Tesla,Stocks,176.647097,simulated
+2026-10-08,TSLA,Tesla,Stocks,174.038533,simulated
+2026-10-09,TSLA,Tesla,Stocks,167.591297,simulated
+2026-10-12,TSLA,Tesla,Stocks,159.545344,simulated
+2026-10-13,TSLA,Tesla,Stocks,161.935562,simulated
+2026-10-14,TSLA,Tesla,Stocks,156.657603,simulated
+2026-10-15,TSLA,Tesla,Stocks,162.634135,simulated
+2026-10-16,TSLA,Tesla,Stocks,155.899057,simulated
+2026-10-19,TSLA,Tesla,Stocks,155.669676,simulated
+2026-10-20,TSLA,Tesla,Stocks,152.136995,simulated
+2026-10-21,TSLA,Tesla,Stocks,145.968469,simulated
+2026-10-22,TSLA,Tesla,Stocks,146.78358,simulated
+2026-10-23,TSLA,Tesla,Stocks,143.816023,simulated
+2026-10-26,TSLA,Tesla,Stocks,144.697772,simulated
+2026-10-27,TSLA,Tesla,Stocks,142.30776,simulated
+2026-10-28,TSLA,Tesla,Stocks,134.961353,simulated
+2026-10-29,TSLA,Tesla,Stocks,132.477927,simulated
+2026-07-31,JPM,JPMorgan Chase,Stocks,222.149993,simulated
+2026-08-03,JPM,JPMorgan Chase,Stocks,224.935303,simulated
+2026-08-04,JPM,JPMorgan Chase,Stocks,222.300778,simulated
+2026-08-05,JPM,JPMorgan Chase,Stocks,222.187147,simulated
+2026-08-06,JPM,JPMorgan Chase,Stocks,217.268868,simulated
+2026-08-07,JPM,JPMorgan Chase,Stocks,219.116821,simulated
+2026-08-10,JPM,JPMorgan Chase,Stocks,216.057751,simulated
+2026-08-11,JPM,JPMorgan Chase,Stocks,211.043245,simulated
+2026-08-12,JPM,JPMorgan Chase,Stocks,210.880843,simulated
+2026-08-13,JPM,JPMorgan Chase,Stocks,213.933913,simulated
+2026-08-14,JPM,JPMorgan Chase,Stocks,209.735946,simulated
+2026-08-17,JPM,JPMorgan Chase,Stocks,206.790226,simulated
+2026-08-18,JPM,JPMorgan Chase,Stocks,204.801723,simulated
+2026-08-19,JPM,JPMorgan Chase,Stocks,201.816496,simulated
+2026-08-20,JPM,JPMorgan Chase,Stocks,202.814428,simulated
+2026-08-21,JPM,JPMorgan Chase,Stocks,200.696865,simulated
+2026-08-24,JPM,JPMorgan Chase,Stocks,198.823191,simulated
+2026-08-25,JPM,JPMorgan Chase,Stocks,200.336592,simulated
+2026-08-26,JPM,JPMorgan Chase,Stocks,198.37858,simulated
+2026-08-27,JPM,JPMorgan Chase,Stocks,199.497831,simulated
+2026-08-28,JPM,JPMorgan Chase,Stocks,196.994411,simulated
+2026-08-31,JPM,JPMorgan Chase,Stocks,193.914542,simulated
+2026-09-01,JPM,JPMorgan Chase,Stocks,189.342343,simulated
+2026-09-02,JPM,JPMorgan Chase,Stocks,193.979474,simulated
+2026-09-03,JPM,JPMorgan Chase,Stocks,193.173546,simulated
+2026-09-04,JPM,JPMorgan Chase,Stocks,193.787097,simulated
+2026-09-07,JPM,JPMorgan Chase,Stocks,193.708892,simulated
+2026-09-08,JPM,JPMorgan Chase,Stocks,194.112129,simulated
+2026-09-09,JPM,JPMorgan Chase,Stocks,194.237551,simulated
+2026-09-10,JPM,JPMorgan Chase,Stocks,199.11623,simulated
+2026-09-11,JPM,JPMorgan Chase,Stocks,196.445036,simulated
+2026-09-14,JPM,JPMorgan Chase,Stocks,192.507607,simulated
+2026-09-15,JPM,JPMorgan Chase,Stocks,189.991663,simulated
+2026-09-16,JPM,JPMorgan Chase,Stocks,186.723512,simulated
+2026-09-17,JPM,JPMorgan Chase,Stocks,188.545524,simulated
+2026-09-18,JPM,JPMorgan Chase,Stocks,190.567107,simulated
+2026-09-21,JPM,JPMorgan Chase,Stocks,188.20039,simulated
+2026-09-22,JPM,JPMorgan Chase,Stocks,184.829104,simulated
+2026-09-23,JPM,JPMorgan Chase,Stocks,183.978569,simulated
+2026-09-24,JPM,JPMorgan Chase,Stocks,187.336017,simulated
+2026-09-25,JPM,JPMorgan Chase,Stocks,180.593651,simulated
+2026-09-28,JPM,JPMorgan Chase,Stocks,181.834264,simulated
+2026-09-29,JPM,JPMorgan Chase,Stocks,179.309043,simulated
+2026-09-30,JPM,JPMorgan Chase,Stocks,181.750631,simulated
+2026-10-01,JPM,JPMorgan Chase,Stocks,179.221519,simulated
+2026-10-02,JPM,JPMorgan Chase,Stocks,178.647068,simulated
+2026-10-05,JPM,JPMorgan Chase,Stocks,175.270508,simulated
+2026-10-06,JPM,JPMorgan Chase,Stocks,173.144445,simulated
+2026-10-07,JPM,JPMorgan Chase,Stocks,176.380237,simulated
+2026-10-08,JPM,JPMorgan Chase,Stocks,178.361006,simulated
+2026-10-09,JPM,JPMorgan Chase,Stocks,177.520827,simulated
+2026-10-12,JPM,JPMorgan Chase,Stocks,175.611768,simulated
+2026-10-13,JPM,JPMorgan Chase,Stocks,171.426774,simulated
+2026-10-14,JPM,JPMorgan Chase,Stocks,170.637029,simulated
+2026-10-15,JPM,JPMorgan Chase,Stocks,170.653797,simulated
+2026-10-16,JPM,JPMorgan Chase,Stocks,170.552679,simulated
+2026-10-19,JPM,JPMorgan Chase,Stocks,170.430045,simulated
+2026-10-20,JPM,JPMorgan Chase,Stocks,168.046613,simulated
+2026-10-21,JPM,JPMorgan Chase,Stocks,167.985865,simulated
+2026-10-22,JPM,JPMorgan Chase,Stocks,167.985402,simulated
+2026-10-23,JPM,JPMorgan Chase,Stocks,170.912954,simulated
+2026-10-26,JPM,JPMorgan Chase,Stocks,175.198904,simulated
+2026-10-27,JPM,JPMorgan Chase,Stocks,174.974643,simulated
+2026-10-28,JPM,JPMorgan Chase,Stocks,173.326845,simulated
+2026-10-29,JPM,JPMorgan Chase,Stocks,173.267098,simulated
+2026-07-31,V,Visa,Stocks,287.893168,simulated
+2026-08-03,V,Visa,Stocks,285.339661,simulated
+2026-08-04,V,Visa,Stocks,285.138909,simulated
+2026-08-05,V,Visa,Stocks,281.591322,simulated
+2026-08-06,V,Visa,Stocks,283.646881,simulated
+2026-08-07,V,Visa,Stocks,283.293398,simulated
+2026-08-10,V,Visa,Stocks,284.144582,simulated
+2026-08-11,V,Visa,Stocks,283.521489,simulated
+2026-08-12,V,Visa,Stocks,281.057948,simulated
+2026-08-13,V,Visa,Stocks,277.878885,simulated
+2026-08-14,V,Visa,Stocks,277.088802,simulated
+2026-08-17,V,Visa,Stocks,275.270133,simulated
+2026-08-18,V,Visa,Stocks,276.043851,simulated
+2026-08-19,V,Visa,Stocks,276.029171,simulated
+2026-08-20,V,Visa,Stocks,271.553418,simulated
+2026-08-21,V,Visa,Stocks,271.77223,simulated
+2026-08-24,V,Visa,Stocks,267.427901,simulated
+2026-08-25,V,Visa,Stocks,265.456841,simulated
+2026-08-26,V,Visa,Stocks,264.520837,simulated
+2026-08-27,V,Visa,Stocks,258.014748,simulated
+2026-08-28,V,Visa,Stocks,258.298227,simulated
+2026-08-31,V,Visa,Stocks,258.766636,simulated
+2026-09-01,V,Visa,Stocks,258.276404,simulated
+2026-09-02,V,Visa,Stocks,256.964653,simulated
+2026-09-03,V,Visa,Stocks,255.815197,simulated
+2026-09-04,V,Visa,Stocks,252.834929,simulated
+2026-09-07,V,Visa,Stocks,252.017976,simulated
+2026-09-08,V,Visa,Stocks,250.352287,simulated
+2026-09-09,V,Visa,Stocks,250.627883,simulated
+2026-09-10,V,Visa,Stocks,247.032441,simulated
+2026-09-11,V,Visa,Stocks,247.731809,simulated
+2026-09-14,V,Visa,Stocks,248.157934,simulated
+2026-09-15,V,Visa,Stocks,247.736732,simulated
+2026-09-16,V,Visa,Stocks,246.434481,simulated
+2026-09-17,V,Visa,Stocks,248.073293,simulated
+2026-09-18,V,Visa,Stocks,243.167138,simulated
+2026-09-21,V,Visa,Stocks,244.514463,simulated
+2026-09-22,V,Visa,Stocks,245.228618,simulated
+2026-09-23,V,Visa,Stocks,246.063941,simulated
+2026-09-24,V,Visa,Stocks,247.198381,simulated
+2026-09-25,V,Visa,Stocks,245.267007,simulated
+2026-09-28,V,Visa,Stocks,244.504551,simulated
+2026-09-29,V,Visa,Stocks,246.380878,simulated
+2026-09-30,V,Visa,Stocks,247.657388,simulated
+2026-10-01,V,Visa,Stocks,248.272478,simulated
+2026-10-02,V,Visa,Stocks,244.289746,simulated
+2026-10-05,V,Visa,Stocks,246.363885,simulated
+2026-10-06,V,Visa,Stocks,250.345835,simulated
+2026-10-07,V,Visa,Stocks,253.904791,simulated
+2026-10-08,V,Visa,Stocks,255.128131,simulated
+2026-10-09,V,Visa,Stocks,250.904842,simulated
+2026-10-12,V,Visa,Stocks,254.266846,simulated
+2026-10-13,V,Visa,Stocks,254.326083,simulated
+2026-10-14,V,Visa,Stocks,247.207236,simulated
+2026-10-15,V,Visa,Stocks,248.825908,simulated
+2026-10-16,V,Visa,Stocks,244.899378,simulated
+2026-10-19,V,Visa,Stocks,241.601612,simulated
+2026-10-20,V,Visa,Stocks,240.247738,simulated
+2026-10-21,V,Visa,Stocks,244.433118,simulated
+2026-10-22,V,Visa,Stocks,243.834955,simulated
+2026-10-23,V,Visa,Stocks,245.11892,simulated
+2026-10-26,V,Visa,Stocks,250.815873,simulated
+2026-10-27,V,Visa,Stocks,256.17158,simulated
+2026-10-28,V,Visa,Stocks,256.366282,simulated
+2026-10-29,V,Visa,Stocks,256.136104,simulated
+2026-07-31,JNJ,Johnson & Johnson,Stocks,157.995272,simulated
+2026-08-03,JNJ,Johnson & Johnson,Stocks,156.901862,simulated
+2026-08-04,JNJ,Johnson & Johnson,Stocks,157.570679,simulated
+2026-08-05,JNJ,Johnson & Johnson,Stocks,158.19547,simulated
+2026-08-06,JNJ,Johnson & Johnson,Stocks,158.369958,simulated
+2026-08-07,JNJ,Johnson & Johnson,Stocks,159.953287,simulated
+2026-08-10,JNJ,Johnson & Johnson,Stocks,158.722618,simulated
+2026-08-11,JNJ,Johnson & Johnson,Stocks,158.633637,simulated
+2026-08-12,JNJ,Johnson & Johnson,Stocks,159.797886,simulated
+2026-08-13,JNJ,Johnson & Johnson,Stocks,160.73407,simulated
+2026-08-14,JNJ,Johnson & Johnson,Stocks,162.464695,simulated
+2026-08-17,JNJ,Johnson & Johnson,Stocks,163.110996,simulated
+2026-08-18,JNJ,Johnson & Johnson,Stocks,162.607106,simulated
+2026-08-19,JNJ,Johnson & Johnson,Stocks,163.197124,simulated
+2026-08-20,JNJ,Johnson & Johnson,Stocks,161.569093,simulated
+2026-08-21,JNJ,Johnson & Johnson,Stocks,158.941828,simulated
+2026-08-24,JNJ,Johnson & Johnson,Stocks,159.867443,simulated
+2026-08-25,JNJ,Johnson & Johnson,Stocks,159.779316,simulated
+2026-08-26,JNJ,Johnson & Johnson,Stocks,160.272852,simulated
+2026-08-27,JNJ,Johnson & Johnson,Stocks,157.574891,simulated
+2026-08-28,JNJ,Johnson & Johnson,Stocks,157.000612,simulated
+2026-08-31,JNJ,Johnson & Johnson,Stocks,156.061651,simulated
+2026-09-01,JNJ,Johnson & Johnson,Stocks,154.718759,simulated
+2026-09-02,JNJ,Johnson & Johnson,Stocks,151.268872,simulated
+2026-09-03,JNJ,Johnson & Johnson,Stocks,150.763159,simulated
+2026-09-04,JNJ,Johnson & Johnson,Stocks,152.122051,simulated
+2026-09-07,JNJ,Johnson & Johnson,Stocks,152.702738,simulated
+2026-09-08,JNJ,Johnson & Johnson,Stocks,151.787828,simulated
+2026-09-09,JNJ,Johnson & Johnson,Stocks,151.76525,simulated
+2026-09-10,JNJ,Johnson & Johnson,Stocks,152.918167,simulated
+2026-09-11,JNJ,Johnson & Johnson,Stocks,148.754715,simulated
+2026-09-14,JNJ,Johnson & Johnson,Stocks,148.569576,simulated
+2026-09-15,JNJ,Johnson & Johnson,Stocks,149.378802,simulated
+2026-09-16,JNJ,Johnson & Johnson,Stocks,150.401241,simulated
+2026-09-17,JNJ,Johnson & Johnson,Stocks,152.981036,simulated
+2026-09-18,JNJ,Johnson & Johnson,Stocks,154.727332,simulated
+2026-09-21,JNJ,Johnson & Johnson,Stocks,155.211709,simulated
+2026-09-22,JNJ,Johnson & Johnson,Stocks,155.68112,simulated
+2026-09-23,JNJ,Johnson & Johnson,Stocks,156.911078,simulated
+2026-09-24,JNJ,Johnson & Johnson,Stocks,156.067092,simulated
+2026-09-25,JNJ,Johnson & Johnson,Stocks,156.004385,simulated
+2026-09-28,JNJ,Johnson & Johnson,Stocks,157.424583,simulated
+2026-09-29,JNJ,Johnson & Johnson,Stocks,160.53644,simulated
+2026-09-30,JNJ,Johnson & Johnson,Stocks,160.280961,simulated
+2026-10-01,JNJ,Johnson & Johnson,Stocks,160.203403,simulated
+2026-10-02,JNJ,Johnson & Johnson,Stocks,159.561444,simulated
+2026-10-05,JNJ,Johnson & Johnson,Stocks,160.751728,simulated
+2026-10-06,JNJ,Johnson & Johnson,Stocks,159.741675,simulated
+2026-10-07,JNJ,Johnson & Johnson,Stocks,161.136458,simulated
+2026-10-08,JNJ,Johnson & Johnson,Stocks,158.631674,simulated
+2026-10-09,JNJ,Johnson & Johnson,Stocks,157.389659,simulated
+2026-10-12,JNJ,Johnson & Johnson,Stocks,156.13843,simulated
+2026-10-13,JNJ,Johnson & Johnson,Stocks,156.429909,simulated
+2026-10-14,JNJ,Johnson & Johnson,Stocks,157.127982,simulated
+2026-10-15,JNJ,Johnson & Johnson,Stocks,153.848169,simulated
+2026-10-16,JNJ,Johnson & Johnson,Stocks,151.534758,simulated
+2026-10-19,JNJ,Johnson & Johnson,Stocks,151.136523,simulated
+2026-10-20,JNJ,Johnson & Johnson,Stocks,149.246099,simulated
+2026-10-21,JNJ,Johnson & Johnson,Stocks,146.111837,simulated
+2026-10-22,JNJ,Johnson & Johnson,Stocks,146.753915,simulated
+2026-10-23,JNJ,Johnson & Johnson,Stocks,146.598395,simulated
+2026-10-26,JNJ,Johnson & Johnson,Stocks,146.441878,simulated
+2026-10-27,JNJ,Johnson & Johnson,Stocks,144.875414,simulated
+2026-10-28,JNJ,Johnson & Johnson,Stocks,145.498175,simulated
+2026-10-29,JNJ,Johnson & Johnson,Stocks,144.281166,simulated
+2026-07-31,XOM,Exxon Mobil,Stocks,120.088334,simulated
+2026-08-03,XOM,Exxon Mobil,Stocks,118.349362,simulated
+2026-08-04,XOM,Exxon Mobil,Stocks,116.742982,simulated
+2026-08-05,XOM,Exxon Mobil,Stocks,117.125896,simulated
+2026-08-06,XOM,Exxon Mobil,Stocks,115.817083,simulated
+2026-08-07,XOM,Exxon Mobil,Stocks,117.075531,simulated
+2026-08-10,XOM,Exxon Mobil,Stocks,117.563745,simulated
+2026-08-11,XOM,Exxon Mobil,Stocks,115.840374,simulated
+2026-08-12,XOM,Exxon Mobil,Stocks,115.975505,simulated
+2026-08-13,XOM,Exxon Mobil,Stocks,115.3255,simulated
+2026-08-14,XOM,Exxon Mobil,Stocks,117.027844,simulated
+2026-08-17,XOM,Exxon Mobil,Stocks,115.849397,simulated
+2026-08-18,XOM,Exxon Mobil,Stocks,115.038203,simulated
+2026-08-19,XOM,Exxon Mobil,Stocks,117.289362,simulated
+2026-08-20,XOM,Exxon Mobil,Stocks,121.566514,simulated
+2026-08-21,XOM,Exxon Mobil,Stocks,125.517563,simulated
+2026-08-24,XOM,Exxon Mobil,Stocks,125.644597,simulated
+2026-08-25,XOM,Exxon Mobil,Stocks,126.085335,simulated
+2026-08-26,XOM,Exxon Mobil,Stocks,129.217144,simulated
+2026-08-27,XOM,Exxon Mobil,Stocks,128.960134,simulated
+2026-08-28,XOM,Exxon Mobil,Stocks,126.961226,simulated
+2026-08-31,XOM,Exxon Mobil,Stocks,127.198867,simulated
+2026-09-01,XOM,Exxon Mobil,Stocks,128.121113,simulated
+2026-09-02,XOM,Exxon Mobil,Stocks,126.432633,simulated
+2026-09-03,XOM,Exxon Mobil,Stocks,123.145911,simulated
+2026-09-04,XOM,Exxon Mobil,Stocks,120.347362,simulated
+2026-09-07,XOM,Exxon Mobil,Stocks,121.63553,simulated
+2026-09-08,XOM,Exxon Mobil,Stocks,120.16852,simulated
+2026-09-09,XOM,Exxon Mobil,Stocks,119.89706,simulated
+2026-09-10,XOM,Exxon Mobil,Stocks,120.305517,simulated
+2026-09-11,XOM,Exxon Mobil,Stocks,121.503216,simulated
+2026-09-14,XOM,Exxon Mobil,Stocks,120.853889,simulated
+2026-09-15,XOM,Exxon Mobil,Stocks,121.822095,simulated
+2026-09-16,XOM,Exxon Mobil,Stocks,120.099525,simulated
+2026-09-17,XOM,Exxon Mobil,Stocks,119.406466,simulated
+2026-09-18,XOM,Exxon Mobil,Stocks,117.465268,simulated
+2026-09-21,XOM,Exxon Mobil,Stocks,119.611737,simulated
+2026-09-22,XOM,Exxon Mobil,Stocks,119.559917,simulated
+2026-09-23,XOM,Exxon Mobil,Stocks,118.153984,simulated
+2026-09-24,XOM,Exxon Mobil,Stocks,117.489712,simulated
+2026-09-25,XOM,Exxon Mobil,Stocks,117.073638,simulated
+2026-09-28,XOM,Exxon Mobil,Stocks,118.393218,simulated
+2026-09-29,XOM,Exxon Mobil,Stocks,115.408875,simulated
+2026-09-30,XOM,Exxon Mobil,Stocks,113.509435,simulated
+2026-10-01,XOM,Exxon Mobil,Stocks,112.824808,simulated
+2026-10-02,XOM,Exxon Mobil,Stocks,117.255245,simulated
+2026-10-05,XOM,Exxon Mobil,Stocks,118.824071,simulated
+2026-10-06,XOM,Exxon Mobil,Stocks,118.375382,simulated
+2026-10-07,XOM,Exxon Mobil,Stocks,119.4924,simulated
+2026-10-08,XOM,Exxon Mobil,Stocks,123.244692,simulated
+2026-10-09,XOM,Exxon Mobil,Stocks,122.539306,simulated
+2026-10-12,XOM,Exxon Mobil,Stocks,121.579605,simulated
+2026-10-13,XOM,Exxon Mobil,Stocks,123.7125,simulated
+2026-10-14,XOM,Exxon Mobil,Stocks,124.445409,simulated
+2026-10-15,XOM,Exxon Mobil,Stocks,125.537996,simulated
+2026-10-16,XOM,Exxon Mobil,Stocks,124.272522,simulated
+2026-10-19,XOM,Exxon Mobil,Stocks,127.901976,simulated
+2026-10-20,XOM,Exxon Mobil,Stocks,131.18619,simulated
+2026-10-21,XOM,Exxon Mobil,Stocks,132.115003,simulated
+2026-10-22,XOM,Exxon Mobil,Stocks,133.302558,simulated
+2026-10-23,XOM,Exxon Mobil,Stocks,128.790267,simulated
+2026-10-26,XOM,Exxon Mobil,Stocks,129.851124,simulated
+2026-10-27,XOM,Exxon Mobil,Stocks,129.189828,simulated
+2026-10-28,XOM,Exxon Mobil,Stocks,129.829928,simulated
+2026-10-29,XOM,Exxon Mobil,Stocks,130.993107,simulated
+2026-07-31,KO,Coca-Cola,Stocks,69.785316,simulated
+2026-08-03,KO,Coca-Cola,Stocks,68.731615,simulated
+2026-08-04,KO,Coca-Cola,Stocks,68.959553,simulated
+2026-08-05,KO,Coca-Cola,Stocks,68.500956,simulated
+2026-08-06,KO,Coca-Cola,Stocks,68.29769,simulated
+2026-08-07,KO,Coca-Cola,Stocks,67.92712,simulated
+2026-08-10,KO,Coca-Cola,Stocks,67.718621,simulated
+2026-08-11,KO,Coca-Cola,Stocks,66.325571,simulated
+2026-08-12,KO,Coca-Cola,Stocks,67.055996,simulated
+2026-08-13,KO,Coca-Cola,Stocks,67.209066,simulated
+2026-08-14,KO,Coca-Cola,Stocks,67.884704,simulated
+2026-08-17,KO,Coca-Cola,Stocks,69.105154,simulated
+2026-08-18,KO,Coca-Cola,Stocks,69.119207,simulated
+2026-08-19,KO,Coca-Cola,Stocks,68.007006,simulated
+2026-08-20,KO,Coca-Cola,Stocks,67.462086,simulated
+2026-08-21,KO,Coca-Cola,Stocks,66.733268,simulated
+2026-08-24,KO,Coca-Cola,Stocks,66.432522,simulated
+2026-08-25,KO,Coca-Cola,Stocks,66.48016,simulated
+2026-08-26,KO,Coca-Cola,Stocks,65.292938,simulated
+2026-08-27,KO,Coca-Cola,Stocks,65.494499,simulated
+2026-08-28,KO,Coca-Cola,Stocks,64.610242,simulated
+2026-08-31,KO,Coca-Cola,Stocks,64.78339,simulated
+2026-09-01,KO,Coca-Cola,Stocks,64.719582,simulated
+2026-09-02,KO,Coca-Cola,Stocks,64.537157,simulated
+2026-09-03,KO,Coca-Cola,Stocks,64.494745,simulated
+2026-09-04,KO,Coca-Cola,Stocks,64.182189,simulated
+2026-09-07,KO,Coca-Cola,Stocks,63.829375,simulated
+2026-09-08,KO,Coca-Cola,Stocks,62.869974,simulated
+2026-09-09,KO,Coca-Cola,Stocks,62.853213,simulated
+2026-09-10,KO,Coca-Cola,Stocks,63.90591,simulated
+2026-09-11,KO,Coca-Cola,Stocks,65.055211,simulated
+2026-09-14,KO,Coca-Cola,Stocks,65.833753,simulated
+2026-09-15,KO,Coca-Cola,Stocks,66.253274,simulated
+2026-09-16,KO,Coca-Cola,Stocks,65.851128,simulated
+2026-09-17,KO,Coca-Cola,Stocks,66.711764,simulated
+2026-09-18,KO,Coca-Cola,Stocks,66.678074,simulated
+2026-09-21,KO,Coca-Cola,Stocks,66.636754,simulated
+2026-09-22,KO,Coca-Cola,Stocks,66.462325,simulated
+2026-09-23,KO,Coca-Cola,Stocks,66.517356,simulated
+2026-09-24,KO,Coca-Cola,Stocks,66.257321,simulated
+2026-09-25,KO,Coca-Cola,Stocks,66.207379,simulated
+2026-09-28,KO,Coca-Cola,Stocks,65.564247,simulated
+2026-09-29,KO,Coca-Cola,Stocks,65.344127,simulated
+2026-09-30,KO,Coca-Cola,Stocks,66.699174,simulated
+2026-10-01,KO,Coca-Cola,Stocks,66.65741,simulated
+2026-10-02,KO,Coca-Cola,Stocks,66.514388,simulated
+2026-10-05,KO,Coca-Cola,Stocks,66.833847,simulated
+2026-10-06,KO,Coca-Cola,Stocks,67.261146,simulated
+2026-10-07,KO,Coca-Cola,Stocks,66.590294,simulated
+2026-10-08,KO,Coca-Cola,Stocks,66.466256,simulated
+2026-10-09,KO,Coca-Cola,Stocks,67.017842,simulated
+2026-10-12,KO,Coca-Cola,Stocks,67.180795,simulated
+2026-10-13,KO,Coca-Cola,Stocks,67.254572,simulated
+2026-10-14,KO,Coca-Cola,Stocks,68.201814,simulated
+2026-10-15,KO,Coca-Cola,Stocks,67.787052,simulated
+2026-10-16,KO,Coca-Cola,Stocks,67.837553,simulated
+2026-10-19,KO,Coca-Cola,Stocks,67.520779,simulated
+2026-10-20,KO,Coca-Cola,Stocks,68.432521,simulated
+2026-10-21,KO,Coca-Cola,Stocks,67.240882,simulated
+2026-10-22,KO,Coca-Cola,Stocks,66.836554,simulated
+2026-10-23,KO,Coca-Cola,Stocks,66.519008,simulated
+2026-10-26,KO,Coca-Cola,Stocks,66.917438,simulated
+2026-10-27,KO,Coca-Cola,Stocks,67.28357,simulated
+2026-10-28,KO,Coca-Cola,Stocks,68.133759,simulated
+2026-10-29,KO,Coca-Cola,Stocks,67.175361,simulated
+2026-07-31,BTC,Bitcoin,Crypto,69548.333399,simulated
+2026-08-01,BTC,Bitcoin,Crypto,68939.103678,simulated
+2026-08-02,BTC,Bitcoin,Crypto,67576.129204,simulated
+2026-08-03,BTC,Bitcoin,Crypto,68678.88893,simulated
+2026-08-04,BTC,Bitcoin,Crypto,66808.991242,simulated
+2026-08-05,BTC,Bitcoin,Crypto,62773.328137,simulated
+2026-08-06,BTC,Bitcoin,Crypto,62079.990161,simulated
+2026-08-07,BTC,Bitcoin,Crypto,59352.283285,simulated
+2026-08-08,BTC,Bitcoin,Crypto,58208.018328,simulated
+2026-08-09,BTC,Bitcoin,Crypto,58860.471901,simulated
+2026-08-10,BTC,Bitcoin,Crypto,59413.991899,simulated
+2026-08-11,BTC,Bitcoin,Crypto,62310.922781,simulated
+2026-08-12,BTC,Bitcoin,Crypto,61938.818135,simulated
+2026-08-13,BTC,Bitcoin,Crypto,59154.1735,simulated
+2026-08-14,BTC,Bitcoin,Crypto,57827.48838,simulated
+2026-08-15,BTC,Bitcoin,Crypto,56254.312983,simulated
+2026-08-16,BTC,Bitcoin,Crypto,54236.166182,simulated
+2026-08-17,BTC,Bitcoin,Crypto,54949.191892,simulated
+2026-08-18,BTC,Bitcoin,Crypto,53895.770441,simulated
+2026-08-19,BTC,Bitcoin,Crypto,50791.591532,simulated
+2026-08-20,BTC,Bitcoin,Crypto,51864.705152,simulated
+2026-08-21,BTC,Bitcoin,Crypto,51691.621421,simulated
+2026-08-22,BTC,Bitcoin,Crypto,52247.958862,simulated
+2026-08-23,BTC,Bitcoin,Crypto,52413.933978,simulated
+2026-08-24,BTC,Bitcoin,Crypto,53416.629621,simulated
+2026-08-25,BTC,Bitcoin,Crypto,53477.589378,simulated
+2026-08-26,BTC,Bitcoin,Crypto,55498.098035,simulated
+2026-08-27,BTC,Bitcoin,Crypto,56210.199951,simulated
+2026-08-28,BTC,Bitcoin,Crypto,56875.249434,simulated
+2026-08-29,BTC,Bitcoin,Crypto,57578.905142,simulated
+2026-08-30,BTC,Bitcoin,Crypto,55116.941557,simulated
+2026-08-31,BTC,Bitcoin,Crypto,54845.386152,simulated
+2026-09-01,BTC,Bitcoin,Crypto,54420.372102,simulated
+2026-09-02,BTC,Bitcoin,Crypto,54760.272275,simulated
+2026-09-03,BTC,Bitcoin,Crypto,52573.07716,simulated
+2026-09-04,BTC,Bitcoin,Crypto,55214.609932,simulated
+2026-09-05,BTC,Bitcoin,Crypto,55387.794349,simulated
+2026-09-06,BTC,Bitcoin,Crypto,53411.160628,simulated
+2026-09-07,BTC,Bitcoin,Crypto,50741.956652,simulated
+2026-09-08,BTC,Bitcoin,Crypto,50315.566225,simulated
+2026-09-09,BTC,Bitcoin,Crypto,50180.386067,simulated
+2026-09-10,BTC,Bitcoin,Crypto,49110.628215,simulated
+2026-09-11,BTC,Bitcoin,Crypto,49246.528942,simulated
+2026-09-12,BTC,Bitcoin,Crypto,48308.310881,simulated
+2026-09-13,BTC,Bitcoin,Crypto,49114.45356,simulated
+2026-09-14,BTC,Bitcoin,Crypto,48058.40811,simulated
+2026-09-15,BTC,Bitcoin,Crypto,48002.932368,simulated
+2026-09-16,BTC,Bitcoin,Crypto,49433.44776,simulated
+2026-09-17,BTC,Bitcoin,Crypto,53398.216243,simulated
+2026-09-18,BTC,Bitcoin,Crypto,51808.179694,simulated
+2026-09-19,BTC,Bitcoin,Crypto,51091.227682,simulated
+2026-09-20,BTC,Bitcoin,Crypto,49820.061382,simulated
+2026-09-21,BTC,Bitcoin,Crypto,51006.22028,simulated
+2026-09-22,BTC,Bitcoin,Crypto,49279.324532,simulated
+2026-09-23,BTC,Bitcoin,Crypto,48568.43824,simulated
+2026-09-24,BTC,Bitcoin,Crypto,48525.326743,simulated
+2026-09-25,BTC,Bitcoin,Crypto,47121.317823,simulated
+2026-09-26,BTC,Bitcoin,Crypto,45787.253983,simulated
+2026-09-27,BTC,Bitcoin,Crypto,45138.568951,simulated
+2026-09-28,BTC,Bitcoin,Crypto,42382.004976,simulated
+2026-09-29,BTC,Bitcoin,Crypto,40583.416181,simulated
+2026-09-30,BTC,Bitcoin,Crypto,40083.648861,simulated
+2026-10-01,BTC,Bitcoin,Crypto,40262.294521,simulated
+2026-10-02,BTC,Bitcoin,Crypto,40038.544858,simulated
+2026-10-03,BTC,Bitcoin,Crypto,37963.438458,simulated
+2026-10-04,BTC,Bitcoin,Crypto,37438.888437,simulated
+2026-10-05,BTC,Bitcoin,Crypto,38346.493566,simulated
+2026-10-06,BTC,Bitcoin,Crypto,38991.319973,simulated
+2026-10-07,BTC,Bitcoin,Crypto,38899.314202,simulated
+2026-10-08,BTC,Bitcoin,Crypto,37877.433949,simulated
+2026-10-09,BTC,Bitcoin,Crypto,38601.53396,simulated
+2026-10-10,BTC,Bitcoin,Crypto,38241.60833,simulated
+2026-10-11,BTC,Bitcoin,Crypto,37220.016483,simulated
+2026-10-12,BTC,Bitcoin,Crypto,36626.832749,simulated
+2026-10-13,BTC,Bitcoin,Crypto,38560.616812,simulated
+2026-10-14,BTC,Bitcoin,Crypto,39127.943017,simulated
+2026-10-15,BTC,Bitcoin,Crypto,40838.051375,simulated
+2026-10-16,BTC,Bitcoin,Crypto,40578.330359,simulated
+2026-10-17,BTC,Bitcoin,Crypto,42071.841515,simulated
+2026-10-18,BTC,Bitcoin,Crypto,41651.340292,simulated
+2026-10-19,BTC,Bitcoin,Crypto,41788.063097,simulated
+2026-10-20,BTC,Bitcoin,Crypto,45385.88868,simulated
+2026-10-21,BTC,Bitcoin,Crypto,46815.563154,simulated
+2026-10-22,BTC,Bitcoin,Crypto,46487.366263,simulated
+2026-10-23,BTC,Bitcoin,Crypto,46741.667813,simulated
+2026-10-24,BTC,Bitcoin,Crypto,47580.485747,simulated
+2026-10-25,BTC,Bitcoin,Crypto,49736.369271,simulated
+2026-10-26,BTC,Bitcoin,Crypto,49405.534326,simulated
+2026-10-27,BTC,Bitcoin,Crypto,47267.496244,simulated
+2026-10-28,BTC,Bitcoin,Crypto,47249.100744,simulated
+2026-10-29,BTC,Bitcoin,Crypto,47650.598273,simulated
+2026-07-31,ETH,Ethereum,Crypto,2610.844906,simulated
+2026-08-01,ETH,Ethereum,Crypto,2744.799727,simulated
+2026-08-02,ETH,Ethereum,Crypto,2778.030496,simulated
+2026-08-03,ETH,Ethereum,Crypto,2865.185419,simulated
+2026-08-04,ETH,Ethereum,Crypto,2747.772948,simulated
+2026-08-05,ETH,Ethereum,Crypto,2839.906142,simulated
+2026-08-06,ETH,Ethereum,Crypto,3075.376574,simulated
+2026-08-07,ETH,Ethereum,Crypto,3167.041622,simulated
+2026-08-08,ETH,Ethereum,Crypto,3197.703919,simulated
+2026-08-09,ETH,Ethereum,Crypto,3216.4703,simulated
+2026-08-10,ETH,Ethereum,Crypto,3442.493224,simulated
+2026-08-11,ETH,Ethereum,Crypto,3323.316024,simulated
+2026-08-12,ETH,Ethereum,Crypto,3309.314927,simulated
+2026-08-13,ETH,Ethereum,Crypto,3367.696858,simulated
+2026-08-14,ETH,Ethereum,Crypto,3464.267214,simulated
+2026-08-15,ETH,Ethereum,Crypto,3407.172156,simulated
+2026-08-16,ETH,Ethereum,Crypto,3447.195082,simulated
+2026-08-17,ETH,Ethereum,Crypto,3410.980765,simulated
+2026-08-18,ETH,Ethereum,Crypto,3426.631701,simulated
+2026-08-19,ETH,Ethereum,Crypto,3409.474892,simulated
+2026-08-20,ETH,Ethereum,Crypto,3264.732171,simulated
+2026-08-21,ETH,Ethereum,Crypto,3262.113874,simulated
+2026-08-22,ETH,Ethereum,Crypto,3372.67828,simulated
+2026-08-23,ETH,Ethereum,Crypto,3250.992959,simulated
+2026-08-24,ETH,Ethereum,Crypto,3221.345048,simulated
+2026-08-25,ETH,Ethereum,Crypto,3303.758076,simulated
+2026-08-26,ETH,Ethereum,Crypto,3172.137838,simulated
+2026-08-27,ETH,Ethereum,Crypto,3194.229863,simulated
+2026-08-28,ETH,Ethereum,Crypto,3068.107988,simulated
+2026-08-29,ETH,Ethereum,Crypto,3203.285623,simulated
+2026-08-30,ETH,Ethereum,Crypto,3497.555349,simulated
+2026-08-31,ETH,Ethereum,Crypto,3776.92412,simulated
+2026-09-01,ETH,Ethereum,Crypto,3745.597266,simulated
+2026-09-02,ETH,Ethereum,Crypto,3852.447477,simulated
+2026-09-03,ETH,Ethereum,Crypto,3870.201483,simulated
+2026-09-04,ETH,Ethereum,Crypto,3885.247127,simulated
+2026-09-05,ETH,Ethereum,Crypto,4120.610618,simulated
+2026-09-06,ETH,Ethereum,Crypto,3919.141156,simulated
+2026-09-07,ETH,Ethereum,Crypto,4079.497143,simulated
+2026-09-08,ETH,Ethereum,Crypto,4071.911901,simulated
+2026-09-09,ETH,Ethereum,Crypto,4295.797363,simulated
+2026-09-10,ETH,Ethereum,Crypto,4326.470382,simulated
+2026-09-11,ETH,Ethereum,Crypto,4217.280629,simulated
+2026-09-12,ETH,Ethereum,Crypto,4261.928911,simulated
+2026-09-13,ETH,Ethereum,Crypto,4382.803567,simulated
+2026-09-14,ETH,Ethereum,Crypto,4388.763932,simulated
+2026-09-15,ETH,Ethereum,Crypto,4470.914964,simulated
+2026-09-16,ETH,Ethereum,Crypto,4383.157789,simulated
+2026-09-17,ETH,Ethereum,Crypto,4041.766435,simulated
+2026-09-18,ETH,Ethereum,Crypto,4182.389479,simulated
+2026-09-19,ETH,Ethereum,Crypto,4294.99675,simulated
+2026-09-20,ETH,Ethereum,Crypto,4319.249142,simulated
+2026-09-21,ETH,Ethereum,Crypto,4330.492075,simulated
+2026-09-22,ETH,Ethereum,Crypto,4504.425771,simulated
+2026-09-23,ETH,Ethereum,Crypto,4426.859262,simulated
+2026-09-24,ETH,Ethereum,Crypto,4309.586966,simulated
+2026-09-25,ETH,Ethereum,Crypto,4278.819582,simulated
+2026-09-26,ETH,Ethereum,Crypto,4476.595686,simulated
+2026-09-27,ETH,Ethereum,Crypto,4246.744017,simulated
+2026-09-28,ETH,Ethereum,Crypto,4443.498939,simulated
+2026-09-29,ETH,Ethereum,Crypto,4336.859666,simulated
+2026-09-30,ETH,Ethereum,Crypto,4159.197945,simulated
+2026-10-01,ETH,Ethereum,Crypto,4363.195073,simulated
+2026-10-02,ETH,Ethereum,Crypto,4347.160095,simulated
+2026-10-03,ETH,Ethereum,Crypto,4137.591579,simulated
+2026-10-04,ETH,Ethereum,Crypto,4081.571224,simulated
+2026-10-05,ETH,Ethereum,Crypto,4228.562118,simulated
+2026-10-06,ETH,Ethereum,Crypto,4424.515716,simulated
+2026-10-07,ETH,Ethereum,Crypto,4353.286512,simulated
+2026-10-08,ETH,Ethereum,Crypto,4421.02367,simulated
+2026-10-09,ETH,Ethereum,Crypto,4542.631569,simulated
+2026-10-10,ETH,Ethereum,Crypto,4419.429777,simulated
+2026-10-11,ETH,Ethereum,Crypto,4466.039727,simulated
+2026-10-12,ETH,Ethereum,Crypto,4447.271171,simulated
+2026-10-13,ETH,Ethereum,Crypto,4344.548151,simulated
+2026-10-14,ETH,Ethereum,Crypto,4251.280106,simulated
+2026-10-15,ETH,Ethereum,Crypto,4249.356031,simulated
+2026-10-16,ETH,Ethereum,Crypto,4241.43596,simulated
+2026-10-17,ETH,Ethereum,Crypto,4138.830515,simulated
+2026-10-18,ETH,Ethereum,Crypto,4060.18017,simulated
+2026-10-19,ETH,Ethereum,Crypto,4222.950965,simulated
+2026-10-20,ETH,Ethereum,Crypto,4244.650973,simulated
+2026-10-21,ETH,Ethereum,Crypto,4376.691972,simulated
+2026-10-22,ETH,Ethereum,Crypto,4567.483635,simulated
+2026-10-23,ETH,Ethereum,Crypto,4656.846174,simulated
+2026-10-24,ETH,Ethereum,Crypto,5061.344261,simulated
+2026-10-25,ETH,Ethereum,Crypto,4890.382684,simulated
+2026-10-26,ETH,Ethereum,Crypto,5027.838266,simulated
+2026-10-27,ETH,Ethereum,Crypto,4952.540377,simulated
+2026-10-28,ETH,Ethereum,Crypto,5298.482276,simulated
+2026-10-29,ETH,Ethereum,Crypto,5635.225369,simulated
+2026-07-31,SOL,Solana,Crypto,154.174932,simulated
+2026-08-01,SOL,Solana,Crypto,146.884207,simulated
+2026-08-02,SOL,Solana,Crypto,151.844992,simulated
+2026-08-03,SOL,Solana,Crypto,157.961854,simulated
+2026-08-04,SOL,Solana,Crypto,163.887757,simulated
+2026-08-05,SOL,Solana,Crypto,163.308086,simulated
+2026-08-06,SOL,Solana,Crypto,167.066938,simulated
+2026-08-07,SOL,Solana,Crypto,172.611884,simulated
+2026-08-08,SOL,Solana,Crypto,171.941115,simulated
+2026-08-09,SOL,Solana,Crypto,181.003644,simulated
+2026-08-10,SOL,Solana,Crypto,161.667588,simulated
+2026-08-11,SOL,Solana,Crypto,166.872822,simulated
+2026-08-12,SOL,Solana,Crypto,158.464302,simulated
+2026-08-13,SOL,Solana,Crypto,166.245105,simulated
+2026-08-14,SOL,Solana,Crypto,164.355048,simulated
+2026-08-15,SOL,Solana,Crypto,157.211126,simulated
+2026-08-16,SOL,Solana,Crypto,160.17785,simulated
+2026-08-17,SOL,Solana,Crypto,153.042871,simulated
+2026-08-18,SOL,Solana,Crypto,146.215227,simulated
+2026-08-19,SOL,Solana,Crypto,135.194566,simulated
+2026-08-20,SOL,Solana,Crypto,135.01415,simulated
+2026-08-21,SOL,Solana,Crypto,138.410065,simulated
+2026-08-22,SOL,Solana,Crypto,145.674118,simulated
+2026-08-23,SOL,Solana,Crypto,144.645463,simulated
+2026-08-24,SOL,Solana,Crypto,152.425877,simulated
+2026-08-25,SOL,Solana,Crypto,152.562825,simulated
+2026-08-26,SOL,Solana,Crypto,151.852864,simulated
+2026-08-27,SOL,Solana,Crypto,156.270769,simulated
+2026-08-28,SOL,Solana,Crypto,164.76329,simulated
+2026-08-29,SOL,Solana,Crypto,161.974371,simulated
+2026-08-30,SOL,Solana,Crypto,160.012196,simulated
+2026-08-31,SOL,Solana,Crypto,158.730606,simulated
+2026-09-01,SOL,Solana,Crypto,159.388867,simulated
+2026-09-02,SOL,Solana,Crypto,152.372246,simulated
+2026-09-03,SOL,Solana,Crypto,160.409002,simulated
+2026-09-04,SOL,Solana,Crypto,157.22947,simulated
+2026-09-05,SOL,Solana,Crypto,160.907313,simulated
+2026-09-06,SOL,Solana,Crypto,154.401272,simulated
+2026-09-07,SOL,Solana,Crypto,157.196258,simulated
+2026-09-08,SOL,Solana,Crypto,160.304435,simulated
+2026-09-09,SOL,Solana,Crypto,156.967795,simulated
+2026-09-10,SOL,Solana,Crypto,173.657527,simulated
+2026-09-11,SOL,Solana,Crypto,176.909292,simulated
+2026-09-12,SOL,Solana,Crypto,193.346433,simulated
+2026-09-13,SOL,Solana,Crypto,202.844671,simulated
+2026-09-14,SOL,Solana,Crypto,196.237719,simulated
+2026-09-15,SOL,Solana,Crypto,192.523348,simulated
+2026-09-16,SOL,Solana,Crypto,196.767443,simulated
+2026-09-17,SOL,Solana,Crypto,197.370202,simulated
+2026-09-18,SOL,Solana,Crypto,197.858914,simulated
+2026-09-19,SOL,Solana,Crypto,195.047667,simulated
+2026-09-20,SOL,Solana,Crypto,178.184612,simulated
+2026-09-21,SOL,Solana,Crypto,176.187457,simulated
+2026-09-22,SOL,Solana,Crypto,157.691793,simulated
+2026-09-23,SOL,Solana,Crypto,160.650859,simulated
+2026-09-24,SOL,Solana,Crypto,154.92336,simulated
+2026-09-25,SOL,Solana,Crypto,149.479566,simulated
+2026-09-26,SOL,Solana,Crypto,147.849448,simulated
+2026-09-27,SOL,Solana,Crypto,149.878975,simulated
+2026-09-28,SOL,Solana,Crypto,139.522771,simulated
+2026-09-29,SOL,Solana,Crypto,127.842337,simulated
+2026-09-30,SOL,Solana,Crypto,121.206351,simulated
+2026-10-01,SOL,Solana,Crypto,109.443463,simulated
+2026-10-02,SOL,Solana,Crypto,104.278543,simulated
+2026-10-03,SOL,Solana,Crypto,112.912114,simulated
+2026-10-04,SOL,Solana,Crypto,107.101873,simulated
+2026-10-05,SOL,Solana,Crypto,110.647639,simulated
+2026-10-06,SOL,Solana,Crypto,103.313596,simulated
+2026-10-07,SOL,Solana,Crypto,104.870368,simulated
+2026-10-08,SOL,Solana,Crypto,103.207168,simulated
+2026-10-09,SOL,Solana,Crypto,102.898973,simulated
+2026-10-10,SOL,Solana,Crypto,107.574813,simulated
+2026-10-11,SOL,Solana,Crypto,119.342624,simulated
+2026-10-12,SOL,Solana,Crypto,122.453806,simulated
+2026-10-13,SOL,Solana,Crypto,125.204928,simulated
+2026-10-14,SOL,Solana,Crypto,121.180774,simulated
+2026-10-15,SOL,Solana,Crypto,126.779634,simulated
+2026-10-16,SOL,Solana,Crypto,127.249127,simulated
+2026-10-17,SOL,Solana,Crypto,134.793927,simulated
+2026-10-18,SOL,Solana,Crypto,136.668984,simulated
+2026-10-19,SOL,Solana,Crypto,151.502876,simulated
+2026-10-20,SOL,Solana,Crypto,139.415514,simulated
+2026-10-21,SOL,Solana,Crypto,139.57873,simulated
+2026-10-22,SOL,Solana,Crypto,148.220777,simulated
+2026-10-23,SOL,Solana,Crypto,147.993491,simulated
+2026-10-24,SOL,Solana,Crypto,144.540484,simulated
+2026-10-25,SOL,Solana,Crypto,144.932136,simulated
+2026-10-26,SOL,Solana,Crypto,137.451231,simulated
+2026-10-27,SOL,Solana,Crypto,140.501316,simulated
+2026-10-28,SOL,Solana,Crypto,161.295801,simulated
+2026-10-29,SOL,Solana,Crypto,173.554475,simulated
+2026-07-31,BNB,BNB,Crypto,570.693486,simulated
+2026-08-01,BNB,BNB,Crypto,555.935362,simulated
+2026-08-02,BNB,BNB,Crypto,549.2261,simulated
+2026-08-03,BNB,BNB,Crypto,566.02751,simulated
+2026-08-04,BNB,BNB,Crypto,552.248469,simulated
+2026-08-05,BNB,BNB,Crypto,540.930675,simulated
+2026-08-06,BNB,BNB,Crypto,555.480559,simulated
+2026-08-07,BNB,BNB,Crypto,570.077997,simulated
+2026-08-08,BNB,BNB,Crypto,563.720605,simulated
+2026-08-09,BNB,BNB,Crypto,545.130844,simulated
+2026-08-10,BNB,BNB,Crypto,520.366568,simulated
+2026-08-11,BNB,BNB,Crypto,509.568249,simulated
+2026-08-12,BNB,BNB,Crypto,476.585876,simulated
+2026-08-13,BNB,BNB,Crypto,487.427971,simulated
+2026-08-14,BNB,BNB,Crypto,478.301653,simulated
+2026-08-15,BNB,BNB,Crypto,485.257858,simulated
+2026-08-16,BNB,BNB,Crypto,513.233118,simulated
+2026-08-17,BNB,BNB,Crypto,531.615261,simulated
+2026-08-18,BNB,BNB,Crypto,513.56982,simulated
+2026-08-19,BNB,BNB,Crypto,527.138571,simulated
+2026-08-20,BNB,BNB,Crypto,545.770833,simulated
+2026-08-21,BNB,BNB,Crypto,533.686439,simulated
+2026-08-22,BNB,BNB,Crypto,518.639774,simulated
+2026-08-23,BNB,BNB,Crypto,516.935862,simulated
+2026-08-24,BNB,BNB,Crypto,492.687997,simulated
+2026-08-25,BNB,BNB,Crypto,514.913104,simulated
+2026-08-26,BNB,BNB,Crypto,479.065458,simulated
+2026-08-27,BNB,BNB,Crypto,463.419652,simulated
+2026-08-28,BNB,BNB,Crypto,459.687111,simulated
+2026-08-29,BNB,BNB,Crypto,456.566084,simulated
+2026-08-30,BNB,BNB,Crypto,458.847164,simulated
+2026-08-31,BNB,BNB,Crypto,462.599022,simulated
+2026-09-01,BNB,BNB,Crypto,459.643999,simulated
+2026-09-02,BNB,BNB,Crypto,475.591296,simulated
+2026-09-03,BNB,BNB,Crypto,446.026148,simulated
+2026-09-04,BNB,BNB,Crypto,446.023947,simulated
+2026-09-05,BNB,BNB,Crypto,436.564055,simulated
+2026-09-06,BNB,BNB,Crypto,438.303027,simulated
+2026-09-07,BNB,BNB,Crypto,441.215452,simulated
+2026-09-08,BNB,BNB,Crypto,429.309646,simulated
+2026-09-09,BNB,BNB,Crypto,421.133537,simulated
+2026-09-10,BNB,BNB,Crypto,431.267081,simulated
+2026-09-11,BNB,BNB,Crypto,435.806903,simulated
+2026-09-12,BNB,BNB,Crypto,427.003329,simulated
+2026-09-13,BNB,BNB,Crypto,453.950671,simulated
+2026-09-14,BNB,BNB,Crypto,486.513119,simulated
+2026-09-15,BNB,BNB,Crypto,465.629379,simulated
+2026-09-16,BNB,BNB,Crypto,469.864259,simulated
+2026-09-17,BNB,BNB,Crypto,506.595916,simulated
+2026-09-18,BNB,BNB,Crypto,518.650702,simulated
+2026-09-19,BNB,BNB,Crypto,522.101722,simulated
+2026-09-20,BNB,BNB,Crypto,518.853066,simulated
+2026-09-21,BNB,BNB,Crypto,510.497074,simulated
+2026-09-22,BNB,BNB,Crypto,507.252782,simulated
+2026-09-23,BNB,BNB,Crypto,498.940865,simulated
+2026-09-24,BNB,BNB,Crypto,510.21634,simulated
+2026-09-25,BNB,BNB,Crypto,504.158258,simulated
+2026-09-26,BNB,BNB,Crypto,497.529911,simulated
+2026-09-27,BNB,BNB,Crypto,479.906291,simulated
+2026-09-28,BNB,BNB,Crypto,479.192867,simulated
+2026-09-29,BNB,BNB,Crypto,466.510025,simulated
+2026-09-30,BNB,BNB,Crypto,463.987218,simulated
+2026-10-01,BNB,BNB,Crypto,478.717892,simulated
+2026-10-02,BNB,BNB,Crypto,484.002087,simulated
+2026-10-03,BNB,BNB,Crypto,491.386495,simulated
+2026-10-04,BNB,BNB,Crypto,496.663982,simulated
+2026-10-05,BNB,BNB,Crypto,497.546479,simulated
+2026-10-06,BNB,BNB,Crypto,495.649552,simulated
+2026-10-07,BNB,BNB,Crypto,491.093699,simulated
+2026-10-08,BNB,BNB,Crypto,502.405947,simulated
+2026-10-09,BNB,BNB,Crypto,486.327011,simulated
+2026-10-10,BNB,BNB,Crypto,506.793152,simulated
+2026-10-11,BNB,BNB,Crypto,507.819098,simulated
+2026-10-12,BNB,BNB,Crypto,497.036899,simulated
+2026-10-13,BNB,BNB,Crypto,490.286485,simulated
+2026-10-14,BNB,BNB,Crypto,480.910014,simulated
+2026-10-15,BNB,BNB,Crypto,483.710394,simulated
+2026-10-16,BNB,BNB,Crypto,473.878555,simulated
+2026-10-17,BNB,BNB,Crypto,490.887517,simulated
+2026-10-18,BNB,BNB,Crypto,479.990274,simulated
+2026-10-19,BNB,BNB,Crypto,448.805758,simulated
+2026-10-20,BNB,BNB,Crypto,439.509894,simulated
+2026-10-21,BNB,BNB,Crypto,414.223049,simulated
+2026-10-22,BNB,BNB,Crypto,414.141842,simulated
+2026-10-23,BNB,BNB,Crypto,427.940115,simulated
+2026-10-24,BNB,BNB,Crypto,436.774071,simulated
+2026-10-25,BNB,BNB,Crypto,420.01414,simulated
+2026-10-26,BNB,BNB,Crypto,410.92911,simulated
+2026-10-27,BNB,BNB,Crypto,433.885088,simulated
+2026-10-28,BNB,BNB,Crypto,438.489149,simulated
+2026-10-29,BNB,BNB,Crypto,438.982096,simulated
+2026-07-31,XRP,XRP,Crypto,0.576769,simulated
+2026-08-01,XRP,XRP,Crypto,0.644075,simulated
+2026-08-02,XRP,XRP,Crypto,0.682771,simulated
+2026-08-03,XRP,XRP,Crypto,0.687068,simulated
+2026-08-04,XRP,XRP,Crypto,0.698123,simulated
+2026-08-05,XRP,XRP,Crypto,0.71778,simulated
+2026-08-06,XRP,XRP,Crypto,0.69826,simulated
+2026-08-07,XRP,XRP,Crypto,0.665774,simulated
+2026-08-08,XRP,XRP,Crypto,0.667347,simulated
+2026-08-09,XRP,XRP,Crypto,0.639499,simulated
+2026-08-10,XRP,XRP,Crypto,0.637733,simulated
+2026-08-11,XRP,XRP,Crypto,0.640497,simulated
+2026-08-12,XRP,XRP,Crypto,0.711654,simulated
+2026-08-13,XRP,XRP,Crypto,0.684915,simulated
+2026-08-14,XRP,XRP,Crypto,0.681171,simulated
+2026-08-15,XRP,XRP,Crypto,0.676154,simulated
+2026-08-16,XRP,XRP,Crypto,0.689591,simulated
+2026-08-17,XRP,XRP,Crypto,0.72285,simulated
+2026-08-18,XRP,XRP,Crypto,0.70707,simulated
+2026-08-19,XRP,XRP,Crypto,0.681414,simulated
+2026-08-20,XRP,XRP,Crypto,0.632916,simulated
+2026-08-21,XRP,XRP,Crypto,0.607079,simulated
+2026-08-22,XRP,XRP,Crypto,0.621912,simulated
+2026-08-23,XRP,XRP,Crypto,0.62319,simulated
+2026-08-24,XRP,XRP,Crypto,0.595355,simulated
+2026-08-25,XRP,XRP,Crypto,0.585451,simulated
+2026-08-26,XRP,XRP,Crypto,0.586281,simulated
+2026-08-27,XRP,XRP,Crypto,0.599721,simulated
+2026-08-28,XRP,XRP,Crypto,0.583919,simulated
+2026-08-29,XRP,XRP,Crypto,0.577375,simulated
+2026-08-30,XRP,XRP,Crypto,0.53201,simulated
+2026-08-31,XRP,XRP,Crypto,0.505147,simulated
+2026-09-01,XRP,XRP,Crypto,0.543292,simulated
+2026-09-02,XRP,XRP,Crypto,0.492346,simulated
+2026-09-03,XRP,XRP,Crypto,0.484918,simulated
+2026-09-04,XRP,XRP,Crypto,0.489725,simulated
+2026-09-05,XRP,XRP,Crypto,0.481544,simulated
+2026-09-06,XRP,XRP,Crypto,0.464347,simulated
+2026-09-07,XRP,XRP,Crypto,0.463072,simulated
+2026-09-08,XRP,XRP,Crypto,0.462969,simulated
+2026-09-09,XRP,XRP,Crypto,0.461261,simulated
+2026-09-10,XRP,XRP,Crypto,0.423887,simulated
+2026-09-11,XRP,XRP,Crypto,0.421085,simulated
+2026-09-12,XRP,XRP,Crypto,0.405189,simulated
+2026-09-13,XRP,XRP,Crypto,0.395324,simulated
+2026-09-14,XRP,XRP,Crypto,0.399382,simulated
+2026-09-15,XRP,XRP,Crypto,0.411065,simulated
+2026-09-16,XRP,XRP,Crypto,0.427993,simulated
+2026-09-17,XRP,XRP,Crypto,0.418538,simulated
+2026-09-18,XRP,XRP,Crypto,0.436308,simulated
+2026-09-19,XRP,XRP,Crypto,0.459972,simulated
+2026-09-20,XRP,XRP,Crypto,0.484112,simulated
+2026-09-21,XRP,XRP,Crypto,0.515354,simulated
+2026-09-22,XRP,XRP,Crypto,0.511987,simulated
+2026-09-23,XRP,XRP,Crypto,0.507991,simulated
+2026-09-24,XRP,XRP,Crypto,0.527206,simulated
+2026-09-25,XRP,XRP,Crypto,0.495762,simulated
+2026-09-26,XRP,XRP,Crypto,0.500457,simulated
+2026-09-27,XRP,XRP,Crypto,0.48865,simulated
+2026-09-28,XRP,XRP,Crypto,0.480607,simulated
+2026-09-29,XRP,XRP,Crypto,0.444381,simulated
+2026-09-30,XRP,XRP,Crypto,0.426925,simulated
+2026-10-01,XRP,XRP,Crypto,0.426531,simulated
+2026-10-02,XRP,XRP,Crypto,0.44393,simulated
+2026-10-03,XRP,XRP,Crypto,0.464154,simulated
+2026-10-04,XRP,XRP,Crypto,0.46248,simulated
+2026-10-05,XRP,XRP,Crypto,0.458557,simulated
+2026-10-06,XRP,XRP,Crypto,0.441732,simulated
+2026-10-07,XRP,XRP,Crypto,0.449803,simulated
+2026-10-08,XRP,XRP,Crypto,0.44482,simulated
+2026-10-09,XRP,XRP,Crypto,0.457114,simulated
+2026-10-10,XRP,XRP,Crypto,0.492138,simulated
+2026-10-11,XRP,XRP,Crypto,0.488971,simulated
+2026-10-12,XRP,XRP,Crypto,0.454829,simulated
+2026-10-13,XRP,XRP,Crypto,0.435365,simulated
+2026-10-14,XRP,XRP,Crypto,0.405681,simulated
+2026-10-15,XRP,XRP,Crypto,0.382488,simulated
+2026-10-16,XRP,XRP,Crypto,0.403604,simulated
+2026-10-17,XRP,XRP,Crypto,0.405708,simulated
+2026-10-18,XRP,XRP,Crypto,0.376993,simulated
+2026-10-19,XRP,XRP,Crypto,0.38631,simulated
+2026-10-20,XRP,XRP,Crypto,0.406814,simulated
+2026-10-21,XRP,XRP,Crypto,0.398283,simulated
+2026-10-22,XRP,XRP,Crypto,0.384423,simulated
+2026-10-23,XRP,XRP,Crypto,0.376742,simulated
+2026-10-24,XRP,XRP,Crypto,0.379695,simulated
+2026-10-25,XRP,XRP,Crypto,0.388839,simulated
+2026-10-26,XRP,XRP,Crypto,0.40804,simulated
+2026-10-27,XRP,XRP,Crypto,0.428773,simulated
+2026-10-28,XRP,XRP,Crypto,0.45001,simulated
+2026-10-29,XRP,XRP,Crypto,0.476066,simulated
+2026-07-31,ADA,Cardano,Crypto,0.372104,simulated
+2026-08-01,ADA,Cardano,Crypto,0.344684,simulated
+2026-08-02,ADA,Cardano,Crypto,0.342434,simulated
+2026-08-03,ADA,Cardano,Crypto,0.347852,simulated
+2026-08-04,ADA,Cardano,Crypto,0.341251,simulated
+2026-08-05,ADA,Cardano,Crypto,0.35716,simulated
+2026-08-06,ADA,Cardano,Crypto,0.350784,simulated
+2026-08-07,ADA,Cardano,Crypto,0.334918,simulated
+2026-08-08,ADA,Cardano,Crypto,0.359998,simulated
+2026-08-09,ADA,Cardano,Crypto,0.372188,simulated
+2026-08-10,ADA,Cardano,Crypto,0.376291,simulated
+2026-08-11,ADA,Cardano,Crypto,0.394137,simulated
+2026-08-12,ADA,Cardano,Crypto,0.415642,simulated
+2026-08-13,ADA,Cardano,Crypto,0.42279,simulated
+2026-08-14,ADA,Cardano,Crypto,0.373902,simulated
+2026-08-15,ADA,Cardano,Crypto,0.361483,simulated
+2026-08-16,ADA,Cardano,Crypto,0.353324,simulated
+2026-08-17,ADA,Cardano,Crypto,0.336358,simulated
+2026-08-18,ADA,Cardano,Crypto,0.339716,simulated
+2026-08-19,ADA,Cardano,Crypto,0.360582,simulated
+2026-08-20,ADA,Cardano,Crypto,0.351945,simulated
+2026-08-21,ADA,Cardano,Crypto,0.332531,simulated
+2026-08-22,ADA,Cardano,Crypto,0.368019,simulated
+2026-08-23,ADA,Cardano,Crypto,0.359805,simulated
+2026-08-24,ADA,Cardano,Crypto,0.338293,simulated
+2026-08-25,ADA,Cardano,Crypto,0.342338,simulated
+2026-08-26,ADA,Cardano,Crypto,0.349702,simulated
+2026-08-27,ADA,Cardano,Crypto,0.337589,simulated
+2026-08-28,ADA,Cardano,Crypto,0.351199,simulated
+2026-08-29,ADA,Cardano,Crypto,0.342745,simulated
+2026-08-30,ADA,Cardano,Crypto,0.327287,simulated
+2026-08-31,ADA,Cardano,Crypto,0.330223,simulated
+2026-09-01,ADA,Cardano,Crypto,0.343198,simulated
+2026-09-02,ADA,Cardano,Crypto,0.332491,simulated
+2026-09-03,ADA,Cardano,Crypto,0.338033,simulated
+2026-09-04,ADA,Cardano,Crypto,0.336457,simulated
+2026-09-05,ADA,Cardano,Crypto,0.387491,simulated
+2026-09-06,ADA,Cardano,Crypto,0.374003,simulated
+2026-09-07,ADA,Cardano,Crypto,0.400804,simulated
+2026-09-08,ADA,Cardano,Crypto,0.399756,simulated
+2026-09-09,ADA,Cardano,Crypto,0.397231,simulated
+2026-09-10,ADA,Cardano,Crypto,0.411826,simulated
+2026-09-11,ADA,Cardano,Crypto,0.430652,simulated
+2026-09-12,ADA,Cardano,Crypto,0.458817,simulated
+2026-09-13,ADA,Cardano,Crypto,0.466419,simulated
+2026-09-14,ADA,Cardano,Crypto,0.452625,simulated
+2026-09-15,ADA,Cardano,Crypto,0.440619,simulated
+2026-09-16,ADA,Cardano,Crypto,0.451992,simulated
+2026-09-17,ADA,Cardano,Crypto,0.465312,simulated
+2026-09-18,ADA,Cardano,Crypto,0.499003,simulated
+2026-09-19,ADA,Cardano,Crypto,0.509553,simulated
+2026-09-20,ADA,Cardano,Crypto,0.537292,simulated
+2026-09-21,ADA,Cardano,Crypto,0.579624,simulated
+2026-09-22,ADA,Cardano,Crypto,0.58442,simulated
+2026-09-23,ADA,Cardano,Crypto,0.542583,simulated
+2026-09-24,ADA,Cardano,Crypto,0.511516,simulated
+2026-09-25,ADA,Cardano,Crypto,0.476033,simulated
+2026-09-26,ADA,Cardano,Crypto,0.515464,simulated
+2026-09-27,ADA,Cardano,Crypto,0.49408,simulated
+2026-09-28,ADA,Cardano,Crypto,0.525468,simulated
+2026-09-29,ADA,Cardano,Crypto,0.541085,simulated
+2026-09-30,ADA,Cardano,Crypto,0.589538,simulated
+2026-10-01,ADA,Cardano,Crypto,0.61986,simulated
+2026-10-02,ADA,Cardano,Crypto,0.616695,simulated
+2026-10-03,ADA,Cardano,Crypto,0.610558,simulated
+2026-10-04,ADA,Cardano,Crypto,0.613164,simulated
+2026-10-05,ADA,Cardano,Crypto,0.618561,simulated
+2026-10-06,ADA,Cardano,Crypto,0.602362,simulated
+2026-10-07,ADA,Cardano,Crypto,0.60138,simulated
+2026-10-08,ADA,Cardano,Crypto,0.651771,simulated
+2026-10-09,ADA,Cardano,Crypto,0.598595,simulated
+2026-10-10,ADA,Cardano,Crypto,0.595565,simulated
+2026-10-11,ADA,Cardano,Crypto,0.559007,simulated
+2026-10-12,ADA,Cardano,Crypto,0.554194,simulated
+2026-10-13,ADA,Cardano,Crypto,0.567651,simulated
+2026-10-14,ADA,Cardano,Crypto,0.555921,simulated
+2026-10-15,ADA,Cardano,Crypto,0.56752,simulated
+2026-10-16,ADA,Cardano,Crypto,0.514803,simulated
+2026-10-17,ADA,Cardano,Crypto,0.534394,simulated
+2026-10-18,ADA,Cardano,Crypto,0.509269,simulated
+2026-10-19,ADA,Cardano,Crypto,0.515995,simulated
+2026-10-20,ADA,Cardano,Crypto,0.511435,simulated
+2026-10-21,ADA,Cardano,Crypto,0.441396,simulated
+2026-10-22,ADA,Cardano,Crypto,0.417439,simulated
+2026-10-23,ADA,Cardano,Crypto,0.414538,simulated
+2026-10-24,ADA,Cardano,Crypto,0.440039,simulated
+2026-10-25,ADA,Cardano,Crypto,0.438441,simulated
+2026-10-26,ADA,Cardano,Crypto,0.436204,simulated
+2026-10-27,ADA,Cardano,Crypto,0.399206,simulated
+2026-10-28,ADA,Cardano,Crypto,0.421169,simulated
+2026-10-29,ADA,Cardano,Crypto,0.452772,simulated
+2026-07-31,DOGE,Dogecoin,Crypto,0.130223,simulated
+2026-08-01,DOGE,Dogecoin,Crypto,0.128517,simulated
+2026-08-02,DOGE,Dogecoin,Crypto,0.11662,simulated
+2026-08-03,DOGE,Dogecoin,Crypto,0.122967,simulated
+2026-08-04,DOGE,Dogecoin,Crypto,0.144612,simulated
+2026-08-05,DOGE,Dogecoin,Crypto,0.15097,simulated
+2026-08-06,DOGE,Dogecoin,Crypto,0.162862,simulated
+2026-08-07,DOGE,Dogecoin,Crypto,0.168247,simulated
+2026-08-08,DOGE,Dogecoin,Crypto,0.158591,simulated
+2026-08-09,DOGE,Dogecoin,Crypto,0.171834,simulated
+2026-08-10,DOGE,Dogecoin,Crypto,0.159566,simulated
+2026-08-11,DOGE,Dogecoin,Crypto,0.157561,simulated
+2026-08-12,DOGE,Dogecoin,Crypto,0.16022,simulated
+2026-08-13,DOGE,Dogecoin,Crypto,0.168936,simulated
+2026-08-14,DOGE,Dogecoin,Crypto,0.173206,simulated
+2026-08-15,DOGE,Dogecoin,Crypto,0.177273,simulated
+2026-08-16,DOGE,Dogecoin,Crypto,0.169356,simulated
+2026-08-17,DOGE,Dogecoin,Crypto,0.156748,simulated
+2026-08-18,DOGE,Dogecoin,Crypto,0.157327,simulated
+2026-08-19,DOGE,Dogecoin,Crypto,0.150764,simulated
+2026-08-20,DOGE,Dogecoin,Crypto,0.139386,simulated
+2026-08-21,DOGE,Dogecoin,Crypto,0.129191,simulated
+2026-08-22,DOGE,Dogecoin,Crypto,0.125447,simulated
+2026-08-23,DOGE,Dogecoin,Crypto,0.11225,simulated
+2026-08-24,DOGE,Dogecoin,Crypto,0.103532,simulated
+2026-08-25,DOGE,Dogecoin,Crypto,0.093857,simulated
+2026-08-26,DOGE,Dogecoin,Crypto,0.094889,simulated
+2026-08-27,DOGE,Dogecoin,Crypto,0.097241,simulated
+2026-08-28,DOGE,Dogecoin,Crypto,0.109685,simulated
+2026-08-29,DOGE,Dogecoin,Crypto,0.10026,simulated
+2026-08-30,DOGE,Dogecoin,Crypto,0.096254,simulated
+2026-08-31,DOGE,Dogecoin,Crypto,0.101671,simulated
+2026-09-01,DOGE,Dogecoin,Crypto,0.100358,simulated
+2026-09-02,DOGE,Dogecoin,Crypto,0.098408,simulated
+2026-09-03,DOGE,Dogecoin,Crypto,0.109035,simulated
+2026-09-04,DOGE,Dogecoin,Crypto,0.106844,simulated
+2026-09-05,DOGE,Dogecoin,Crypto,0.099683,simulated
+2026-09-06,DOGE,Dogecoin,Crypto,0.092109,simulated
+2026-09-07,DOGE,Dogecoin,Crypto,0.093983,simulated
+2026-09-08,DOGE,Dogecoin,Crypto,0.095721,simulated
+2026-09-09,DOGE,Dogecoin,Crypto,0.088158,simulated
+2026-09-10,DOGE,Dogecoin,Crypto,0.083097,simulated
+2026-09-11,DOGE,Dogecoin,Crypto,0.085806,simulated
+2026-09-12,DOGE,Dogecoin,Crypto,0.08883,simulated
+2026-09-13,DOGE,Dogecoin,Crypto,0.085467,simulated
+2026-09-14,DOGE,Dogecoin,Crypto,0.088718,simulated
+2026-09-15,DOGE,Dogecoin,Crypto,0.091815,simulated
+2026-09-16,DOGE,Dogecoin,Crypto,0.082499,simulated
+2026-09-17,DOGE,Dogecoin,Crypto,0.080969,simulated
+2026-09-18,DOGE,Dogecoin,Crypto,0.083011,simulated
+2026-09-19,DOGE,Dogecoin,Crypto,0.080205,simulated
+2026-09-20,DOGE,Dogecoin,Crypto,0.070545,simulated
+2026-09-21,DOGE,Dogecoin,Crypto,0.069358,simulated
+2026-09-22,DOGE,Dogecoin,Crypto,0.072559,simulated
+2026-09-23,DOGE,Dogecoin,Crypto,0.079776,simulated
+2026-09-24,DOGE,Dogecoin,Crypto,0.06995,simulated
+2026-09-25,DOGE,Dogecoin,Crypto,0.081825,simulated
+2026-09-26,DOGE,Dogecoin,Crypto,0.076474,simulated
+2026-09-27,DOGE,Dogecoin,Crypto,0.080993,simulated
+2026-09-28,DOGE,Dogecoin,Crypto,0.087219,simulated
+2026-09-29,DOGE,Dogecoin,Crypto,0.092518,simulated
+2026-09-30,DOGE,Dogecoin,Crypto,0.093352,simulated
+2026-10-01,DOGE,Dogecoin,Crypto,0.087068,simulated
+2026-10-02,DOGE,Dogecoin,Crypto,0.090404,simulated
+2026-10-03,DOGE,Dogecoin,Crypto,0.086606,simulated
+2026-10-04,DOGE,Dogecoin,Crypto,0.074441,simulated
+2026-10-05,DOGE,Dogecoin,Crypto,0.088212,simulated
+2026-10-06,DOGE,Dogecoin,Crypto,0.092041,simulated
+2026-10-07,DOGE,Dogecoin,Crypto,0.102649,simulated
+2026-10-08,DOGE,Dogecoin,Crypto,0.097185,simulated
+2026-10-09,DOGE,Dogecoin,Crypto,0.10613,simulated
+2026-10-10,DOGE,Dogecoin,Crypto,0.117338,simulated
+2026-10-11,DOGE,Dogecoin,Crypto,0.129455,simulated
+2026-10-12,DOGE,Dogecoin,Crypto,0.129938,simulated
+2026-10-13,DOGE,Dogecoin,Crypto,0.1215,simulated
+2026-10-14,DOGE,Dogecoin,Crypto,0.120817,simulated
+2026-10-15,DOGE,Dogecoin,Crypto,0.10639,simulated
+2026-10-16,DOGE,Dogecoin,Crypto,0.096543,simulated
+2026-10-17,DOGE,Dogecoin,Crypto,0.097563,simulated
+2026-10-18,DOGE,Dogecoin,Crypto,0.09239,simulated
+2026-10-19,DOGE,Dogecoin,Crypto,0.091941,simulated
+2026-10-20,DOGE,Dogecoin,Crypto,0.0918,simulated
+2026-10-21,DOGE,Dogecoin,Crypto,0.103592,simulated
+2026-10-22,DOGE,Dogecoin,Crypto,0.112541,simulated
+2026-10-23,DOGE,Dogecoin,Crypto,0.112801,simulated
+2026-10-24,DOGE,Dogecoin,Crypto,0.121894,simulated
+2026-10-25,DOGE,Dogecoin,Crypto,0.116906,simulated
+2026-10-26,DOGE,Dogecoin,Crypto,0.115141,simulated
+2026-10-27,DOGE,Dogecoin,Crypto,0.122214,simulated
+2026-10-28,DOGE,Dogecoin,Crypto,0.114008,simulated
+2026-10-29,DOGE,Dogecoin,Crypto,0.112678,simulated
+2026-07-31,AVAX,Avalanche,Crypto,25.108096,simulated
+2026-08-01,AVAX,Avalanche,Crypto,25.270844,simulated
+2026-08-02,AVAX,Avalanche,Crypto,27.644857,simulated
+2026-08-03,AVAX,Avalanche,Crypto,26.524647,simulated
+2026-08-04,AVAX,Avalanche,Crypto,26.856228,simulated
+2026-08-05,AVAX,Avalanche,Crypto,25.562975,simulated
+2026-08-06,AVAX,Avalanche,Crypto,23.996784,simulated
+2026-08-07,AVAX,Avalanche,Crypto,22.419881,simulated
+2026-08-08,AVAX,Avalanche,Crypto,24.287443,simulated
+2026-08-09,AVAX,Avalanche,Crypto,27.657403,simulated
+2026-08-10,AVAX,Avalanche,Crypto,28.402036,simulated
+2026-08-11,AVAX,Avalanche,Crypto,27.30486,simulated
+2026-08-12,AVAX,Avalanche,Crypto,28.384231,simulated
+2026-08-13,AVAX,Avalanche,Crypto,27.867077,simulated
+2026-08-14,AVAX,Avalanche,Crypto,29.122844,simulated
+2026-08-15,AVAX,Avalanche,Crypto,29.592695,simulated
+2026-08-16,AVAX,Avalanche,Crypto,30.05146,simulated
+2026-08-17,AVAX,Avalanche,Crypto,31.072135,simulated
+2026-08-18,AVAX,Avalanche,Crypto,30.097415,simulated
+2026-08-19,AVAX,Avalanche,Crypto,29.43543,simulated
+2026-08-20,AVAX,Avalanche,Crypto,26.776658,simulated
+2026-08-21,AVAX,Avalanche,Crypto,26.133754,simulated
+2026-08-22,AVAX,Avalanche,Crypto,24.167275,simulated
+2026-08-23,AVAX,Avalanche,Crypto,23.975728,simulated
+2026-08-24,AVAX,Avalanche,Crypto,22.745612,simulated
+2026-08-25,AVAX,Avalanche,Crypto,22.872611,simulated
+2026-08-26,AVAX,Avalanche,Crypto,23.449949,simulated
+2026-08-27,AVAX,Avalanche,Crypto,21.688053,simulated
+2026-08-28,AVAX,Avalanche,Crypto,20.739316,simulated
+2026-08-29,AVAX,Avalanche,Crypto,19.690752,simulated
+2026-08-30,AVAX,Avalanche,Crypto,20.516023,simulated
+2026-08-31,AVAX,Avalanche,Crypto,22.534695,simulated
+2026-09-01,AVAX,Avalanche,Crypto,23.615202,simulated
+2026-09-02,AVAX,Avalanche,Crypto,23.165697,simulated
+2026-09-03,AVAX,Avalanche,Crypto,25.109542,simulated
+2026-09-04,AVAX,Avalanche,Crypto,23.10322,simulated
+2026-09-05,AVAX,Avalanche,Crypto,25.089181,simulated
+2026-09-06,AVAX,Avalanche,Crypto,24.199814,simulated
+2026-09-07,AVAX,Avalanche,Crypto,20.768321,simulated
+2026-09-08,AVAX,Avalanche,Crypto,24.028078,simulated
+2026-09-09,AVAX,Avalanche,Crypto,26.20668,simulated
+2026-09-10,AVAX,Avalanche,Crypto,24.760775,simulated
+2026-09-11,AVAX,Avalanche,Crypto,24.992011,simulated
+2026-09-12,AVAX,Avalanche,Crypto,24.698901,simulated
+2026-09-13,AVAX,Avalanche,Crypto,24.838153,simulated
+2026-09-14,AVAX,Avalanche,Crypto,22.892289,simulated
+2026-09-15,AVAX,Avalanche,Crypto,22.050118,simulated
+2026-09-16,AVAX,Avalanche,Crypto,22.625008,simulated
+2026-09-17,AVAX,Avalanche,Crypto,22.903829,simulated
+2026-09-18,AVAX,Avalanche,Crypto,24.465458,simulated
+2026-09-19,AVAX,Avalanche,Crypto,24.573005,simulated
+2026-09-20,AVAX,Avalanche,Crypto,27.962259,simulated
+2026-09-21,AVAX,Avalanche,Crypto,26.882902,simulated
+2026-09-22,AVAX,Avalanche,Crypto,27.269088,simulated
+2026-09-23,AVAX,Avalanche,Crypto,24.541272,simulated
+2026-09-24,AVAX,Avalanche,Crypto,22.906803,simulated
+2026-09-25,AVAX,Avalanche,Crypto,24.643246,simulated
+2026-09-26,AVAX,Avalanche,Crypto,23.397957,simulated
+2026-09-27,AVAX,Avalanche,Crypto,24.09094,simulated
+2026-09-28,AVAX,Avalanche,Crypto,24.009233,simulated
+2026-09-29,AVAX,Avalanche,Crypto,22.668771,simulated
+2026-09-30,AVAX,Avalanche,Crypto,22.238712,simulated
+2026-10-01,AVAX,Avalanche,Crypto,21.618549,simulated
+2026-10-02,AVAX,Avalanche,Crypto,21.046759,simulated
+2026-10-03,AVAX,Avalanche,Crypto,21.937446,simulated
+2026-10-04,AVAX,Avalanche,Crypto,22.738829,simulated
+2026-10-05,AVAX,Avalanche,Crypto,22.028026,simulated
+2026-10-06,AVAX,Avalanche,Crypto,20.955998,simulated
+2026-10-07,AVAX,Avalanche,Crypto,21.283954,simulated
+2026-10-08,AVAX,Avalanche,Crypto,21.167196,simulated
+2026-10-09,AVAX,Avalanche,Crypto,22.398817,simulated
+2026-10-10,AVAX,Avalanche,Crypto,25.35686,simulated
+2026-10-11,AVAX,Avalanche,Crypto,25.98216,simulated
+2026-10-12,AVAX,Avalanche,Crypto,25.36829,simulated
+2026-10-13,AVAX,Avalanche,Crypto,24.582568,simulated
+2026-10-14,AVAX,Avalanche,Crypto,22.940855,simulated
+2026-10-15,AVAX,Avalanche,Crypto,21.350014,simulated
+2026-10-16,AVAX,Avalanche,Crypto,19.764048,simulated
+2026-10-17,AVAX,Avalanche,Crypto,18.918137,simulated
+2026-10-18,AVAX,Avalanche,Crypto,18.076779,simulated
+2026-10-19,AVAX,Avalanche,Crypto,18.421775,simulated
+2026-10-20,AVAX,Avalanche,Crypto,17.629761,simulated
+2026-10-21,AVAX,Avalanche,Crypto,17.059866,simulated
+2026-10-22,AVAX,Avalanche,Crypto,15.607064,simulated
+2026-10-23,AVAX,Avalanche,Crypto,16.712807,simulated
+2026-10-24,AVAX,Avalanche,Crypto,16.811439,simulated
+2026-10-25,AVAX,Avalanche,Crypto,18.145953,simulated
+2026-10-26,AVAX,Avalanche,Crypto,18.546411,simulated
+2026-10-27,AVAX,Avalanche,Crypto,19.691878,simulated
+2026-10-28,AVAX,Avalanche,Crypto,19.001909,simulated
+2026-10-29,AVAX,Avalanche,Crypto,19.336283,simulated

@@ -1,0 +1,121 @@
+Dept_Code,Department,Month,Budget,Actual_Spend,Variance,Variance_Pct,Status,Transactions,Attributed_Revenue,ROAS,Is_Future_Month
+CS,Customer Success,2026-01,48000,5800,42200,87.9,Within budget,1,,,False
+CS,Customer Success,2026-02,48000,6400,41600,86.7,Within budget,1,,,False
+CS,Customer Success,2026-03,48000,14000,34000,70.8,Within budget,2,,,False
+CS,Customer Success,2026-04,48000,6200,41800,87.1,Within budget,1,,,False
+CS,Customer Success,2026-05,48000,7400,40600,84.6,Within budget,1,,,False
+CS,Customer Success,2026-06,48000,8100,39900,83.1,Within budget,1,,,False
+CS,Customer Success,2026-07,48000,17900,30100,62.7,Within budget,2,,,False
+CS,Customer Success,2026-08,48000,7600,40400,84.2,Within budget,1,,,False
+CS,Customer Success,2026-09,48000,18000,30000,62.5,Within budget,2,,,False
+CS,Customer Success,2026-10,48000,19600,28400,59.2,Within budget,2,,,False
+CS,Customer Success,2026-11,48000,11200,36800,76.7,Within budget,1,,,True
+CS,Customer Success,2026-12,48000,26300,21700,45.2,Within budget,2,,,True
+ENG,Engineering,2026-01,125000,85500,39500,31.6,Within budget,3,,,False
+ENG,Engineering,2026-02,125000,71000,54000,43.2,Within budget,2,,,False
+ENG,Engineering,2026-03,125000,133000,-8000,-6.4,Over budget,3,,,False
+ENG,Engineering,2026-04,125000,99000,26000,20.8,Within budget,3,,,False
+ENG,Engineering,2026-05,125000,83000,42000,33.6,Within budget,2,,,False
+ENG,Engineering,2026-06,125000,88000,37000,29.6,Within budget,2,,,False
+ENG,Engineering,2026-07,125000,92000,33000,26.4,Within budget,2,,,False
+ENG,Engineering,2026-08,125000,96000,29000,23.2,Within budget,2,,,False
+ENG,Engineering,2026-09,125000,99000,26000,20.8,Within budget,2,,,False
+ENG,Engineering,2026-10,125000,103000,22000,17.6,Within budget,2,,,False
+ENG,Engineering,2026-11,125000,111000,14000,11.2,Within budget,2,,,True
+ENG,Engineering,2026-12,125000,120000,5000,4.0,Within budget,2,,,True
+FIN,Finance,2026-01,31000,8700,22300,71.9,Within budget,2,,,False
+FIN,Finance,2026-02,31000,4800,26200,84.5,Within budget,1,,,False
+FIN,Finance,2026-03,31000,10000,21000,67.7,Within budget,2,,,False
+FIN,Finance,2026-04,31000,9300,21700,70.0,Within budget,2,,,False
+FIN,Finance,2026-05,31000,9000,22000,71.0,Within budget,2,,,False
+FIN,Finance,2026-06,31000,12100,18900,61.0,Within budget,2,,,False
+FIN,Finance,2026-07,31000,9600,21400,69.0,Within budget,2,,,False
+FIN,Finance,2026-08,31000,11100,19900,64.2,Within budget,2,,,False
+FIN,Finance,2026-09,31000,11900,19100,61.6,Within budget,2,,,False
+FIN,Finance,2026-10,31000,13000,18000,58.1,Within budget,2,,,False
+FIN,Finance,2026-11,31000,15600,15400,49.7,Within budget,2,,,True
+FIN,Finance,2026-12,31000,20200,10800,34.8,Within budget,2,,,True
+HR,Human Resources,2026-01,42000,22500,19500,46.4,Within budget,2,,,False
+HR,Human Resources,2026-02,42000,20500,21500,51.2,Within budget,2,,,False
+HR,Human Resources,2026-03,42000,16000,26000,61.9,Within budget,1,,,False
+HR,Human Resources,2026-04,42000,17000,25000,59.5,Within budget,2,,,False
+HR,Human Resources,2026-05,42000,24000,18000,42.9,Within budget,2,,,False
+HR,Human Resources,2026-06,42000,23000,19000,45.2,Within budget,2,,,False
+HR,Human Resources,2026-07,42000,23700,18300,43.6,Within budget,2,,,False
+HR,Human Resources,2026-08,42000,11500,30500,72.6,Within budget,1,,,False
+HR,Human Resources,2026-09,42000,25500,16500,39.3,Within budget,2,,,False
+HR,Human Resources,2026-10,42000,29000,13000,31.0,Within budget,2,,,False
+HR,Human Resources,2026-11,42000,30500,11500,27.4,Within budget,2,,,True
+HR,Human Resources,2026-12,42000,38000,4000,9.5,Within budget,2,,,True
+IT,Information Technology,2026-01,95000,38000,57000,60.0,Within budget,1,,,False
+IT,Information Technology,2026-02,95000,49500,45500,47.9,Within budget,2,,,False
+IT,Information Technology,2026-03,95000,53000,42000,44.2,Within budget,2,,,False
+IT,Information Technology,2026-04,95000,47000,48000,50.5,Within budget,2,,,False
+IT,Information Technology,2026-05,95000,50900,44100,46.4,Within budget,2,,,False
+IT,Information Technology,2026-06,95000,49500,45500,47.9,Within budget,2,,,False
+IT,Information Technology,2026-07,95000,54000,41000,43.2,Within budget,2,,,False
+IT,Information Technology,2026-08,95000,59000,36000,37.9,Within budget,2,,,False
+IT,Information Technology,2026-09,95000,63000,32000,33.7,Within budget,2,,,False
+IT,Information Technology,2026-10,95000,68000,27000,28.4,Within budget,2,,,False
+IT,Information Technology,2026-11,95000,74000,21000,22.1,Within budget,2,,,True
+IT,Information Technology,2026-12,95000,83000,12000,12.6,Within budget,2,,,True
+LEG,Legal,2026-01,28000,10500,17500,62.5,Within budget,1,,,False
+LEG,Legal,2026-02,28000,8900,19100,68.2,Within budget,1,,,False
+LEG,Legal,2026-03,28000,11500,16500,58.9,Within budget,1,,,False
+LEG,Legal,2026-04,28000,12000,16000,57.1,Within budget,1,,,False
+LEG,Legal,2026-05,28000,9500,18500,66.1,Within budget,1,,,False
+LEG,Legal,2026-06,28000,14000,14000,50.0,Within budget,1,,,False
+LEG,Legal,2026-07,28000,11000,17000,60.7,Within budget,1,,,False
+LEG,Legal,2026-08,28000,13000,15000,53.6,Within budget,1,,,False
+LEG,Legal,2026-09,28000,15000,13000,46.4,Within budget,1,,,False
+LEG,Legal,2026-10,28000,12500,15500,55.4,Within budget,1,,,False
+LEG,Legal,2026-11,28000,18000,10000,35.7,Within budget,1,,,True
+LEG,Legal,2026-12,28000,16000,12000,42.9,Within budget,1,,,True
+MKT,Marketing,2026-01,55000,29000,26000,47.3,Within budget,3,164000.0,5.66,False
+MKT,Marketing,2026-02,55000,39000,16000,29.1,Within budget,4,211000.0,5.41,False
+MKT,Marketing,2026-03,55000,45000,10000,18.2,Within budget,5,250500.0,5.57,False
+MKT,Marketing,2026-04,55000,60000,-5000,-9.1,Over budget,6,314000.0,5.23,False
+MKT,Marketing,2026-05,55000,70000,-15000,-27.3,Over budget,7,359500.0,5.14,False
+MKT,Marketing,2026-06,55000,69500,-14500,-26.4,Over budget,6,355000.0,5.11,False
+MKT,Marketing,2026-07,55000,79000,-24000,-43.6,Over budget,6,394000.0,4.99,False
+MKT,Marketing,2026-08,55000,73000,-18000,-32.7,Over budget,6,382000.0,5.23,False
+MKT,Marketing,2026-09,55000,86000,-31000,-56.4,Over budget,6,438000.0,5.09,False
+MKT,Marketing,2026-10,55000,82500,-27500,-50.0,Over budget,6,439000.0,5.32,False
+MKT,Marketing,2026-11,55000,112000,-57000,-103.6,Over budget,7,628000.0,5.61,True
+MKT,Marketing,2026-12,55000,121000,-66000,-120.0,Over budget,7,675000.0,5.58,True
+OPS,Operations,2026-01,85000,43000,42000,49.4,Within budget,3,,,False
+OPS,Operations,2026-02,85000,39400,45600,53.6,Within budget,3,,,False
+OPS,Operations,2026-03,85000,42200,42800,50.4,Within budget,2,,,False
+OPS,Operations,2026-04,85000,33800,51200,60.2,Within budget,2,,,False
+OPS,Operations,2026-05,85000,39100,45900,54.0,Within budget,2,,,False
+OPS,Operations,2026-06,85000,40600,44400,52.2,Within budget,2,,,False
+OPS,Operations,2026-07,85000,39500,45500,53.5,Within budget,2,,,False
+OPS,Operations,2026-08,85000,40400,44600,52.5,Within budget,2,,,False
+OPS,Operations,2026-09,85000,44200,40800,48.0,Within budget,2,,,False
+OPS,Operations,2026-10,85000,46500,38500,45.3,Within budget,2,,,False
+OPS,Operations,2026-11,85000,48000,37000,43.5,Within budget,2,,,True
+OPS,Operations,2026-12,85000,52500,32500,38.2,Within budget,2,,,True
+PRD,Product,2026-01,72000,7500,64500,89.6,Within budget,1,,,False
+PRD,Product,2026-02,72000,6200,65800,91.4,Within budget,1,,,False
+PRD,Product,2026-03,72000,17900,54100,75.1,Within budget,2,,,False
+PRD,Product,2026-04,72000,14500,57500,79.9,Within budget,2,,,False
+PRD,Product,2026-05,72000,11000,61000,84.7,Within budget,1,,,False
+PRD,Product,2026-06,72000,17000,55000,76.4,Within budget,2,,,False
+PRD,Product,2026-07,72000,19400,52600,73.1,Within budget,2,,,False
+PRD,Product,2026-08,72000,21500,50500,70.1,Within budget,2,,,False
+PRD,Product,2026-09,72000,25000,47000,65.3,Within budget,2,,,False
+PRD,Product,2026-10,72000,13500,58500,81.2,Within budget,1,,,False
+PRD,Product,2026-11,72000,31500,40500,56.2,Within budget,2,,,True
+PRD,Product,2026-12,72000,33500,38500,53.5,Within budget,2,,,True
+SAL,Sales,2026-01,63000,12300,50700,80.5,Within budget,2,,,False
+SAL,Sales,2026-02,63000,11100,51900,82.4,Within budget,2,,,False
+SAL,Sales,2026-03,63000,14400,48600,77.1,Within budget,2,,,False
+SAL,Sales,2026-04,63000,12900,50100,79.5,Within budget,2,,,False
+SAL,Sales,2026-05,63000,12000,51000,81.0,Within budget,2,,,False
+SAL,Sales,2026-06,63000,15500,47500,75.4,Within budget,2,,,False
+SAL,Sales,2026-07,63000,15500,47500,75.4,Within budget,2,,,False
+SAL,Sales,2026-08,63000,16100,46900,74.4,Within budget,2,,,False
+SAL,Sales,2026-09,63000,20500,42500,67.5,Within budget,2,,,False
+SAL,Sales,2026-10,63000,20900,42100,66.8,Within budget,2,,,False
+SAL,Sales,2026-11,63000,25300,37700,59.8,Within budget,2,,,True
+SAL,Sales,2026-12,63000,34500,28500,45.2,Within budget,2,,,True
