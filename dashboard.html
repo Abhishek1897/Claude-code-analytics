@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trading Desk</title>
+<style>
+  /* Bloomberg-style terminal theme: black canvas, amber chrome, monospace data. */
+  :root {
+    color-scheme: dark;
+    --page: #000000;
+    --panel: #0a0a0a;
+    --panel-head: #141414;
+    --text: #e8e6e3;
+    --text-2: #a9a59c;
+    --text-3: #6f6b63;
+    --amber: #ffa028;
+    --grid: #1c1c1c;
+    --rule: #2e2e2e;
+    --hover: rgba(255, 160, 40, 0.07);
+    --neon: #39ff14;             /* BUY / up */
+    --neon-row: rgba(57, 255, 20, 0.11);
+    --red: #ff3b30;              /* CAUTION / down */
+    --red-row: rgba(255, 59, 48, 0.13);
+    --series-1: #3987e5;         /* forecaster: stocks */
+    --series-2: #d95926;         /* forecaster: crypto */
+    --mono: "IBM Plex Mono", "JetBrains Mono", Consolas, "Courier New", monospace;
+    --sans: system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--page); color: var(--text); font: 13px/1.45 var(--mono); }
+  .wrap { max-width: 1280px; margin: 0 auto; padding: 0 20px 48px; }
+  :focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+
+  /* Top bar */
+  .topbar {
+    position: sticky; top: 0; z-index: 5; background: var(--page); border-bottom: 1px solid var(--amber);
+    display: flex; align-items: center; gap: 20px; padding: 10px 20px; margin-bottom: 20px;
+  }
+  .brand { color: var(--amber); font-weight: 700; letter-spacing: 0.12em; font-size: 15px; }
+  .topbar .meta { color: var(--text-2); font-size: 12px; }
+  .topbar .meta b { color: var(--text); font-weight: 600; }
+  .badge {
+    margin-left: auto; border: 1px solid var(--amber); color: var(--amber); padding: 2px 8px;
+    font-size: 11px; letter-spacing: 0.08em;
+  }
+
+  /* Panels */
+  .panel { background: var(--panel); border: 1px solid var(--rule); margin-bottom: 24px; }
+  .panel > h2 {
+    margin: 0; padding: 8px 14px; background: var(--panel-head); border-bottom: 1px solid var(--rule);
+    color: var(--amber); font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+    display: flex; gap: 12px; align-items: baseline;
+  }
+  .panel > h2 small { color: var(--text-3); font-weight: 400; letter-spacing: 0.04em; text-transform: none; }
+  .panel-body { padding: 14px; }
+
+  /* Stat tiles */
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 1px; background: var(--rule);
+    border-bottom: 1px solid var(--rule); }
+  .tile { background: var(--panel); padding: 12px 14px; }
+  .tile .label { color: var(--text-3); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; }
+  .tile .value { font-size: 24px; font-weight: 600; margin-top: 2px; }
+  .tile .note { color: var(--text-3); font-size: 11px; }
+  .tile.buy .value { color: var(--neon); }
+  .tile.caution .value { color: var(--red); }
+
+  /* Controls */
+  .controls { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; padding: 10px 14px;
+    border-bottom: 1px solid var(--rule); }
+  .seg { display: inline-flex; border: 1px solid var(--rule); }
+  .seg button, .btn {
+    font: inherit; font-size: 12px; color: var(--text-2); background: transparent; border: 0;
+    padding: 6px 12px; cursor: pointer; letter-spacing: 0.04em;
+  }
+  .seg button + button { border-left: 1px solid var(--rule); }
+  .seg button[aria-pressed="true"] { background: var(--amber); color: #000; font-weight: 700; }
+  .btn { border: 1px solid var(--rule); }
+  .seg button:hover:not([aria-pressed="true"]), .btn:hover { color: var(--text); background: var(--hover); }
+  select, input[type="search"], input[type="number"] {
+    font: inherit; font-size: 12px; color: var(--text); background: #000; border: 1px solid var(--rule);
+    padding: 6px 10px;
+  }
+  input[type="search"] { flex: 1 1 200px; }
+  .controls .count { margin-left: auto; color: var(--text-3); font-size: 12px; }
+
+  /* Tables */
+  .scroll { overflow: auto; }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { padding: 7px 12px; text-align: left; white-space: nowrap; border-bottom: 1px solid var(--grid); }
+  thead th { position: sticky; top: 0; background: var(--panel-head); border-bottom: 1px solid var(--rule); padding: 0; }
+  th button {
+    all: unset; box-sizing: border-box; display: flex; gap: 6px; align-items: center; width: 100%;
+    padding: 7px 12px; cursor: pointer; color: var(--amber); font-size: 11px; font-weight: 700;
+    letter-spacing: 0.08em; text-transform: uppercase;
+  }
+  th.num button { justify-content: flex-end; }
+  th .arrow { font-size: 9px; min-width: 9px; }
+  tbody tr:hover { background: var(--hover); }
+  td.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .up { color: var(--neon); }
+  .down { color: var(--red); }
+  .dim { color: var(--text-2); }
+  .empty { padding: 32px; text-align: center; color: var(--text-2); }
+  tfoot td { font-weight: 700; border-top: 1px solid var(--rule); border-bottom: 0; }
+
+  /* Signal rows */
+  tr.row-buy { background: var(--neon-row); box-shadow: inset 3px 0 0 var(--neon); }
+  tr.row-caution { background: var(--red-row); box-shadow: inset 3px 0 0 var(--red); }
+  tr.row-buy:hover { background: rgba(57, 255, 20, 0.17); }
+  tr.row-caution:hover { background: rgba(255, 59, 48, 0.19); }
+  .ticker { color: var(--amber); font-weight: 700; }
+  .tag {
+    display: inline-block; min-width: 72px; text-align: center; padding: 2px 8px;
+    font-size: 11px; font-weight: 700; letter-spacing: 0.1em;
+  }
+  .tag.buy { background: var(--neon); color: #000; }
+  .tag.caution { background: var(--red); color: #000; }
+  .tag.neutral { border: 1px solid var(--rule); color: var(--text-3); }
+
+  /* RSI meter: 0-100 track with oversold/overbought zones */
+  .rsi { display: inline-flex; align-items: center; gap: 10px; justify-content: flex-end; }
+  .meter { position: relative; width: 96px; height: 6px; background: #1a1a1a; }
+  .meter::before, .meter::after { content: ""; position: absolute; top: 0; bottom: 0; }
+  .meter::before { left: 0; width: var(--lo); background: rgba(57, 255, 20, 0.22); }
+  .meter::after { right: 0; width: calc(100% - var(--hi)); background: rgba(255, 59, 48, 0.25); }
+  .meter i { position: absolute; top: -3px; width: 4px; height: 12px; margin-left: -2px; background: var(--text); z-index: 1; }
+  .row-buy .meter i { background: var(--neon); }
+  .row-caution .meter i { background: var(--red); }
+  svg.spark { display: block; }
+
+  /* Future Wealth */
+  .fc-inputs { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 8px; }
+  .fc-inputs label { display: flex; flex-direction: column; gap: 6px; font-size: 11px; color: var(--text-3);
+    letter-spacing: 0.08em; text-transform: uppercase; }
+  .fc-inputs .field { position: relative; }
+  .fc-inputs .field span { position: absolute; left: 10px; top: 50%; transform: translateY(-50%); color: var(--text-3); }
+  .fc-inputs input { width: 220px; padding-left: 22px; font-size: 13px; font-variant-numeric: tabular-nums; }
+  .fc-inputs input[aria-invalid="true"] { border-color: var(--red); }
+  .fc-error { color: var(--text-2); font-size: 12px; min-height: 18px; }
+  .fc-error:not(:empty)::before { content: "! "; color: var(--red); font-weight: 700; }
+  .fc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; }
+  .fc-card { border: 1px solid var(--rule); padding: 16px; background: #050505; }
+  .fc-card h3 { display: flex; align-items: center; gap: 8px; font-size: 13px; margin: 0; letter-spacing: 0.06em;
+    text-transform: uppercase; }
+  .fc-card h3 .rate { margin-left: auto; font-size: 11px; font-weight: 400; color: var(--text-2); }
+  .swatch { width: 10px; height: 10px; }
+  .fc-big { font-size: 28px; font-weight: 600; margin: 12px 0 2px; }
+  .fc-sub { color: var(--text-3); font-size: 11px; margin-bottom: 12px; }
+  .fc-card dl { display: grid; grid-template-columns: 1fr auto; gap: 5px 12px; margin: 0;
+    border-top: 1px solid var(--grid); padding-top: 10px; font-size: 12px; }
+  .fc-card dt { color: var(--text-2); }
+  .fc-card dd { margin: 0; text-align: right; font-variant-numeric: tabular-nums; }
+  .note { color: var(--text-3); font-size: 11px; margin: 10px 0 0; }
+
+  .missing { color: var(--text-2); font-size: 11px; }
+  .missing::before { content: "! "; color: var(--amber); font-weight: 700; }
+</style>
+</head>
+<body>
+<div class="topbar">
+  <span class="brand">TRADING DESK</span>
+  <span class="meta">AS OF <b id="as-of"></b></span>
+  <span class="meta">SIGNAL <b>RSI(<span class="rsi-period"></span>)</b> · BUY &lt; <b class="lo"></b> · CAUTION &gt; <b class="hi"></b></span>
+  <span class="badge" id="sim-badge" hidden>SIMULATED DATA</span>
+</div>
+
+<div class="wrap">
+  <!-- Signals -->
+  <section class="panel" aria-labelledby="sig-title">
+    <h2 id="sig-title">Signals <small id="sig-sub"></small></h2>
+    <div class="tiles">
+      <div class="tile"><div class="label">Assets tracked</div><div class="value" id="s-total"></div><div class="note" id="s-mix"></div></div>
+      <div class="tile buy"><div class="label">Buy · RSI &lt; <span class="lo"></span></div><div class="value" id="s-buy"></div><div class="note" id="s-buy-list"></div></div>
+      <div class="tile caution"><div class="label">Caution · RSI &gt; <span class="hi"></span></div><div class="value" id="s-caution"></div><div class="note" id="s-caution-list"></div></div>
+      <div class="tile"><div class="label">Neutral</div><div class="value" id="s-neutral"></div><div class="note">Between the two thresholds</div></div>
+    </div>
+    <div class="controls" role="search">
+      <div class="seg" id="sig-filter" role="group" aria-label="Signal">
+        <button type="button" data-v="" aria-pressed="true">ALL</button>
+        <button type="button" data-v="BUY" aria-pressed="false">BUY</button>
+        <button type="button" data-v="CAUTION" aria-pressed="false">CAUTION</button>
+        <button type="button" data-v="NEUTRAL" aria-pressed="false">NEUTRAL</button>
+      </div>
+      <select id="sig-class" aria-label="Asset class">
+        <option value="">All classes</option><option>Stocks</option><option>Crypto</option>
+      </select>
+      <input type="search" id="sig-q" placeholder="Ticker or name" aria-label="Search assets">
+      <span class="count" id="sig-count" aria-live="polite"></span>
+    </div>
+    <div class="scroll">
+      <table>
+        <thead><tr id="sig-head"></tr></thead>
+        <tbody id="sig-body"></tbody>
+      </table>
+    </div>
+    <p class="note" style="padding: 0 14px 12px">RSI is a momentum indicator, not a recommendation. Below <span class="lo"></span> means
+      recent losses outweigh gains (oversold); above <span class="hi"></span> means the opposite (overbought). Not financial advice.</p>
+  </section>
+
+  <!-- Future Wealth -->
+  <section class="panel" aria-labelledby="fc-title">
+    <h2 id="fc-title">Future Wealth <small>Projected value in 12 months</small></h2>
+    <div class="panel-body">
+      <div class="fc-inputs">
+        <label>Initial investment (lump sum)
+          <span class="field"><span>$</span>
+            <input id="fc-lump" type="number" inputmode="decimal" min="0" step="any" value="10000"></span>
+        </label>
+        <label>Monthly contribution (DCA)
+          <span class="field"><span>$</span>
+            <input id="fc-monthly" type="number" inputmode="decimal" min="0" step="any" value="500"></span>
+        </label>
+      </div>
+      <div class="fc-error" id="fc-error" role="alert"></div>
+      <div class="fc-grid" id="fc-grid" aria-live="polite"></div>
+      <p class="note">Illustrative only, not financial advice. Uses fixed annual growth rates compounded monthly;
+        monthly contributions are invested at the start of each month. Real returns vary, and crypto can lose value quickly.</p>
+    </div>
+  </section>
+
+  <!-- Cash ledger -->
+  <section class="panel" aria-labelledby="led-title" id="ledger-panel">
+    <h2 id="led-title">Cash Ledger <small id="subtitle"></small></h2>
+    <div class="tiles">
+      <div class="tile"><div class="label">Transactions</div><div class="value" id="t-count"></div><div class="note" id="t-count-note"></div></div>
+      <div class="tile"><div class="label">Money in</div><div class="value" id="t-in"></div><div class="note" id="t-in-note"></div></div>
+      <div class="tile"><div class="label">Money out</div><div class="value" id="t-out"></div><div class="note" id="t-out-note"></div></div>
+      <div class="tile"><div class="label">Net</div><div class="value" id="t-net"></div><div class="note">Money in minus money out</div></div>
+    </div>
+    <div class="controls" role="search">
+      <input type="search" id="q" placeholder="Search description, ID, category…" aria-label="Search transactions">
+      <select id="cat" aria-label="Category"><option value="">All categories</option></select>
+      <select id="dir" aria-label="Direction">
+        <option value="">Money in &amp; out</option>
+        <option value="in">Money in only</option>
+        <option value="out">Money out only</option>
+      </select>
+      <button class="btn" id="reset" type="button">RESET</button>
+      <span class="count" id="count" aria-live="polite"></span>
+    </div>
+    <div class="scroll">
+      <table>
+        <thead><tr id="head"></tr></thead>
+        <tbody id="body"></tbody>
+        <tfoot><tr id="foot"></tr></tfoot>
+      </table>
+    </div>
+  </section>
+</div>
+
+<script>
+const SIGNALS = [{"ticker": "AAPL", "name": "Apple", "asset_class": "Stocks", "as_of": "2026-10-29", "close": 183.541792, "change_1d_pct": -0.87, "change_14d_pct": -0.88, "rsi_14": 44.4, "signal": "NEUTRAL", "spark": [179.448103, 179.360585, 181.755807, 180.17166, 179.87003, 180.168315, 180.340769, 177.057119, 177.259452, 180.909488, 176.759432, 179.052742, 179.373589, 177.655923, 183.067495, 185.172682, 181.871333, 182.074732, 183.656573, 183.137242, 185.022878, 184.838362, 186.697645, 190.769955, 188.846278, 189.422585, 188.110735, 188.470187, 185.143632, 183.541792]}, {"ticker": "ADA", "name": "Cardano", "asset_class": "Crypto", "as_of": "2026-10-29", "close": 0.452772, "change_1d_pct": 7.5, "change_14d_pct": -20.22, "rsi_14": 43.8, "signal": "NEUTRAL", "spark": [0.589538, 0.61986, 0.616695, 0.610558, 0.613164, 0.618561, 0.602362, 0.60138, 0.651771, 0.598595, 0.595565, 0.559007, 0.554194, 0.567651, 0.555921, 0.56752, 0.514803, 0.534394, 0.509269, 0.515995, 0.511435, 0.441396, 0.417439, 0.414538, 0.440039, 0.438441, 0.436204, 0.399206, 0.421169, 0.452772]}, {"ticker": "AMZN", "name": "Amazon", "asset_class": "Stocks", "as_of": "2026-10-29", "close": 141.55162, "change_1d_pct": -0.21, "change_14d_pct": -16.16, "rsi_14": 29.4, "signal": "BUY", "spark": [166.408064, 163.822495, 164.993293, 166.118259, 172.984702, 168.232572, 171.246738, 170.940521, 170.892563, 166.008302, 164.322986, 166.617017, 166.176138, 166.27938, 165.150149, 168.839143, 168.597968, 161.177893, 158.803443, 152.519323, 142.773939, 141.127004, 144.796806, 144.788466, 141.291185, 138.519195, 141.545493, 141.850503, 141.844827, 141.55162]}, {"ticker": "AVAX", "name": "Avalanche", "asset_class": "Crypto", "as_of": "2026-10-29", "close": 19.336283, "change_1d_pct": 1.76, "change_14d_pct": -9.43, "rsi_14": 47.1, "signal": "NEUTRAL", "spark": [22.238712, 21.618549, 21.046759, 21.937446, 22.738829, 22.028026, 20.955998, 21.283954, 21.167196, 22.398817, 25.35686, 25.98216, 25.36829, 24.582568, 22.940855, 21.350014, 19.764048, 18.918137, 18.076779, 18.421775, 17.629761, 17.059866, 15.607064, 16.712807, 16.811439, 18.145953, 18.546411, 19.691878, 19.001909, 19.336283]}, {"ticker": "BNB", "name": "BNB", "asset_class": "Crypto", "as_of": "2026-10-29", "close": 438.982096, "change_1d_pct": 0.11, "change_14d_pct": -9.25, "rsi_14": 44.1, "signal": "NEUTRAL", "spark": [463.987218, 478.717892, 484.002087, 491.386495, 496.663982, 497.546479, 495.649552, 491.093699, 502.405947, 486.327011, 506.793152, 507.819098, 497.036899, 490.286485, 480.910014, 483.710394, 473.878555, 490.887517, 479.990274, 448.805758, 439.509894, 414.223049, 414.141842, 427.940115, 436.774071, 420.01414, 410.92911, 433.885088, 438.489149, 438.982096]}, {"ticker": "BTC", "name": "Bitcoin", "asset_class": "Crypto", "as_of": "2026-10-29", "close": 47650.598273, "change_1d_pct": 0.85, "change_14d_pct": 16.68, "rsi_14": 61.1, "signal": "NEUTRAL", "spark": [40083.648861, 40262.294521, 40038.544858, 37963.438458, 37438.888437, 38346.493566, 38991.319973, 38899.314202, 37877.433949, 38601.53396, 38241.60833, 37220.016483, 36626.832749, 38560.616812, 39127.943017, 40838.051375, 40578.330359, 42071.841515, 41651.340292, 41788.063097, 45385.88868, 46815.563154, 46487.366263, 46741.667813, 47580.485747, 49736.369271, 49405.534326, 47267.496244, 47249.100744, 47650.598273]}, {"ticker": "DOGE", "name": "Dogecoin", "asset_class": "Crypto", "as_of": "2026-10-29", "close": 0.112678, "change_1d_pct": -1.17, "change_14d_pct": 5.91, "rsi_14": 54.0, "signal": "NEUTRAL", "spark": [0.093352, 0.087068, 0.090404, 0.086606, 0.074441, 0.088212, 0.092041, 0.102649, 0.097185, 0.10613, 0.117338, 0.129455, 0.129938, 0.1215, 0.120817, 0.10639, 0.096543, 0.097563, 0.09239, 0.091941, 0.0918, 0.103592, 0.112541, 0.112801, 0.121894, 0.116906, 0.115141, 0.122214, 0.114008, 0.112678]}, {"ticker": "ETH", "name": "Ethereum", "asset_class": "Crypto", "as_of": "2026-10-29", "close": 5635.225369, "change_1d_pct": 6.36, "change_14d_pct": 32.61, "rsi_14": 75.4, "signal": "CAUTION", "spark": [4159.197945, 4363.195073, 4347.160095, 4137.591579, 4081.571224, 4228.562118, 4424.515716, 4353.286512, 4421.02367, 4542.631569, 4419.429777, 4466.039727, 4447.271171, 4344.548151, 4251.280106, 4249.356031, 4241.43596, 4138.830515, 4060.18017, 4222.950965, 4244.650973, 4376.691972, 4567.483635, 4656.846174, 5061.344261, 4890.382684, 5027.838266, 4952.540377, 5298.482276, 5635.225369]}, {"ticker": "GOOGL", "name": "Alphabet", "asset_class": "Stocks", "as_of": "2026-10-29", "close": 181.491739, "change_1d_pct": -0.93, "change_14d_pct": -0.13, "rsi_14": 53.7, "signal": "NEUTRAL", "spark": [176.052949, 176.73715, 175.937265, 175.293668, 175.465096, 180.305578, 182.118113, 181.926575, 180.039111, 177.992985, 183.477644, 185.436629, 185.940943, 185.063283, 181.677816, 181.73169, 184.88929, 183.863115, 183.387459, 182.933474, 183.569851, 178.648656, 178.160333, 175.704705, 178.792748, 176.594567, 178.706245, 183.953543, 183.192682, 181.491739]}, {"ticker": "JNJ", "name": "Johnson & Johnson", "asset_class": "Stocks", "as_of": "2026-10-29", "close": 144.281166, "change_1d_pct": -0.84, "change_14d_pct": -8.33, "rsi_14": 26.6, "signal": "BUY", "spark": [154.727332, 155.211709, 155.68112, 156.911078, 156.067092, 156.004385, 157.424583, 160.53644, 160.280961, 160.203403, 159.561444, 160.751728, 159.741675, 161.136458, 158.631674, 157.389659, 156.13843, 156.429909, 157.127982, 153.848169, 151.534758, 151.136523, 149.246099, 146.111837, 146.753915, 146.598395, 146.441878, 144.875414, 145.498175, 144.281166]}, {"ticker": "JPM", "name": "JPMorgan Chase", "asset_class": "Stocks", "as_of": "2026-10-29", "close": 173.267098, "change_1d_pct": -0.03, "change_14d_pct": -2.4, "rsi_14": 42.1, "signal": "NEUTRAL", "spark": [190.567107, 188.20039, 184.829104, 183.978569, 187.336017, 180.593651, 181.834264, 179.309043, 181.750631, 179.221519, 178.647068, 175.270508, 173.144445, 176.380237, 178.361006, 177.520827, 175.611768, 171.426774, 170.637029, 170.653797, 170.552679, 170.430045, 168.046613, 167.985865, 167.985402, 170.912954, 175.198904, 174.974643, 173.326845, 173.267098]}, {"ticker": "KO", "name": "Coca-Cola", "asset_class": "Stocks", "as_of": "2026-10-29", "close": 67.175361, "change_1d_pct": -1.41, "change_14d_pct": 0.24, "rsi_14": 50.9, "signal": "NEUTRAL", "spark": [66.678074, 66.636754, 66.462325, 66.517356, 66.257321, 66.207379, 65.564247, 65.344127, 66.699174, 66.65741, 66.514388, 66.833847, 67.261146, 66.590294, 66.466256, 67.017842, 67.180795, 67.254572, 68.201814, 67.787052, 67.837553, 67.520779, 68.432521, 67.240882, 66.836554, 66.519008, 66.917438, 67.28357, 68.133759, 67.175361]}, {"ticker": "META", "name": "Meta Platforms", "asset_class": "Stocks", "as_of": "2026-10-29", "close": 707.185595, "change_1d_pct": 0.61, "change_14d_pct": 11.0, "rsi_14": 72.3, "signal": "CAUTION", "spark": [611.501014, 637.195095, 645.547808, 646.340919, 622.804393, 628.142812, 601.809304, 583.440149, 594.513805, 603.823, 607.275434, 590.141422, 590.631639, 587.138241, 600.805222, 637.109069, 645.944337, 640.704588, 630.060821, 634.972875, 638.226242, 627.886495, 635.186861, 624.904681, 646.171849, 667.436197, 689.735596, 688.750591, 702.88878, 707.185595]}, {"ticker": "MSFT", "name": "Microsoft", "asset_class": "Stocks", "as_of": "2026-10-29", "close": 413.915053, "change_1d_pct": 1.47, "change_14d_pct": -1.52, "rsi_14": 44.6, "signal": "NEUTRAL", "spark": [413.436503, 408.260298, 409.199043, 422.262977, 417.37461, 413.744632, 414.936131, 417.810004, 416.779418, 415.579563, 421.368845, 426.148242, 421.70913, 422.93025, 424.835183, 420.287291, 423.509629, 420.130283, 427.593849, 430.467676, 432.7337, 430.887972, 431.897198, 421.668367, 416.705376, 420.506189, 409.795912, 416.343974, 407.918104, 413.915053]}, {"ticker": "NVDA", "name": "NVIDIA", "asset_class": "Stocks", "as_of": "2026-10-29", "close": 143.244776, "change_1d_pct": 2.87, "change_14d_pct": 26.75, "rsi_14": 75.3, "signal": "CAUTION", "spark": [117.28389, 111.248542, 113.728567, 113.648608, 113.892447, 111.350759, 112.880387, 111.068799, 110.593655, 106.977111, 104.389784, 109.968919, 109.61614, 111.914484, 113.150787, 113.011205, 112.645773, 116.181151, 116.523689, 117.395818, 118.892287, 124.65042, 128.757206, 131.815935, 131.17068, 127.362877, 132.625081, 138.17481, 139.253829, 143.244776]}, {"ticker": "SOL", "name": "Solana", "asset_class": "Crypto", "as_of": "2026-10-29", "close": 173.554475, "change_1d_pct": 7.6, "change_14d_pct": 36.89, "rsi_14": 69.1, "signal": "NEUTRAL", "spark": [121.206351, 109.443463, 104.278543, 112.912114, 107.101873, 110.647639, 103.313596, 104.870368, 103.207168, 102.898973, 107.574813, 119.342624, 122.453806, 125.204928, 121.180774, 126.779634, 127.249127, 134.793927, 136.668984, 151.502876, 139.415514, 139.57873, 148.220777, 147.993491, 144.540484, 144.932136, 137.451231, 140.501316, 161.295801, 173.554475]}, {"ticker": "TSLA", "name": "Tesla", "asset_class": "Stocks", "as_of": "2026-10-29", "close": 132.477927, "change_1d_pct": -1.84, "change_14d_pct": -20.95, "rsi_14": 19.4, "signal": "BUY", "spark": [234.631014, 237.416848, 228.898613, 224.915159, 221.330257, 220.946985, 216.839565, 210.650986, 208.417255, 201.059515, 189.325457, 186.19255, 189.176786, 176.647097, 174.038533, 167.591297, 159.545344, 161.935562, 156.657603, 162.634135, 155.899057, 155.669676, 152.136995, 145.968469, 146.78358, 143.816023, 144.697772, 142.30776, 134.961353, 132.477927]}, {"ticker": "V", "name": "Visa", "asset_class": "Stocks", "as_of": "2026-10-29", "close": 256.136104, "change_1d_pct": -0.09, "change_14d_pct": 2.08, "rsi_14": 59.2, "signal": "NEUTRAL", "spark": [243.167138, 244.514463, 245.228618, 246.063941, 247.198381, 245.267007, 244.504551, 246.380878, 247.657388, 248.272478, 244.289746, 246.363885, 250.345835, 253.904791, 255.128131, 250.904842, 254.266846, 254.326083, 247.207236, 248.825908, 244.899378, 241.601612, 240.247738, 244.433118, 243.834955, 245.11892, 250.815873, 256.17158, 256.366282, 256.136104]}, {"ticker": "XOM", "name": "Exxon Mobil", "asset_class": "Stocks", "as_of": "2026-10-29", "close": 130.993107, "change_1d_pct": 0.9, "change_14d_pct": 6.9, "rsi_14": 63.2, "signal": "NEUTRAL", "spark": [117.465268, 119.611737, 119.559917, 118.153984, 117.489712, 117.073638, 118.393218, 115.408875, 113.509435, 112.824808, 117.255245, 118.824071, 118.375382, 119.4924, 123.244692, 122.539306, 121.579605, 123.7125, 124.445409, 125.537996, 124.272522, 127.901976, 131.18619, 132.115003, 133.302558, 128.790267, 129.851124, 129.189828, 129.829928, 130.993107]}, {"ticker": "XRP", "name": "XRP", "asset_class": "Crypto", "as_of": "2026-10-29", "close": 0.476066, "change_1d_pct": 5.79, "change_14d_pct": 24.47, "rsi_14": 61.7, "signal": "NEUTRAL", "spark": [0.426925, 0.426531, 0.44393, 0.464154, 0.46248, 0.458557, 0.441732, 0.449803, 0.44482, 0.457114, 0.492138, 0.488971, 0.454829, 0.435365, 0.405681, 0.382488, 0.403604, 0.405708, 0.376993, 0.38631, 0.406814, 0.398283, 0.384423, 0.376742, 0.379695, 0.388839, 0.40804, 0.428773, 0.45001, 0.476066]}];
+const CONFIG = {"rsiPeriod": 14, "oversold": 30, "overbought": 70, "asOf": "2026-10-29", "simulated": true};
+const DATA = [{"TransactionID": "TXN1001", "Date": "2026-01-02", "Description": "Salary Deposit ACME Corp", "Category": "Income", "Amount": 3500.0, "Currency": "USD", "AccountNo": "ACC-4421"}, {"TransactionID": "TXN1002", "Date": "2026-01-03", "Description": "Starbucks #1234", "Category": "Food", "Amount": -5.75, "Currency": "USD", "AccountNo": "ACC-4421"}, {"TransactionID": "TXN1003", "Date": "2026-01-04", "Description": "AMAZON MKTPLACE", "Category": "Shopping", "Amount": -89.99, "Currency": "USD", "AccountNo": "ACC-4421"}, {"TransactionID": "TXN1004", "Date": "2026-01-05", "Description": "Shell Gas Station", "Category": "Transport", "Amount": -45.2, "Currency": "USD", "AccountNo": "ACC-4421"}, {"TransactionID": "TXN1005", "Date": "2026-01-06", "Description": "Netflix Subscription", "Category": "Entertainment", "Amount": -15.49, "Currency": "USD", "AccountNo": "ACC-4421"}, {"TransactionID": "TXN1006", "Date": "2026-01-07", "Description": "Walmart Supercenter", "Category": "Groceries", "Amount": -132.67, "Currency": "USD", "AccountNo": "ACC-4421"}, {"TransactionID": "TXN1007", "Date": "2026-01-08", "Description": "Uber Trip", "Category": "Transport", "Amount": -23.1, "Currency": "USD", "AccountNo": "ACC-4421"}, {"TransactionID": "TXN1008", "Date": "2026-01-09", "Description": "Electric Bill - PG&E", "Category": "Utilities", "Amount": -98.0, "Currency": "USD", "AccountNo": "ACC-4421"}, {"TransactionID": "TXN1009", "Date": "2026-01-10", "Description": "ATM Withdrawal", "Category": "Cash", "Amount": -200.0, "Currency": "USD", "AccountNo": "ACC-4421"}, {"TransactionID": "TXN1010", "Date": "2026-01-11", "Description": "Transfer to Savings", "Category": "Transfer", "Amount": -500.0, "Currency": "USD", "AccountNo": "ACC-4421"}, {"TransactionID": "TXN1011", "Date": "2026-01-12", "Description": "Spotify", "Category": "Entertainment", "Amount": -9.99, "Currency": "USD", "AccountNo": "ACC-4421"}, {"TransactionID": "TXN1012", "Date": "2026-01-13", "Description": "Rent Payment", "Category": "Housing", "Amount": -1800.0, "Currency": "USD", "AccountNo": "ACC-4421"}, {"TransactionID": "TXN1013", "Date": "2026-01-14", "Description": "Target", "Category": "Shopping", "Amount": -64.32, "Currency": "", "AccountNo": "ACC-4421"}, {"TransactionID": "TXN1014", "Date": "2026-01-15", "Description": "Interest Credit", "Category": "Income", "Amount": 2.15, "Currency": "USD", "AccountNo": "ACC-4421"}, {"TransactionID": "TXN1015", "Date": "2026-01-16", "Description": "Chipotle", "Category": "Food", "Amount": -12.85, "Currency": "USD", "AccountNo": "ACC-4421"}, {"TransactionID": "TXN1016", "Date": "2026-01-17", "Description": "Venmo - John", "Category": "Transfer", "Amount": -40.0, "Currency": "USD", "AccountNo": "ACC-4421"}, {"TransactionID": "TXN1017", "Date": "2026-01-18", "Description": "Whole Foods", "Category": "Groceries", "Amount": -87.43, "Currency": "USD", "AccountNo": "ACC-4421"}, {"TransactionID": "TXN1018", "Date": "", "Description": "Apple Store", "Category": "Shopping", "Amount": -129.0, "Currency": "USD", "AccountNo": "ACC-4421"}, {"TransactionID": "TXN1019", "Date": "2026-01-20", "Description": "Comcast Internet", "Category": "Utilities", "Amount": -79.99, "Currency": "USD", "AccountNo": "ACC-4421"}, {"TransactionID": "TXN1020", "Date": "2026-01-21", "Description": "CVS Pharmacy", "Category": "Health", "Amount": -23.47, "Currency": "USD", "AccountNo": "ACC-4421"}, {"TransactionID": "TXN1021", "Date": "2026-01-22", "Description": "Lyft Ride", "Category": "Transport", "Amount": -18.6, "Currency": "USD", "AccountNo": "ACC-4421"}, {"TransactionID": "TXN1022", "Date": "2026-01-23", "Description": "Gym Membership", "Category": "Health", "Amount": -49.99, "Currency": "USD", "AccountNo": "ACC-4421"}, {"TransactionID": "TXN1023", "Date": "2026-01-24", "Description": "Refund AMAZON", "Category": "Shopping", "Amount": 89.99, "Currency": "USD", "AccountNo": "ACC-4421"}, {"TransactionID": "TXN1024", "Date": "2026-01-25", "Description": "Dominos Pizza", "Category": "Food", "Amount": -21.3, "Currency": "USD", "AccountNo": "ACC-4421"}, {"TransactionID": "TXN1025", "Date": "2026-01-26", "Description": "Water Bill", "Category": "Utilities", "Amount": -35.0, "Currency": "USD", "AccountNo": "ACC-4421"}, {"TransactionID": "TXN1026", "Date": "2026-01-27", "Description": "Freelance Payment", "Category": "Income", "Amount": 750.0, "Currency": "USD", "AccountNo": "ACC-4421"}, {"TransactionID": "TXN1027", "Date": "2026-01-28", "Description": "Home Depot", "Category": "Shopping", "Amount": -156.78, "Currency": "USD", "AccountNo": "ACC-4421"}, {"TransactionID": "TXN1028", "Date": "2026-01-29", "Description": "McDonalds", "Category": "Food", "Amount": -8.49, "Currency": "USD", "AccountNo": "ACC-4421"}, {"TransactionID": "TXN1029", "Date": "2026-01-30", "Description": "Car Insurance GEICO", "Category": "Insurance", "Amount": -112.5, "Currency": "USD", "AccountNo": "ACC-4421"}, {"TransactionID": "TXN1030", "Date": "2026-01-31", "Description": "Salary Deposit ACME Corp", "Category": "Income", "Amount": 3500.0, "Currency": "USD", "AccountNo": "ACC-4421"}, {"TransactionID": "TXN1031", "Date": "2026-02-01", "Description": "Starbucks #1234", "Category": "Food", "Amount": -6.25, "Currency": "USD", "AccountNo": "ACC-4421"}, {"TransactionID": "TXN1032", "Date": "2026-02-02", "Description": "Costco", "Category": "Groceries", "Amount": -210.45, "Currency": "USD", "AccountNo": "ACC-4421"}, {"TransactionID": "TXN1033", "Date": "2026-02-03", "Description": "Phone Bill Verizon", "Category": "Utilities", "Amount": -65.0, "Currency": "USD", "AccountNo": "ACC-4421"}, {"TransactionID": "TXN1034", "Date": "2026-02-04", "Description": "Doctor Visit Copay", "Category": "Health", "Amount": -30.0, "Currency": "USD", "AccountNo": "ACC-4421"}, {"TransactionID": "TXN1035", "Date": "2026-02-05", "Description": "Uber Eats", "Category": "Food", "Amount": -27.8, "Currency": "USD", "AccountNo": "ACC-4421"}, {"TransactionID": "TXN1036", "Date": "2026-02-06", "Description": "ATM Withdrawal", "Category": "Cash", "Amount": -100.0, "Currency": "USD", "AccountNo": "ACC-4421"}, {"TransactionID": "TXN1037", "Date": "2026-02-07", "Description": "Movie Theater AMC", "Category": "Entertainment", "Amount": -32.0, "Currency": "USD", "AccountNo": "ACC-4421"}, {"TransactionID": "TXN1038", "Date": "2026-02-08", "Description": "Transfer to Savings", "Category": "Transfer", "Amount": -500.0, "Currency": "USD", "AccountNo": "ACC-4421"}, {"TransactionID": "TXN1039", "Date": "2026-02-09", "Description": "Trader Joes", "Category": "Groceries", "Amount": -58.12, "Currency": "USD", "AccountNo": "ACC-4421"}, {"TransactionID": "TXN1040", "Date": "2026-02-10", "Description": "Hulu", "Category": "Entertainment", "Amount": -7.99, "Currency": "USD", "AccountNo": "ACC-4421"}, {"TransactionID": "TXN1041", "Date": "2026-02-11", "Description": "Parking Fee", "Category": "Transport", "Amount": -15.0, "Currency": "USD", "AccountNo": "ACC-4421"}, {"TransactionID": "TXN1042", "Date": "2026-02-12", "Description": "Dividend Credit", "Category": "Income", "Amount": 45.67, "Currency": "USD", "AccountNo": "ACC-4421"}, {"TransactionID": "TXN1043", "Date": "2026-02-13", "Description": "Best Buy", "Category": "Shopping", "Amount": -299.99, "Currency": "USD", "AccountNo": "ACC-4421"}];
+
+const money = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" });
+const fmtSigned = v => (v > 0 ? "+" : v < 0 ? "−" : "") + money.format(Math.abs(v));
+const isMissing = v => v === null || v === undefined || v === "";
+const esc = s => String(s).replace(/[&<>"]/g, ch => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch]));
+const $ = id => document.getElementById(id);
+const fill = (sel, text) => document.querySelectorAll(sel).forEach(el => { el.textContent = text; });
+
+// Header
+$("as-of").textContent = CONFIG.asOf;
+fill(".rsi-period", CONFIG.rsiPeriod);
+fill(".lo", CONFIG.oversold);
+fill(".hi", CONFIG.overbought);
+$("sim-badge").hidden = !CONFIG.simulated;
+
+// Shared sortable-header helper
+function sortableHeader(rowId, cols, state, onChange) {
+  $(rowId).innerHTML = cols.map(c =>
+    `<th scope="col" class="${c.cls || ""}" data-key="${c.key}" aria-sort="none">
+       ${c.sortable === false ? `<button type="button" disabled>${c.label}</button>`
+         : `<button type="button">${c.label}<span class="arrow" aria-hidden="true"></span></button>`}
+     </th>`).join("");
+  $(rowId).addEventListener("click", e => {
+    const th = e.target.closest("th");
+    if (!th || cols.find(c => c.key === th.dataset.key).sortable === false) return;
+    state.dir = state.key === th.dataset.key ? -state.dir : 1;
+    state.key = th.dataset.key;
+    onChange();
+  });
+  return () => document.querySelectorAll(`#${rowId} th`).forEach(th => {
+    const on = th.dataset.key === state.key;
+    th.setAttribute("aria-sort", on ? (state.dir > 0 ? "ascending" : "descending") : "none");
+    const a = th.querySelector(".arrow");
+    if (a) a.textContent = on ? (state.dir > 0 ? "▲" : "▼") : "";
+  });
+}
+
+function compareBy(state) {
+  return (a, b) => {
+    const x = a[state.key], y = b[state.key];
+    if (isMissing(x) && isMissing(y)) return 0;
+    if (isMissing(x)) return 1;            // missing values always sink to the bottom
+    if (isMissing(y)) return -1;
+    return (typeof x === "number" ? x - y : String(x).localeCompare(String(y))) * state.dir;
+  };
+}
+
+// --- Signals ---------------------------------------------------------------------
+const SIG_COLS = [
+  { key: "ticker",         label: "Ticker" },
+  { key: "name",           label: "Name" },
+  { key: "asset_class",    label: "Class" },
+  { key: "close",          label: "Last",  cls: "num" },
+  { key: "change_1d_pct",  label: "1D %",  cls: "num" },
+  { key: "change_14d_pct", label: `${CONFIG.rsiPeriod}D %`, cls: "num" },
+  { key: "spark",          label: "30D trend", sortable: false },
+  { key: "rsi_14",         label: `RSI(${CONFIG.rsiPeriod})`, cls: "num" },
+  { key: "signal",         label: "Signal" },
+];
+const sigState = { key: "rsi_14", dir: 1, filter: "" };
+
+const fmtPrice = v => v >= 1000 ? v.toLocaleString("en-US", { maximumFractionDigits: 2, minimumFractionDigits: 2 })
+  : v >= 1 ? v.toFixed(2) : v.toFixed(4);
+const fmtPct = v => isMissing(v) ? "—" : `${v > 0 ? "+" : v < 0 ? "−" : ""}${Math.abs(v).toFixed(2)}%`;
+const dirClass = v => v > 0 ? "up" : v < 0 ? "down" : "dim";
+
+function spark(values) {
+  const w = 96, h = 22, pad = 2;
+  const lo = Math.min(...values), hi = Math.max(...values), span = hi - lo || 1;
+  const pts = values.map((v, i) => [pad + i * (w - 2 * pad) / (values.length - 1),
+                                    h - pad - (v - lo) / span * (h - 2 * pad)]);
+  const [lx, ly] = pts[pts.length - 1];
+  const trend = values[values.length - 1] >= values[0] ? "var(--neon)" : "var(--red)";
+  return `<svg class="spark" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img"
+            aria-label="30-period price trend, ${values[values.length - 1] >= values[0] ? "up" : "down"}">
+    <polyline points="${pts.map(p => p.map(n => n.toFixed(1)).join(",")).join(" ")}" fill="none"
+      stroke="var(--text-2)" stroke-width="1.25" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="${lx.toFixed(1)}" cy="${ly.toFixed(1)}" r="2.5" fill="${trend}"/></svg>`;
+}
+
+function sigCell(c, r) {
+  const v = r[c.key];
+  switch (c.key) {
+    case "ticker": return `<td class="ticker">${esc(v)}</td>`;
+    case "asset_class": return `<td class="dim">${esc(v)}</td>`;
+    case "close": return `<td class="num">${fmtPrice(v)}</td>`;
+    case "change_1d_pct":
+    case "change_14d_pct": return `<td class="num ${dirClass(v)}">${fmtPct(v)}</td>`;
+    case "spark": return `<td>${spark(v)}</td>`;
+    case "rsi_14": return isMissing(v) ? `<td class="num dim">—</td>` : `<td class="num"><span class="rsi">
+        <span class="meter" style="--lo:${CONFIG.oversold}%;--hi:${CONFIG.overbought}%" aria-hidden="true">
+          <i style="left:${Math.max(0, Math.min(100, v))}%"></i></span><b>${v.toFixed(1)}</b></span></td>`;
+    case "signal": return `<td><span class="tag ${v.toLowerCase()}">${esc(v)}</span></td>`;
+    default: return `<td>${esc(v)}</td>`;
+  }
+}
+
+const sigHeader = sortableHeader("sig-head", SIG_COLS, sigState, renderSignals);
+
+function renderSignals() {
+  const q = $("sig-q").value.trim().toLowerCase(), cls = $("sig-class").value;
+  const rows = SIGNALS.filter(r =>
+    (!sigState.filter || r.signal === sigState.filter) &&
+    (!cls || r.asset_class === cls) &&
+    (!q || r.ticker.toLowerCase().includes(q) || r.name.toLowerCase().includes(q))
+  ).sort(compareBy(sigState));
+  sigHeader();
+  $("sig-body").innerHTML = rows.length
+    ? rows.map(r => `<tr class="${r.signal === "BUY" ? "row-buy" : r.signal === "CAUTION" ? "row-caution" : ""}">
+        ${SIG_COLS.map(c => sigCell(c, r)).join("")}</tr>`).join("")
+    : `<tr><td class="empty" colspan="${SIG_COLS.length}">No assets match these filters.</td></tr>`;
+  $("sig-count").textContent = `${rows.length} of ${SIGNALS.length} assets`;
+}
+
+document.querySelectorAll("#sig-filter button").forEach(b => b.addEventListener("click", () => {
+  sigState.filter = b.dataset.v;
+  document.querySelectorAll("#sig-filter button").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+  renderSignals();
+}));
+["sig-q", "sig-class"].forEach(id => $(id).addEventListener("input", renderSignals));
+
+const by = s => SIGNALS.filter(r => r.signal === s);
+$("s-total").textContent = SIGNALS.length;
+$("s-mix").textContent = ["Stocks", "Crypto"].map(c => `${SIGNALS.filter(r => r.asset_class === c).length} ${c.toLowerCase()}`).join(" · ");
+$("s-buy").textContent = by("BUY").length;
+$("s-buy-list").textContent = by("BUY").map(r => r.ticker).join(" ") || "None";
+$("s-caution").textContent = by("CAUTION").length;
+$("s-caution-list").textContent = by("CAUTION").map(r => r.ticker).join(" ") || "None";
+$("s-neutral").textContent = by("NEUTRAL").length;
+$("sig-sub").textContent = `${SIGNALS.length} assets · daily closes · sorted by RSI`;
+renderSignals();
+
+// --- Future Wealth forecaster -------------------------------------------------
+const RATES = {"Stocks": 0.1, "Crypto": 0.3};          // { name: annual growth rate }
+const HORIZON = 12;      // months
+const SERIES = ["--series-1", "--series-2"];
+
+function forecast(lump, monthly, annual, months = HORIZON) {
+  const m = Math.pow(1 + annual, 1 / 12) - 1;    // effective monthly rate
+  const lumpFv = lump * Math.pow(1 + m, months);
+  let dcaFv = 0;
+  for (let k = 1; k <= months; k++) dcaFv += monthly * Math.pow(1 + m, k);  // start-of-month deposits
+  return { lump: lumpFv, dca: dcaFv, total: lumpFv + dcaFv, invested: lump + monthly * months };
+}
+
+function readAmount(id) {
+  const el = $(id), raw = el.value.trim();
+  const v = raw === "" ? 0 : Number(raw);
+  const ok = Number.isFinite(v) && v >= 0;
+  el.setAttribute("aria-invalid", String(!ok));
+  return ok ? v : null;
+}
+
+function renderForecast() {
+  const lump = readAmount("fc-lump"), monthly = readAmount("fc-monthly");
+  if (lump === null || monthly === null) {
+    $("fc-error").textContent = "Enter amounts of zero or more.";
+    return;
+  }
+  $("fc-error").textContent = lump + monthly === 0 ? "Enter an amount to see a projection." : "";
+
+  $("fc-grid").innerHTML = Object.entries(RATES).map(([name, rate], i) => {
+    const f = forecast(lump, monthly, rate);
+    const gain = f.total - f.invested;
+    return `<article class="fc-card">
+      <h3><span class="swatch" style="background: var(${SERIES[i % SERIES.length]})" aria-hidden="true"></span>
+        ${esc(name)}<span class="rate">${(rate * 100).toFixed(0)}% a year</span></h3>
+      <div class="fc-big">${money.format(f.total)}</div>
+      <div class="fc-sub">Projected value after ${HORIZON} months</div>
+      <dl>
+        <dt>Total invested</dt><dd>${money.format(f.invested)}</dd>
+        <dt>Projected gain</dt><dd class="${gain > 0 ? "up" : ""}">${fmtSigned(gain)}</dd>
+        <dt>From lump sum</dt><dd>${money.format(f.lump)}</dd>
+        <dt>From monthly contributions</dt><dd>${money.format(f.dca)}</dd>
+      </dl>
+    </article>`;
+  }).join("");
+}
+
+["fc-lump", "fc-monthly"].forEach(id => $(id).addEventListener("input", renderForecast));
+renderForecast();
+
+// --- Cash ledger -----------------------------------------------------------------
+if (!DATA.length) {
+  $("ledger-panel").hidden = true;
+} else {
+  const COLS = [
+    { key: "TransactionID", label: "Transaction ID" },
+    { key: "Date",          label: "Date" },
+    { key: "Description",   label: "Description" },
+    { key: "Category",      label: "Category" },
+    { key: "Amount",        label: "Amount", cls: "num" },
+    { key: "Currency",      label: "Currency" },
+    { key: "AccountNo",     label: "Account" },
+  ];
+  const ledState = { key: "Date", dir: 1 };
+  const ledHeader = sortableHeader("head", COLS, ledState, render);
+
+  [...new Set(DATA.map(r => r.Category).filter(Boolean))].sort()
+    .forEach(c => $("cat").insertAdjacentHTML("beforeend", `<option>${esc(c)}</option>`));
+  ["q", "cat", "dir"].forEach(id => $(id).addEventListener("input", render));
+  $("reset").addEventListener("click", () => {
+    $("q").value = ""; $("cat").value = ""; $("dir").value = "";
+    ledState.key = "Date"; ledState.dir = 1; render();
+  });
+
+  function cell(c, r) {
+    const v = r[c.key];
+    if (isMissing(v)) return `<td class="${c.cls || ""}"><span class="missing">MISSING</span></td>`;
+    if (c.key === "Amount") return `<td class="num ${v > 0 ? "up" : ""}">${fmtSigned(v)}</td>`;
+    return `<td class="${c.cls || ""}">${esc(v)}</td>`;
+  }
+
+  function render() {
+    const q = $("q").value.trim().toLowerCase(), cat = $("cat").value, dir = $("dir").value;
+    const rows = DATA.filter(r =>
+      (!q || COLS.some(c => String(r[c.key] ?? "").toLowerCase().includes(q))) &&
+      (!cat || r.Category === cat) &&
+      (!dir || (dir === "in" ? r.Amount > 0 : r.Amount < 0))
+    ).sort(compareBy(ledState));
+    ledHeader();
+
+    $("body").innerHTML = rows.length
+      ? rows.map(r => `<tr>${COLS.map(c => cell(c, r)).join("")}</tr>`).join("")
+      : `<tr><td class="empty" colspan="${COLS.length}">No transactions match these filters.</td></tr>`;
+
+    const ins = rows.filter(r => r.Amount > 0), outs = rows.filter(r => r.Amount < 0);
+    const sumIn = ins.reduce((s, r) => s + r.Amount, 0);
+    const sumOut = outs.reduce((s, r) => s - r.Amount, 0);
+    const net = sumIn - sumOut;
+
+    $("t-count").textContent = rows.length;
+    $("t-count-note").textContent = rows.length === DATA.length ? "All rows" : `of ${DATA.length} rows`;
+    $("t-in").textContent = money.format(sumIn);
+    $("t-in-note").textContent = `${ins.length} credit${ins.length === 1 ? "" : "s"}`;
+    $("t-out").textContent = money.format(sumOut);
+    $("t-out-note").textContent = `${outs.length} debit${outs.length === 1 ? "" : "s"}`;
+    $("t-net").textContent = fmtSigned(net);
+    $("t-net").className = "value" + (net > 0 ? " up" : "");
+
+    $("count").textContent = `Showing ${rows.length} of ${DATA.length}`;
+    $("foot").innerHTML = COLS.map((c, i) =>
+      c.key === "Amount" ? `<td class="num ${net > 0 ? "up" : ""}">${fmtSigned(net)}</td>`
+      : `<td>${i === 0 ? "Net total" : ""}</td>`).join("");
+  }
+
+  const dates = DATA.map(r => r.Date).filter(Boolean).sort();
+  const gaps = DATA.filter(r => COLS.some(c => isMissing(r[c.key]))).length;
+  $("subtitle").textContent =
+    `${DATA.length} transactions · ${dates[0]} to ${dates[dates.length - 1]}` +
+    (gaps ? ` · ${gaps} row${gaps === 1 ? "" : "s"} with missing values` : "");
+  render();
+}
+</script>
+</body>
+</html>
