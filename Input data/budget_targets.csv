@@ -1,0 +1,11 @@
+Dept_code,Department_name,Monthly_Budget,CapEx_Limit
+MKT,Marketing,55000,200000
+OPS,Operations,85000,500000
+HR,Human Resources,42000,100000
+FIN,Finance,31000,150000
+ENG,Engineering,125000,800000
+SAL,Sales,63000,250000
+IT,Information Technology,95000,600000
+LEG,Legal,28000,80000
+PRD,Product,72000,300000
+CS,Customer Success,48000,150000
